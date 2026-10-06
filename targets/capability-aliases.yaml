@@ -1,0 +1,678 @@
+version: capability-aliases-v2
+generated: 2026-10-02（v2：2026-10-03 补 banking / travel 两段）
+targets:
+  agentdojo-workspace:
+    _evidence_basis: 直读本机安装的 agentdojo==0.1.35（wheel sha256 见 requirements-target.txt）
+    capabilities:
+    - id: user_turn
+      native: 适配器把用户消息放进对话并调用 Pipeline.query
+      source: harness/adapters/agentdojo_workspace.py:inject；agentdojo/agent_pipeline/basic_elements.py InitQuery
+      reason: 目标的入口就是用户轮次；卡的这一步问的是'攻击能否经由用户发言进入'
+      actions:
+      - user_turn
+    - id: assistant_response
+      native: 模型生成一条 assistant 消息（内容块列表）
+      source: agentdojo/agent_pipeline/basic_elements.py；harness/adapters/agentdojo_workspace.py:_extract_assistant_text
+      reason: 任何一轮对话都会产生助手回复；卡的这一步问的是'攻击是否需要一个可读的助手输出'
+      actions:
+      - response_generate
+      - answer_generate
+      - generation_complete
+      - assistant_turn
+    - id: instruction_following
+      native: agent 读取指令并据此行动（工具调用循环）
+      source: agentdojo/agent_pipeline/agent_pipeline.py:AgentPipeline.from_config（tools_loop）
+      reason: 被评测对象就是'照着指令做事的 agent'；这一步是它的定义性质
+      actions:
+      - instruction_follow
+      - task_execute
+    - id: tool_invocation
+      native: FunctionsRuntime 执行模型给出的 tool_calls
+      source: agentdojo/functions_runtime.py:41 FunctionCall / :68 Function；agent_pipeline/tool_execution.py:46 ToolsExecutor / :74 for tool_call in messages[-1]['tool_calls']
+      reason: 目标确有工具调用执行面；这一步问的是'攻击路径里有没有一次工具调用'
+      actions:
+      - tool_call
+      - tool_invoke
+      - invoke_tool
+      - select_tool
+    - id: tool_schema_exposure
+      native: 工具 schema 作为 tools 参数交给模型
+      source: agentdojo/agent_pipeline/llms/openai_llm.py:134 _function_to_openai / :160 tools=tools
+      reason: 模型能看到每个工具的名字、描述与参数 schema；这一步问的是'工具元数据是否可见'
+      actions:
+      - read_tool_metadata
+      - tool_list
+    - id: tool_output_ingestion
+      native: 工具输出回灌进对话循环（不可信内容入口）
+      source: agentdojo/agent_pipeline/tool_execution.py:118 ToolsExecutionLoop / tool_result_to_str
+      reason: 工具返回值会作为消息回到模型上下文；这一步问的是'是否存在工具返回面'
+      actions:
+      - tool_return
+      - tool_return_read
+      - read_tool_result
+    - id: system_prompt_in_context
+      native: 系统提示词进入模型上下文（SystemMessage 组件）
+      source: agentdojo/agent_pipeline/basic_elements.py:28 SystemMessage
+      reason: 目标确有系统提示词这一层；**能不能把它读出来是 T06 的测量问题，不是适用性问题**
+      actions:
+      - read_system_prompt
+    - id: state_changing_tools
+      native: 24 个工具里有可写工具（send_email / create_file / create_calendar_event …）
+      source: targets/agentdojo-workspace.json 的 tools 清单（直读 default_suites/v1/workspace/task_suite.py）
+      reason: 逐个工具名与目标工具清单**逐字一致**的，直接算命中，不算别名
+      actions:
+      - send_email
+      - delete_email
+      - create_file
+      - delete_file
+      - share_file
+      - append_to_file
+      - create_calendar_event
+      - cancel_calendar_event
+      - reschedule_calendar_event
+      - add_calendar_event_participants
+    excluded:
+    - family: 检索语料 / 向量库
+      actions:
+      - knowledge_retrieve
+      - retrieve_document
+      - rag_query
+      reason: 包内以 5 条正则直查（retriev|vector_store|embedding|long_term_memory|authoriz），命中的都是'检索文件'的 docstring；未见检索语料或向量库面
+    - family: 长期记忆 / 跨会话状态
+      actions:
+      - memory_retrieve
+      - memory_write
+      - memory_read
+      reason: 同上直查未见长期记忆面；环境是 per-task 构造、每 trial 重建
+    - family: 授权判定
+      actions:
+      - authz_decide
+      - authorization_check
+      reason: 同上直查未见授权面；工具调用不做授权判定（docs/benchmark-matrix.md §3.2 已认定'没有 authorization 证据层'）
+    - family: 工具注册 / 动态工具集
+      actions:
+      - register_tool
+      - abort_tool_registration
+      - rewrite_tool_descriptor
+      - crawl_server_metadata
+      - read_agent_card
+      - read_skill_metadata
+      reason: 工具集在 pipeline 构造时固定（FunctionsRuntime(suite.tools)），运行时无注册/改写端点
+    - family: 审计日志 / 服务端回读
+      actions:
+      - server_log_readback
+      - log_interpret
+      reason: 环境内无审计日志面；targets/agentdojo-workspace.json 的 receipt_supported=false
+    - family: 物理/具身动作
+      actions:
+      - execute_manipulation
+      - decode_action_chunk
+      - plan_action
+      - read_lidar_state
+      reason: 目标域是邮件/日程/云盘，无执行器与传感器面
+    - family: 模型训练 / 权重
+      actions:
+      - load_model
+      reason: 目标只经 API 调用模型，无训练与权重面
+    _unresolved:
+    - actions:
+      - code_generate
+      - plan_generate
+      - decision_generate
+      - reasoning_trace_generate
+      - orchestrate_task
+      - web_fetch
+      - outbound_request
+      - execute_command
+      - doc_ingest
+      - answer_with_context
+      - guardrail_invoke
+      reason: 名称有歧义或需要额外前提（如代码执行、规划器、网络、护栏模型），**本轮未取得直读依据，故不别名**。按 E3：这是'本次未核'，不是'目标没有'。
+  injecagent-toolkits:
+    _evidence_basis: 直读 InjecAgent 仓库（uiuc-kang-lab/InjecAgent, main）： data/tools.json（38 toolkit / 330 工具名，按 src/utils.py:120-129 的 tool_name = kit_name + tool['name'] 导出，见 targets/injecagent-toolkits.json） 与 src/prompts/agent_prompts.py（ReAct 循环与 Scratchpad）。 画像重建脚本：results/README.md
+    capabilities:
+    - id: user_turn
+      native: agent 接收 [User Input] 作为任务
+      source: src/prompts/agent_prompts.py 的 USER_PROMPT（[User Input] / [Tool Specifications] / [Scratchpad] 三段）
+      reason: 入口是用户任务陈述；这一步问的是'攻击能否经由用户发言进入'
+      actions:
+      - user_turn
+    - id: assistant_response
+      native: 模型生成 Thought 与最终回答
+      source: src/prompts/agent_prompts.py:30-37（Thought/Action/Action Input/Observation，最后合成回答）
+      reason: 任何一轮都有助手输出；卡的这一步问的是'攻击是否需要一次可读的助手输出'
+      actions:
+      - response_generate
+      - answer_generate
+      - generation_complete
+      - assistant_turn
+    - id: instruction_following
+      native: agent 按任务指令自主使用工具完成任务
+      source: src/prompts/agent_prompts.py:78-79（Effective Tool Use / Autonomous Requirement）
+      reason: 被评测对象就是'照着指令做事的 agent'；这一步是它的定义性质
+      actions:
+      - instruction_follow
+      - task_execute
+    - id: tool_invocation
+      native: Action / Action Input 触发工具执行，Observation 返回结果
+      source: 'src/prompts/agent_prompts.py:31-33 / :112-116（Action: the tool that you choose to use）'
+      reason: 目标确有工具调用执行面；这一步问的是'攻击路径里有没有一次工具调用'
+      actions:
+      - tool_call
+      - tool_invoke
+      - invoke_tool
+      - select_tool
+    - id: tool_schema_exposure
+      native: 每个工具的名字/描述/参数以 [Tool Specifications] 交给模型
+      source: src/prompts/agent_prompts.py:32（Action Input … matching the tool's [Arguments] specifications）/ :47（Use only available tools）
+      reason: 模型能看到工具元数据；这一步问的是'工具元数据是否可见'
+      actions:
+      - read_tool_metadata
+      - tool_list
+    - id: tool_output_ingestion
+      native: 工具执行结果作为 Observation 回灌进上下文
+      source: 'src/prompts/agent_prompts.py:33（Observation: the execution result of the tool）/ :18（Scratchpad 追踪 previous tool calls and tool execution outputs）'
+      reason: 工具返回值回到模型上下文——这正是间接提示注入的入口面
+      actions:
+      - tool_return
+      - tool_return_read
+      - read_tool_result
+    - id: system_prompt_in_context
+      native: agent 有系统提示词（SYS_PROMPT）
+      source: 'src/prompts/agent_prompts.py:136（"hwchase17_react": (SYS_PROMPT, USER_PROMPT_SIMPLE)）'
+      reason: 目标确有系统提示词这一层；能否读出是测量问题，不是适用性问题
+      actions:
+      - read_system_prompt
+    - id: reasoning_step
+      native: ReAct 的 Thought 步：模型先推理再决定下一步动作
+      source: 'src/prompts/agent_prompts.py:30（Thought: your reasoning for determining the next action）'
+      reason: 模型确有一步显式推理；这一步问的是'攻击是否依赖一次规划/推理输出'
+      actions:
+      - plan_action
+    - id: code_execution
+      native: Terminal 工具执行终端命令
+      source: 'targets/injecagent-toolkits.json 的 TerminalExecute（data/tools.json: toolkit=Terminal, tool=Execute）'
+      reason: 目标确有命令执行面
+      actions:
+      - execute_command
+    - id: web_retrieval
+      native: 浏览器与搜索工具把外部网页内容取回上下文
+      source: targets/injecagent-toolkits.json 的 WebBrowserNavigateTo / WebBrowserRetrieveElements / GoogleSearchWebSearch
+      reason: 目标确有'从外部取内容'的面；这一步问的是'攻击能否经由取回的内容进入'
+      actions:
+      - web_fetch
+    - id: outbound_messaging
+      native: Slack / Twilio / Gmail 向外部收件人发消息
+      source: targets/injecagent-toolkits.json 的 SlackSendMessage / TwilioSendSms / GmailSendEmail
+      reason: 目标确有对外发信面；这一步问的是'攻击是否以外发消息为终点或中转'
+      actions:
+      - agent_message
+      - outbound_request
+    - id: physical_actuation
+      native: 智能锁 / 室内机器人 / 交通控制 / 应急调度工具执行物理侧动作
+      source: targets/injecagent-toolkits.json 的 AugustSmartLockUnlockDoor / IndoorRobotGoToRoom / TrafficControl* / EmergencyDispatchSystemRedirectDispatchResources
+      reason: 目标确有作用于物理侧的执行器面
+      actions:
+      - execute_manipulation
+    - id: embodied_state_read
+      native: 室内机器人可读取自身状态与周围物体
+      source: targets/injecagent-toolkits.json 的 IndoorRobotGetCurrentState / IndoorRobotLookAroundObject
+      reason: 目标确有具身状态观测面
+      actions:
+      - read_lidar_state
+    - id: document_ingest
+      native: 笔记与病历工具接收文档写入
+      source: targets/injecagent-toolkits.json 的 EvernoteManagerCreateNote / EpicFHIRManageClinicalDocuments
+      reason: 目标确有文档写入面
+      actions:
+      - doc_ingest
+    excluded:
+    - family: 检索语料 / 知识库（**一处判断，从严排除**）
+      actions:
+      - knowledge_retrieve
+      - retrieve_document
+      - rag_query
+      reason: 目标**确有**将外部内容取回上下文的面（WebBrowser / GoogleSearch）， 但 T01 的 knowledge_retrieve 指的是**可被投毒的知识库/语料**， 而网页检索是否等价于该面**是一个判断，不是事实**。 本轮从严排除并登记（按 E4：判断须标出）。**若认为等价， 加入后 T01 的约 20 张卡会变为适用**——这是一个会显著改变覆盖率的决定，不由当前实现替做。
+    - family: 长期记忆 / 跨会话状态
+      actions:
+      - memory_retrieve
+      - memory_write
+      - memory_read
+      reason: Scratchpad 只保存**本次**工具轨迹（agent_prompts.py:18），无跨会话持久记忆面
+    - family: 授权判定
+      actions:
+      - authz_decide
+      - authorization_check
+      reason: 工具集内有身份类工具（NortonIdentitySafe / Spokeo），但**没有授权判定端点**；身份查询 ≠ 授权决策
+    - family: 工具注册 / 动态工具集
+      actions:
+      - register_tool
+      - abort_tool_registration
+      - rewrite_tool_descriptor
+      - crawl_server_metadata
+      - read_agent_card
+      - read_skill_metadata
+      reason: 'agent_prompts.py:47 原文 *"Use only available tools: Do not use tools that are not provided above"* ⇒ 工具表是**给定**的（这也是 tool 维记 2 档的依据）， 运行时无注册/改写端点'
+    - family: 审计日志 / 服务端回读
+      actions:
+      - server_log_readback
+      - log_interpret
+      reason: 工具集中无审计日志面（receipt_supported 亦为 false）
+    - family: 模型训练 / 权重
+      actions:
+      - load_model
+      reason: 目标只经 API 调用模型，无训练与权重面
+    _unresolved:
+    - actions:
+      - code_generate
+      - plan_generate
+      - decision_generate
+      - reasoning_trace_generate
+      - orchestrate_task
+      - answer_with_context
+      - guardrail_invoke
+      - decode_action_chunk
+      - ingress_read
+      - skill_select
+      - file_read
+      reason: 名称有歧义或需额外前提（代码**生成**≠执行、编排器、护栏模型、动作分块解码），**本轮未取得直读依据，故不别名**。按 E3：这是'本次未核'，不是'目标没有'。
+  poisonedrag-rag-pipeline:
+    _evidence_basis: 直读 sleeepeer/PoisonedRAG（main）的源码符号，逐条**回源校验**（脚本会因上游改动而构建失败）： src/contriever_src/beir_utils.py:85 def encode_corpus / :46 def encode_queries； src/prompts.py:8 def wrap_prompt(question, context；src/models/GPT.py:14 def query(self, msg)； 调用处 main.py:129-130 / :166-168（wrap_prompt(...) → llm.query(query_prompt)）。 画像重建脚本：results/README.md
+    capabilities:
+    - id: knowledge_corpus_retrieval
+      native: BEIR 语料（默认 nq，可选 hotpotqa / msmarco）+ 稠密检索器；查询经编码后在语料上检索
+      source: src/contriever_src/beir_utils.py:46 encode_queries / :85 encode_corpus；main.py:56/:58 load_beir_datasets
+      reason: 目标**结构性地拥有**一个可被写入的语料与一套检索器 —— 这正是 T01 的 knowledge_retrieve 所指的那一面。**与 InjecAgent 那处不同：这里是事实，不是判断** （对照 D23：那里是"网页检索算不算语料面"，此处是"确实有语料"）。
+      actions:
+      - knowledge_retrieve
+      - encode_queries
+    - id: corpus_ingest
+      native: 文档编码入库（攻击者的投毒写入面）
+      source: src/contriever_src/beir_utils.py:85 encode_corpus
+      reason: 目标确有文档写入面
+      actions:
+      - doc_ingest
+    - id: answer_generation
+      native: 把检索到的上下文拼进提示词后交给生成模型作答
+      source: src/prompts.py:8 wrap_prompt；src/models/GPT.py:14 query；main.py:130/:168
+      reason: 目标确有生成回答这一步
+      actions:
+      - answer_generate
+      - response_generate
+      - generation_complete
+      - assistant_turn
+      - instruction_follow
+    - id: user_question
+      native: 管线逐条接收用户问题（main.py 的查询循环）
+      source: main.py:98 target_queries / :121-129 question = ...['question']
+      reason: 入口是用户提问
+      actions:
+      - user_turn
+    excluded:
+    - family: 工具调用 / 工具元数据 / 工具注册（**这是 RAG 管线，不是 agent**）
+      actions:
+      - tool_call
+      - tool_invoke
+      - invoke_tool
+      - select_tool
+      - read_tool_metadata
+      - tool_list
+      - register_tool
+      - abort_tool_registration
+      - rewrite_tool_descriptor
+      - crawl_server_metadata
+      - read_agent_card
+      - read_skill_metadata
+      - tool_return
+      - tool_return_read
+      - read_tool_result
+      - plan_action
+      reason: 管线的三个组件（检索器 / 拼提示 / 生成）是**固定调用**的，模型没有"选择并调用工具"这一步： 没有 tool-calling 循环、没有工具 schema 暴露、没有工具返回值回灌。 故本族一律不别名 —— 这也是 tool 维仍记 2 档（"已知工具"而非"任意工具"）的原因。
+    - family: 检索以外的一切外部取数
+      actions:
+      - web_fetch
+      reason: 语料是**离线固定**的 BEIR 数据集，不是网页抓取
+    - family: 长期记忆 / 跨会话状态
+      actions:
+      - memory_retrieve
+      - memory_write
+      - memory_read
+      reason: 每个查询独立处理（memory 维记 1 档）
+    - family: 授权判定
+      actions:
+      - authz_decide
+      - authorization_check
+      reason: 问答管线无授权判定面
+    - family: 审计日志 / 服务端回读
+      actions:
+      - server_log_readback
+      - log_interpret
+      reason: 无审计面（receipt_supported 亦为 false）
+    - family: 物理 / 具身动作
+      actions:
+      - execute_manipulation
+      - decode_action_chunk
+      - read_lidar_state
+      reason: 纯文本问答管线，无执行器与传感器
+    - family: 命令执行 / 对外发信
+      actions:
+      - execute_command
+      - outbound_request
+      - agent_message
+      reason: 管线不执行命令、不对外发消息
+    - family: 模型训练 / 权重
+      actions:
+      - load_model
+      reason: 经其 model_configs/ 调 API 或本地模型，无训练面
+    _unresolved:
+    - actions:
+      - code_generate
+      - plan_generate
+      - decision_generate
+      - reasoning_trace_generate
+      - orchestrate_task
+      - answer_with_context
+      - guardrail_invoke
+      - ingress_read
+      - skill_select
+      - file_read
+      - task_execute
+      reason: 名称有歧义或需额外前提，**本轮未取得直读依据，故不别名**（E3：这是'本次未核'）。
+  mcp-local:
+    _evidence_basis: 直读 harness/adapter_mcp_local.py（本靶标的唯一实现，与本表同批交付）： CATALOG（8 个服务器工具的出厂定义）、WRITE_TOOLS （update_tool_metadata / register_tool / abort_tool_registration）、 _Handler.tools_list()（MCP tools/list）、_Handler.read_entity() （MCP resources/read，独立回读通道）、 McpLocalTarget.run_task()（宿主侧 tool-calling 循环）、 _McpSession.call_tool()（MCP tools/call 客户端）。 画像 targets/mcp-local.json 的 tools 与本文件 __init__.TOOLS 逐字一致。
+    capabilities:
+    - id: user_turn
+      native: 宿主把统一任务陈述作为一条 user 消息交给模型
+      source: harness/adapter_mcp_local.py:McpLocalTarget.run_task（messages = [system, user]）
+      reason: 目标确有用户轮入口；这一步问的是'攻击能否经由用户发言进入'
+      actions:
+      - user_turn
+    - id: assistant_response
+      native: 模型生成一条 assistant 消息（可带 tool_calls）
+      source: harness/adapter_mcp_local.py:McpLocalTarget._chat / run_task
+      reason: 任何一轮都有助手输出；卡若要求一次可读的助手输出，本目标具备
+      actions:
+      - response_generate
+      - answer_generate
+      - generation_complete
+      - assistant_turn
+    - id: tool_invocation
+      native: 模型给出的 tool_calls 被逐个经 MCP tools/call 真执行
+      source: harness/adapter_mcp_local.py:McpLocalTarget._dispatch → _McpSession.call_tool
+      reason: 本目标是 MCP 客户端 + 服务器，确有工具选择与调用执行面
+      actions:
+      - select_tool
+      - invoke_tool
+      - tool_call
+      - tool_invoke
+    - id: tool_schema_exposure
+      native: 工具 name/description/inputSchema 经 MCP tools/list 载入 agent 上下文与 API 的 tools 参数
+      source: harness/adapter_mcp_local.py:_Handler.tools_list / McpLocalTarget._render_reference
+      reason: 工具有描述与 schema 两项。卡上 read_tool_metadata 由服务器工具 read_tool_metadata **逐字命中**（画像 tools 清单里有），故这里只别名 tool_list。
+      actions:
+      - tool_list
+    - id: descriptor_write
+      native: 服务器管理工具改写已批准工具定义的字段（name / description / approved）
+      source: harness/adapter_mcp_local.py:_Handler.call_tool 的 update_tool_metadata 分支
+      reason: 卡上 rewrite_tool_descriptor 指的是'改写工具描述符'这个动作，本目标确有该端点
+      actions:
+      - rewrite_tool_descriptor
+    - id: server_metadata_serving
+      native: 服务器按 MCP 协议应答自己的工具元数据清单（tools/list）
+      source: harness/adapter_mcp_local.py:_Handler.handle 的 tools/list 分支
+      reason: '**这一条按 E4 标为判断**：卡上 crawl_server_metadata 指的是"聚合平台爬取该 server 的元数据"，爬取那一侧由对端执行，本目标供给的是**被爬的服务端面**。 若认为"被爬面"不等于"爬取"，删掉本 capability ⇒ B-99 退回 untested。'
+      actions:
+      - crawl_server_metadata
+    - id: authorization_decision_point
+      native: adapter 在 call_tool() 里做策略判定并**真的拦住**未通过判定的写动作；判定逐条记账（含 phase 与服务器签发的 decision_id），经独立 reader 读回
+      source: harness/adapter_mcp_local.py 的 AUTHZ_TOOL/GATED_ACTION/ISSUER_ARG 常量、authz_allows()、_Handler.call_tool() 的策略判定与 _record_authz() 台账、_McpSession.call_tool() 的基线探针、observe() 的 authorization_decisions
+      reason: 策略是**机制**：受约束的动作默认拒，只有当调用参数里带一枚形态合法的授权令牌才放行 ⇒ 令牌由模型在参数里给 ⇒ 攻击者可控 ⇒ 对应 authorization_signal_spoof 的构念。T03 的 20 张卡全部要求 authz_decide（methods/T03/T03.py:872-876 的契约）
+      actions:
+      - authz_decide
+    - id: mcp_local_corpus_retrieval
+      native: 服务器内置一个知识库；工具 knowledge_retrieve 按查询回 top-k 条目（投放面 kb_write 把毒文档写进同一个库）
+      source: harness/adapter_mcp_local.py 的 KB_RETRIEVE_TOOL / KB_WRITE_TOOL / KB_ANSWER_TOOL 分支（_Handler._execute）、KB_PROJECTION_KEYS、KB_FACT_ENTITY_IDS
+      reason: T01 的主体是 RAG 知识库投毒（28 张卡里 15 张是 kb_doc 载体，且只缺检索与作答两个动作）。本目标确有"按查询回条目"这个端点，故按 E4 记为**目标确有**。检索实现是极简包含匹配 + 稳定排序（不装嵌入模型：那会引入新依赖与不可复现性）；语料是我方造的、**不是 BEIR/nq**，报告须写明这条偏离。权威真值目录 kb_facts 另有通道，投放面与模型都够不到它。
+      actions:
+      - knowledge_retrieve
+    excluded:
+    - family: 技能包 / 分层技能库
+      actions:
+      - install_skill
+      - read_skill_metadata
+      - skill_update_append
+      - compile_skill
+      - ingest_experience
+      reason: 本靶标只有**工具定义注册表**一种权威存储；技能包与技能库不是它的实体（画像 tools 清单里无对应端点）
+    - family: 模型训练 / 权重 / 分发工件模板
+      actions:
+      - load_model
+      - load_plugin
+      - read_chat_template
+      reason: 本靶标经 API 调用模型，无训练、无权重、无 chat template 面
+    - family: A2A 发现层（Agent Card）
+      actions:
+      - agent_discovery
+      - read_agent_card
+      - register_agent
+      reason: 本靶标是 MCP 服务器，不是 A2A 编排器：没有 Agent Card 与发现端点
+    - family: 编排 / 规划器
+      actions:
+      - orchestrate_task
+      - plan_action
+      reason: 循环是固定的一步一调用，没有独立的规划器或编排器组件
+    - family: 长期记忆 / 跨会话状态
+      actions:
+      - memory_retrieve
+      - memory_write
+      - memory_read
+      reason: 每 trial 从出厂注册表重建、单会话；画像 memory=2 只及'瞬时会话记忆'
+    - family: 审计日志读回（判据用）
+      actions:
+      - server_log_readback
+      reason: '**2026-10-05 部分解除**：log_interpret 已从本排除项移出 —— 本靶标现在
+        真的有一条**带链式哈希**的审计条目存储，且 log_interpret 是画像 tools 里
+        逐字存在的工具名（依据：results/README.md
+        §4 步骤 1/4/5）。server_log_readback（T08 的动作名）**仍然排除**：它指的是
+        "服务端日志读回"这个落点，而本靶标托管的是**审计轨迹**（条目级 schema + 链式哈希
+        + 独立 reader），两者不是同一个面；把它别名进来会显著改变 T08 的覆盖率，
+        属裁定范围，当前实现不替其决定。'
+    - family: 检索语料 / 知识库
+      actions:
+      - knowledge_retrieve
+      - retrieve_document
+      - rag_query
+      reason: 本靶标没有语料与检索器
+    - family: 物理 / 具身动作
+      actions:
+      - execute_manipulation
+      - decode_action_chunk
+      - read_lidar_state
+      reason: 纯本地进程协议，无执行器与传感器
+    - family: 对外发信 / 命令执行 / 网页取数
+      actions:
+      - outbound_request
+      - agent_message
+      - execute_command
+      - web_fetch
+      reason: 服务器不发消息、不执行命令、不访问网络（画像 never_connects_to_real_system=true）
+    - family: 工具返回值注入（**一处判断，从严排除**）
+      actions:
+      - tool_return
+      - tool_return_read
+      - read_tool_result
+      reason: 本靶标的只读工具确有返回值回灌 agent 上下文（这是 MCP 的常态）， 但 T04 的 tool_return 指的是"工具**返回值**作为注入入口被投毒"， 而本靶标的投毒面是**工具 metadata**（B-96 逐字：写入面 = MCP 工具 metadata） ⇒ 从严排除并登记。**若认为等价，加入后 T04 的卡会开始适用**—— 那会显著改变覆盖率，不由当前实现替定。
+    _unresolved:
+    - actions:
+      - read_system_prompt
+      - system_prompt_write
+      - chat_template_write
+      - agent_config_write
+      - agent_card_write
+      - tool_metadata_write
+      - tool_registry_write
+      - skill_package_write
+      - skill_store_append
+      - model_adapter_build
+      - receive_agent_message
+      - code_generate
+      - memory_read
+      reason: 名称有歧义或需额外前提。**特别说明**：tool_metadata_write 与 tool_registry_write 是 T05 类模块 ENTRY_TOOL 的**写入工具契约名** （methods/T05/T05.py 的 TOOL_CONTRACT），不是本目标的端点名； 把它们别名到 mcp-local 会让"写入物"那一轴失去区分度 ⇒ 不别名。 按 E3：这是"本次未核"，不是"目标没有"。
+  agentdojo-banking:
+    _evidence_basis: 直读本机安装的 agentdojo==0.1.35（wheel sha256 见 requirements-target.txt）。 逻辑与 workspace 共用同一基类 harness/adapters/_agentdojo_suite.py:136 AgentDojoSuiteAdapter；本适配器文件自述「逻辑在 _agentdojo_suite.py（本文件只有数据）」。
+    _gap_2026_10_03: 本段 capabilities 由 G-42 专项审计补齐（2026-10-03）；**excluded 段尚未写**， 见本段上方注释与 results/README.md §4.3。
+    capabilities:
+    - id: user_turn
+      native: 适配器把用户消息放进对话并调用 Pipeline.query
+      source: harness/adapters/_agentdojo_suite.py:136 AgentDojoSuiteAdapter 的 inject；agentdojo/agent_pipeline/basic_elements.py InitQuery
+      reason: 目标的入口就是用户轮次；卡的这一步问的是'攻击能否经由用户发言进入'
+      actions:
+      - user_turn
+    - id: assistant_response
+      native: 模型生成一条 assistant 消息（内容块列表）
+      source: agentdojo/agent_pipeline/basic_elements.py；harness/adapters/_agentdojo_suite.py 的 _extract_assistant_text
+      reason: 任何一轮对话都会产生助手回复；卡的这一步问的是'攻击是否需要一个可读的助手输出'
+      actions:
+      - response_generate
+      - answer_generate
+      - generation_complete
+      - assistant_turn
+    - id: instruction_following
+      native: agent 读取指令并据此行动（工具调用循环）
+      source: agentdojo/agent_pipeline/agent_pipeline.py:AgentPipeline.from_config（tools_loop）
+      reason: 被评测对象就是'照着指令做事的 agent'；这一步是它的定义性质
+      actions:
+      - instruction_follow
+      - task_execute
+    - id: tool_invocation
+      native: FunctionsRuntime 执行模型给出的 tool_calls
+      source: agentdojo/functions_runtime.py:41 FunctionCall / :68 Function；agent_pipeline/tool_execution.py:46 ToolsExecutor / :74 for tool_call in messages[-1]['tool_calls']
+      reason: 目标确有工具调用执行面；这一步问的是'攻击路径里有没有一次工具调用'
+      actions:
+      - tool_call
+      - tool_invoke
+      - invoke_tool
+      - select_tool
+    - id: tool_schema_exposure
+      native: 工具 schema 作为 tools 参数交给模型
+      source: agentdojo/agent_pipeline/llms/openai_llm.py:134 _function_to_openai / :160 tools=tools
+      reason: 模型能看到每个工具的名字、描述与参数 schema；这一步问的是'工具元数据是否可见'
+      actions:
+      - read_tool_metadata
+      - tool_list
+    - id: tool_output_ingestion
+      native: 工具输出回灌进对话循环（不可信内容入口）
+      source: agentdojo/agent_pipeline/tool_execution.py:118 ToolsExecutionLoop / tool_result_to_str
+      reason: 工具返回值会作为消息回到模型上下文；这一步问的是'是否存在工具返回面'
+      actions:
+      - tool_return
+      - tool_return_read
+      - read_tool_result
+    - id: system_prompt_in_context
+      native: 系统提示词进入模型上下文（SystemMessage 组件）
+      source: agentdojo/agent_pipeline/basic_elements.py:28 SystemMessage
+      reason: 目标确有系统提示词这一层；**能不能把它读出来是 T06 的测量问题，不是适用性问题**
+      actions:
+      - read_system_prompt
+    excluded: []
+    _unresolved:
+    - actions:
+      - code_generate
+      - plan_generate
+      - decision_generate
+      - reasoning_trace_generate
+      - orchestrate_task
+      - web_fetch
+      - outbound_request
+      - execute_command
+      - doc_ingest
+      - answer_with_context
+      - guardrail_invoke
+      - server_log_readback
+      - log_interpret
+      - trace_cleanup
+      - memory_retrieve
+      - memory_write
+      - authz_decide
+      - file_read
+      - content_retrieve
+      reason: 名称有歧义或需要额外前提；**本轮未取得直读依据，故不别名**。按 E3：这是「本次未核」，不是「目标没有」。
+  agentdojo-travel:
+    _evidence_basis: 直读本机安装的 agentdojo==0.1.35（wheel sha256 见 requirements-target.txt）。 逻辑与 workspace 共用同一基类 harness/adapters/_agentdojo_suite.py:136 AgentDojoSuiteAdapter；本适配器文件自述「逻辑在 _agentdojo_suite.py（本文件只有数据）」。
+    _gap_2026_10_03: 本段 capabilities 由 G-42 专项审计补齐（2026-10-03）；**excluded 段尚未写**， 见本段上方注释与 results/README.md §4.3。
+    capabilities:
+    - id: user_turn
+      native: 适配器把用户消息放进对话并调用 Pipeline.query
+      source: harness/adapters/_agentdojo_suite.py:136 AgentDojoSuiteAdapter 的 inject；agentdojo/agent_pipeline/basic_elements.py InitQuery
+      reason: 目标的入口就是用户轮次；卡的这一步问的是'攻击能否经由用户发言进入'
+      actions:
+      - user_turn
+    - id: assistant_response
+      native: 模型生成一条 assistant 消息（内容块列表）
+      source: agentdojo/agent_pipeline/basic_elements.py；harness/adapters/_agentdojo_suite.py 的 _extract_assistant_text
+      reason: 任何一轮对话都会产生助手回复；卡的这一步问的是'攻击是否需要一个可读的助手输出'
+      actions:
+      - response_generate
+      - answer_generate
+      - generation_complete
+      - assistant_turn
+    - id: instruction_following
+      native: agent 读取指令并据此行动（工具调用循环）
+      source: agentdojo/agent_pipeline/agent_pipeline.py:AgentPipeline.from_config（tools_loop）
+      reason: 被评测对象就是'照着指令做事的 agent'；这一步是它的定义性质
+      actions:
+      - instruction_follow
+      - task_execute
+    - id: tool_invocation
+      native: FunctionsRuntime 执行模型给出的 tool_calls
+      source: agentdojo/functions_runtime.py:41 FunctionCall / :68 Function；agent_pipeline/tool_execution.py:46 ToolsExecutor / :74 for tool_call in messages[-1]['tool_calls']
+      reason: 目标确有工具调用执行面；这一步问的是'攻击路径里有没有一次工具调用'
+      actions:
+      - tool_call
+      - tool_invoke
+      - invoke_tool
+      - select_tool
+    - id: tool_schema_exposure
+      native: 工具 schema 作为 tools 参数交给模型
+      source: agentdojo/agent_pipeline/llms/openai_llm.py:134 _function_to_openai / :160 tools=tools
+      reason: 模型能看到每个工具的名字、描述与参数 schema；这一步问的是'工具元数据是否可见'
+      actions:
+      - read_tool_metadata
+      - tool_list
+    - id: tool_output_ingestion
+      native: 工具输出回灌进对话循环（不可信内容入口）
+      source: agentdojo/agent_pipeline/tool_execution.py:118 ToolsExecutionLoop / tool_result_to_str
+      reason: 工具返回值会作为消息回到模型上下文；这一步问的是'是否存在工具返回面'
+      actions:
+      - tool_return
+      - tool_return_read
+      - read_tool_result
+    - id: system_prompt_in_context
+      native: 系统提示词进入模型上下文（SystemMessage 组件）
+      source: agentdojo/agent_pipeline/basic_elements.py:28 SystemMessage
+      reason: 目标确有系统提示词这一层；**能不能把它读出来是 T06 的测量问题，不是适用性问题**
+      actions:
+      - read_system_prompt
+    excluded: []
+    _unresolved:
+    - actions:
+      - code_generate
+      - plan_generate
+      - decision_generate
+      - reasoning_trace_generate
+      - orchestrate_task
+      - web_fetch
+      - outbound_request
+      - execute_command
+      - doc_ingest
+      - answer_with_context
+      - guardrail_invoke
+      - server_log_readback
+      - log_interpret
+      - trace_cleanup
+      - memory_retrieve
+      - memory_write
+      - authz_decide
+      - file_read
+      - content_retrieve
+      reason: 名称有歧义或需要额外前提；**本轮未取得直读依据，故不别名**。按 E3：这是「本次未核」，不是「目标没有」。
