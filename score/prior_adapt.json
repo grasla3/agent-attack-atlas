@@ -1,0 +1,7 @@
+{
+  "_why": "spec/prior.md §4.2 的 adapt 分量需要『该机制在多少个不同模型/目标上都有效』这一输入，而**卡上没有这个字段**。本文件是它的人工登记处：键为 mechanism_ref，值为 §4.2 的机制性结论（不是文献 ASR 的转述）。",
+  "_rule": "只填**读得出来**的那些：一条机制要在多个不同模型上都有独立测量才填 1.0；只在某几个模型上有效填 0.5；经校准才有效（依赖模板族匹配）填 0.5 并注明 needs_calibration。**读不出来就不要填**——缺省走 T3 的 default(0.5) 并记 adapt_no_machine_readable_source。",
+  "_discipline": "本文件的每个条目都必须能指认到卡上的 provenance_components.mechanism.source（题名 + 表图号）。凭印象填 = 违反 E2。",
+  "_status": "v1 为空：尚未做逐机制的模型普适性判读。⇒ 全部卡的 adapt 取默认 0.5，报告里必须同报『该分量在当前库里不区分方法』。",
+  "overrides": {}
+}

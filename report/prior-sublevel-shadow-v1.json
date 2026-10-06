@@ -1,0 +1,1700 @@
+{
+ "cells": [
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.ATK-INJ-01.retrieval_corpus_ipi",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.ATK-INJ-02.remote_resource_ipi",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.27,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.436667,
+   "case_id": "T01",
+   "method_id": "T01.ATK-INJ-03.persistent_memory_ipi",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.91,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.076667,
+   "case_id": "T01",
+   "method_id": "T01.ATK-INJ-04.agent_to_agent_ipi",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.76,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.926667,
+   "case_id": "T01",
+   "method_id": "T01.ATK-INJ-12.self_replicating_worm",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.67,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.836667,
+   "case_id": "T01",
+   "method_id": "T01.ATK-MAS-01.single_image_jailbreak",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.76,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.926667,
+   "case_id": "T01",
+   "method_id": "T01.ATK-MEM-01.embedding_trigger_backdoor",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.ATK-MEM-02.blackbox_knowledge_corruption",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.ATK-MEM-02.whitebox_knowledge_corruption",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.136666666666667,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.303333666666667,
+   "case_id": "T01",
+   "method_id": "T01.ATK-MEM-03.query_only_memory_injection",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-25.select_existing_vulnerable_sample",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.219999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.386667,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-26.benign_fragment_decomposition",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-27.reward_subspace_projection",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-28.perturbation_triple_insertion",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.91,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.076667,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-29.deceptive_semantic_reasoning",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.27,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.436667,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-30.persistent_memory_write",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-31.coordinated_beam_search",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.219999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.386667,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-32.word_level_trigger",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-34.link_injection",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.136666666666667,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.303333666666667,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-35.visual_sleeper_memory",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-36.cluster_pgd_multimodal",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-37.graph_topology_integrity",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-38.local_global_dual_path",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-39.single_doc_adversarial_cot",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-40.embedding_space_optimization",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-41.single_poison_overpower",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-43.category_oriented",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T01",
+   "method_id": "T01.LIT-B-44.retriever_guided_word_refinement",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 0.0,
+   "Prior_SR": 3.0700000000000003,
+   "cand_Prior_I": 0.0,
+   "cand_Prior_SR": 3.0700000000000003,
+   "case_id": "T02",
+   "method_id": "T02.AUD-ATTENTION-BLIND.high_attention_decoy",
+   "surface_layer": "L1.4"
+  },
+  {
+   "Prior_I": 0.0,
+   "Prior_SR": 2.67,
+   "cand_Prior_I": 0.0,
+   "cand_Prior_SR": 2.67,
+   "case_id": "T02",
+   "method_id": "T02.AUD-ATTRIB-MISATTR.semantic_norm_drift",
+   "surface_layer": "L1.4"
+  },
+  {
+   "Prior_I": 0.0,
+   "Prior_SR": 3.1200000000000006,
+   "cand_Prior_I": 0.0,
+   "cand_Prior_SR": 3.1200000000000006,
+   "case_id": "T02",
+   "method_id": "T02.AUD-AUDIT-EVADE.factual_cloak_bypass",
+   "surface_layer": "L1.4"
+  },
+  {
+   "Prior_I": 10.0,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 10.0,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T02",
+   "method_id": "T02.AUD-COVER-ACCESS.covering_access_dilution",
+   "surface_layer": "L6"
+  },
+  {
+   "Prior_I": 10.0,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 10.0,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T02",
+   "method_id": "T02.AUD-DETECTOR-EVADE.provenance_action_mimicry",
+   "surface_layer": "L6"
+  },
+  {
+   "Prior_I": 0.0,
+   "Prior_SR": 2.92,
+   "cand_Prior_I": 0.0,
+   "cand_Prior_SR": 2.92,
+   "case_id": "T02",
+   "method_id": "T02.AUD-INTERP-EVASION.log_interpretation_evasion",
+   "surface_layer": "L1.4"
+  },
+  {
+   "Prior_I": 0.0,
+   "Prior_SR": 2.52,
+   "cand_Prior_I": 0.0,
+   "cand_Prior_SR": 2.52,
+   "case_id": "T02",
+   "method_id": "T02.AUD-LOGSUBSTRATE.s2_persona_hijack",
+   "surface_layer": "L1.4"
+  },
+  {
+   "Prior_I": 0.0,
+   "Prior_SR": 2.76,
+   "cand_Prior_I": 0.0,
+   "cand_Prior_SR": 2.76,
+   "case_id": "T02",
+   "method_id": "T02.AUD-LOGSUBSTRATE.s3_context_manipulation",
+   "surface_layer": "L1.4"
+  },
+  {
+   "Prior_I": 3.333333333333334,
+   "Prior_SR": 6.243333333333334,
+   "cand_Prior_I": 3.5,
+   "cand_Prior_SR": 6.41,
+   "case_id": "T02",
+   "method_id": "T02.AUD-MODEL-BACKDOOR.log_detector_backdoor",
+   "surface_layer": "L2.1"
+  },
+  {
+   "Prior_I": 10.0,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 10.0,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T02",
+   "method_id": "T02.AUD-MONITOR-EVADE.ordinary_task_pressure",
+   "surface_layer": "L6"
+  },
+  {
+   "Prior_I": 10.0,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 10.0,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T02",
+   "method_id": "T02.AUD-NODE-SUBSTITUTE.provenance_node_substitution",
+   "surface_layer": "L6"
+  },
+  {
+   "Prior_I": 10.0,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 10.0,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T02",
+   "method_id": "T02.AUD-PRECOMMIT-SNATCH.precommit_event_snatching",
+   "surface_layer": "L6"
+  },
+  {
+   "Prior_I": 6.666666666666668,
+   "Prior_SR": 9.726666666666667,
+   "cand_Prior_I": 6.833333,
+   "cand_Prior_SR": 9.893332999999998,
+   "case_id": "T02",
+   "method_id": "T02.AUD-RELAY-REWRITE.bearing_field_rewrite",
+   "surface_layer": "L4.1"
+  },
+  {
+   "Prior_I": 10.0,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 10.0,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T02",
+   "method_id": "T02.AUD-TOOLCALL-SPOOF.tool_call_spoofing",
+   "surface_layer": "L6"
+  },
+  {
+   "Prior_I": 10.0,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 10.0,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T02",
+   "method_id": "T02.AUD-TRACE-DELETE.trace_self_delete",
+   "surface_layer": "L6"
+  },
+  {
+   "Prior_I": 10.0,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 10.0,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T02",
+   "method_id": "T02.AUD-TRACE-EDIT.trace_record_edit",
+   "surface_layer": "L6"
+  },
+  {
+   "Prior_I": 10.0,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 10.0,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T02",
+   "method_id": "T02.AUD-TRACE-FORGE.forged_event_insertion",
+   "surface_layer": "L6"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.76,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.926667,
+   "case_id": "T03",
+   "method_id": "T03.B-45.mcp_upd_toolchain_composition",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.76,
+   "cand_Prior_I": 5.666667,
+   "cand_Prior_SR": 8.426667,
+   "case_id": "T03",
+   "method_id": "T03.B-46.capability_amplification",
+   "surface_layer": "L3.4"
+  },
+  {
+   "Prior_I": 3.333333333333334,
+   "Prior_SR": 6.3933333333333335,
+   "cand_Prior_I": 3.666667,
+   "cand_Prior_SR": 6.726666999999999,
+   "case_id": "T03",
+   "method_id": "T03.B-47.confused_deputy_capability_gate",
+   "surface_layer": "L2.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.76,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.926667,
+   "case_id": "T03",
+   "method_id": "T03.B-48.relink_compression_boundary",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 6.666666666666668,
+   "Prior_SR": 8.786666666666669,
+   "cand_Prior_I": 6.833333,
+   "cand_Prior_SR": 8.953333,
+   "case_id": "T03",
+   "method_id": "T03.B-49.mas_hub_vertical_escalation",
+   "surface_layer": "L4.1"
+  },
+  {
+   "Prior_I": 6.666666666666668,
+   "Prior_SR": 9.026666666666667,
+   "cand_Prior_I": 6.833333,
+   "cand_Prior_SR": 9.193332999999999,
+   "case_id": "T03",
+   "method_id": "T03.B-50.mas_horizontal_escalation",
+   "surface_layer": "L4.1"
+  },
+  {
+   "Prior_I": 0.0,
+   "Prior_SR": 2.91,
+   "cand_Prior_I": 0.0,
+   "cand_Prior_SR": 2.91,
+   "case_id": "T03",
+   "method_id": "T03.B-51.visual_confused_deputy",
+   "surface_layer": "L1.3"
+  },
+  {
+   "Prior_I": 3.333333333333334,
+   "Prior_SR": 5.453333333333335,
+   "cand_Prior_I": 3.666667,
+   "cand_Prior_SR": 5.7866670000000004,
+   "case_id": "T03",
+   "method_id": "T03.B-52.delegation_scope_expansion",
+   "surface_layer": "L2.2"
+  },
+  {
+   "Prior_I": 8.333333333333334,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 8.5,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T03",
+   "method_id": "T03.B-53.hook_update_trojanization",
+   "surface_layer": "L5.1"
+  },
+  {
+   "Prior_I": 6.666666666666668,
+   "Prior_SR": 8.653333333333334,
+   "cand_Prior_I": 7.166667,
+   "cand_Prior_SR": 9.153333666666667,
+   "case_id": "T03",
+   "method_id": "T03.B-54.trust_delegation_escalation",
+   "surface_layer": "L4.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.359999999999999,
+   "cand_Prior_I": 5.666667,
+   "cand_Prior_SR": 8.026667,
+   "case_id": "T03",
+   "method_id": "T03.B-55.label_lifecycle_escalation",
+   "surface_layer": "L3.4"
+  },
+  {
+   "Prior_I": 6.666666666666668,
+   "Prior_SR": 9.426666666666668,
+   "cand_Prior_I": 7.0,
+   "cand_Prior_SR": 9.76,
+   "case_id": "T03",
+   "method_id": "T03.B-56.browser_privilege_takeover",
+   "surface_layer": "L4.2"
+  },
+  {
+   "Prior_I": 3.333333333333334,
+   "Prior_SR": 6.003333333333334,
+   "cand_Prior_I": 3.5,
+   "cand_Prior_SR": 6.17,
+   "case_id": "T03",
+   "method_id": "T03.B-57.confirmation_surface_forgery",
+   "surface_layer": "L2.1"
+  },
+  {
+   "Prior_I": 3.333333333333334,
+   "Prior_SR": 6.403333333333334,
+   "cand_Prior_I": 3.833333,
+   "cand_Prior_SR": 6.903333,
+   "case_id": "T03",
+   "method_id": "T03.B-58.mcp_multivector_pitfall",
+   "surface_layer": "L2.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.76,
+   "cand_Prior_I": 5.666667,
+   "cand_Prior_SR": 8.426667,
+   "case_id": "T03",
+   "method_id": "T03.B-60.arbitrary_file_write_persistence",
+   "surface_layer": "L3.4"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.76,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.926667,
+   "case_id": "T03",
+   "method_id": "T03.B-61.message_role_context_escalation",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.859999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.026667,
+   "case_id": "T03",
+   "method_id": "T03.B-62.cross_scope_context_escalation",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 3.333333333333334,
+   "Prior_SR": 6.243333333333334,
+   "cand_Prior_I": 3.666667,
+   "cand_Prior_SR": 6.5766670000000005,
+   "case_id": "T03",
+   "method_id": "T03.B-T03-01.mcp_metadata_tool_selection_hijack",
+   "surface_layer": "L2.2"
+  },
+  {
+   "Prior_I": 3.333333333333334,
+   "Prior_SR": 6.093333333333334,
+   "cand_Prior_I": 3.666667,
+   "cand_Prior_SR": 6.426667,
+   "case_id": "T03",
+   "method_id": "T03.B-T03-02.hijacked_invocation_payload_execution",
+   "surface_layer": "L2.2"
+  },
+  {
+   "Prior_I": 3.333333333333334,
+   "Prior_SR": 6.003333333333334,
+   "cand_Prior_I": 3.666667,
+   "cand_Prior_SR": 6.336667,
+   "case_id": "T03",
+   "method_id": "T03.B-T03-03.preference_manipulation_bias",
+   "surface_layer": "L2.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.82,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.32,
+   "case_id": "T04",
+   "method_id": "T04.B-65.jailbreak_llm_controlled_robot",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.67,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.17,
+   "case_id": "T04",
+   "method_id": "T04.B-66.objective_decoupled_backdoor",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.67,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.17,
+   "case_id": "T04",
+   "method_id": "T04.B-73.configured_failure_trapping",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.67,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.17,
+   "case_id": "T04",
+   "method_id": "T04.B-76.supply_chain_module_backdoor",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.67,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.17,
+   "case_id": "T04",
+   "method_id": "T04.B-77.gcg_textual_suffix_vla",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.720000000000001,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.22,
+   "case_id": "T04",
+   "method_id": "T04.B-78.diffusion_latent_unrestricted_patch",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.720000000000001,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.22,
+   "case_id": "T04",
+   "method_id": "T04.B-79.voice_user_system_jailbreak",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.720000000000001,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.22,
+   "case_id": "T04",
+   "method_id": "T04.B-80.jailbreak_llm_controlled_robot_blackbox",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.67,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.17,
+   "case_id": "T04",
+   "method_id": "T04.B-81.jailbreak_llm_controlled_robot_graybox",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.720000000000001,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.22,
+   "case_id": "T04",
+   "method_id": "T04.B-82.llm_generated_ics_attack_patterns",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.720000000000001,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.22,
+   "case_id": "T04",
+   "method_id": "T04.B-83.adversarial_patch_bbox_hijack",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.67,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.17,
+   "case_id": "T04",
+   "method_id": "T04.B-T04-01A.blindfold_proxy_planner_decomposition",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.67,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.17,
+   "case_id": "T04",
+   "method_id": "T04.B-T04-01B.blindfold_cover_action_obfuscation",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.67,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.17,
+   "case_id": "T04",
+   "method_id": "T04.B-T04-01C.blindfold_fsm_verifier_refinement",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.720000000000001,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.22,
+   "case_id": "T04",
+   "method_id": "T04.B-T04-02.cross_robot_message_propagation",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.720000000000001,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.22,
+   "case_id": "T04",
+   "method_id": "T04.B-T04-03.planner_state_text_injection",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.720000000000001,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.22,
+   "case_id": "T04",
+   "method_id": "T04.B-T04-04.action_freezing_adversarial_image",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.67,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.17,
+   "case_id": "T04",
+   "method_id": "T04.B-T04-05.action_chunk_drift_backdoor",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.67,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.17,
+   "case_id": "T04",
+   "method_id": "T04.B-T04-06.mqtt_provenance_forgery",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.720000000000001,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.22,
+   "case_id": "T04",
+   "method_id": "T04.B-T04-07.structured_output_backdoor_ros2",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.720000000000001,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.22,
+   "case_id": "T04",
+   "method_id": "T04.B-T04-08A.ripa_visual_ocr_injection",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.720000000000001,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.22,
+   "case_id": "T04",
+   "method_id": "T04.B-T04-08B.ripa_lidar_state_forgery",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.620000000000001,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.120000000000001,
+   "case_id": "T04",
+   "method_id": "T04.B-T04-09.telesurgery_visual_stream_perturbation",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.720000000000001,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.22,
+   "case_id": "T04",
+   "method_id": "T04.B-T04-10.multi_robot_communication_attack",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.91,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.41,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-T05-01.MCP_IMPLICIT_TOOL_POISON",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.91,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.41,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-T05-02.MCP_TWO_STAGE_METADATA_OPT",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 8.333333333333334,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 8.666667,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-T05-03.CHAT_TEMPLATE_IMPLANT",
+   "surface_layer": "L5.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.67,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 8.003333,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-T05-04.MARKETPLACE_SYSTEM_PROMPT",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.07,
+   "cand_Prior_I": 5.666667,
+   "cand_Prior_SR": 8.736667,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-T05-05.PAYLOADLESS_SKILL",
+   "surface_layer": "L3.4"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.07,
+   "cand_Prior_I": 5.666667,
+   "cand_Prior_SR": 8.736667,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-T05-06.CONDITIONAL_SKILL_RULE",
+   "surface_layer": "L3.4"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.82,
+   "cand_Prior_I": 5.666667,
+   "cand_Prior_SR": 8.486667,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-T05-07.SELF_COMPILED_SKILL",
+   "surface_layer": "L3.4"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.91,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 8.243333,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-T05-08.CONFIG_FILE_WRITE",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 8.333333333333334,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 8.666667,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-T05-09.CROSS_SESSION_SUBBACKDOOR",
+   "surface_layer": "L5.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.666667,
+   "cand_Prior_SR": 8.726666999999999,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-T05-10.SKILL_STORE_APPEND",
+   "surface_layer": "L3.4"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.91,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.41,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-T05-11.AGENT_NAME_COLLISION",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 8.333333333333334,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 8.666667,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-T05-12.PLUGIN_LORA_TROJAN",
+   "surface_layer": "L5.2"
+  },
+  {
+   "Prior_I": 8.333333333333334,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 8.666667,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-T05-13.REACT_TRACE_POISON_FT",
+   "surface_layer": "L5.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.91,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.41,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-100.AGENT_CARD_DISCOVERY_POISON",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 8.333333333333334,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 8.666667,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-101.TRAINED_PREFERENCE_BIAS",
+   "surface_layer": "L5.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.559999999999999,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-85.DESCRIPTOR_FIELD_REWRITE",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.91,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.41,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-86B.TOOL_FRAMING",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.91,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.41,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-86.TOOL_SET_HIJACK",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.91,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.41,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-87.TOOL_DESCRIPTION_INJECT",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.559999999999999,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-88B.TOOL_DESCRIPTION_INJECT_TSE",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.559999999999999,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-89.TOOL_DOCUMENT_INJECT",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.219999999999999,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.719999999999999,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-90.DESCRIPTOR_MUTATION_ENGINE",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 8.333333333333334,
+   "Prior_SR": 10.0,
+   "cand_Prior_I": 8.666667,
+   "cand_Prior_SR": 10.0,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-91.WEIGHT_IMPLANTED_BACKDOOR",
+   "surface_layer": "L5.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.91,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.41,
+   "case_id": "T05",
+   "method_id": "T05.LIT-B-99.REQUIREMENT_ENGINEERED_OVERSHADOW",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.91,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.076667,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-105.intent_inference_equivalent_prompt",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.219999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.386667,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-106.gradient_optimized_adversarial_query",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.219999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.386667,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-107.memorization_attention_path_analysis",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.376666666666667,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.543333666666667,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-108.rl_trained_attack_agent",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.219999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.386667,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-109.extended_sandwich_query_family",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.98,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.146667,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-110.remember_to_start_instruction_family",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.326666666666666,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.493333666666667,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-111.worm_like_elicitation_propagation",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.326666666666666,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.493333666666667,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-112.ucb_skill_evolution_probing",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-113B.semantic_cache_side_channel",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-113.kv_cache_timing_prefix_recovery",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.18,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.346667,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-115.multi_turn_sycophancy_escalation",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-116.output_inversion_prompt_recovery",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.960000000000001,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.126667000000001,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-117B.latent_trait_inference",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.960000000000001,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.126667000000001,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-117.passive_network_metadata_prompt_recovery",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.16,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.326667,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-118.statistical_cache_audit",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.226666999999999,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-120.hard_token_dpo_reconstruction",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.960000000000001,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.126667000000001,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-121.adaptive_input_time_feedback",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.859999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.026667,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-122.stepwave_boundary_collision",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.859999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.026667,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-123.schema_completion_parameter_exfil",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.226666666666667,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.393333666666667,
+   "case_id": "T06",
+   "method_id": "T06.LIT-B-124.two_stage_harness_distillation",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.219999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.386667,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-125.thinktrap_infinite_thinking",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.219999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.386667,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-126.loopllm_repetitive_generation",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.219999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.386667,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-127.naturalsloth_natural_instruction",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.451666666666666,
+   "cand_Prior_I": 5.833333,
+   "cand_Prior_SR": 8.284999666666666,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-128.corba_recursive_blocking",
+   "surface_layer": "L3.5"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.960000000000001,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 8.293333,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-129A.guardrail_structural_mutation",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.960000000000001,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 8.293333,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-129.guardrail_beam_search_dos",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.16,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 7.66,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-130.tool_chain_n_round_amplification",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.960000000000001,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.126667000000001,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-131.creep_external_poisoning_cost",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.293333333333333,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.460000333333333,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-132.turn_amplification_steering",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 0.0,
+   "Prior_SR": 2.8200000000000003,
+   "cand_Prior_I": 0.0,
+   "cand_Prior_SR": 2.8200000000000003,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-133.persona_conditioned_cost",
+   "surface_layer": "L1.1"
+  },
+  {
+   "Prior_I": 0.0,
+   "Prior_SR": 2.91,
+   "cand_Prior_I": 0.0,
+   "cand_Prior_SR": 2.91,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-134.viddos_universal_ela_video",
+   "surface_layer": "L1.3"
+  },
+  {
+   "Prior_I": 3.333333333333334,
+   "Prior_SR": 6.3933333333333335,
+   "cand_Prior_I": 3.5,
+   "cand_Prior_SR": 6.56,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-135.groundhog_bitflip_eos_experts",
+   "surface_layer": "L2.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.859999999999999,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 8.36,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-136A.skillbloat_tool_driven",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 3.333333333333334,
+   "Prior_SR": 5.693333333333333,
+   "cand_Prior_I": 3.666667,
+   "cand_Prior_SR": 6.026667,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-136B.skillbloat_context_amplification",
+   "surface_layer": "L2.2"
+  },
+  {
+   "Prior_I": 0.0,
+   "Prior_SR": 2.9600000000000004,
+   "cand_Prior_I": 0.0,
+   "cand_Prior_SR": 2.9600000000000004,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-136.skillbloat_output_inflation",
+   "surface_layer": "L1.1"
+  },
+  {
+   "Prior_I": 0.0,
+   "Prior_SR": 2.86,
+   "cand_Prior_I": 0.0,
+   "cand_Prior_SR": 2.86,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-137.convergent_detour_hijacking",
+   "surface_layer": "L1.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.219999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.386667,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-138.crabs_autodos_blackbox",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 3.333333333333334,
+   "Prior_SR": 6.3933333333333335,
+   "cand_Prior_I": 3.5,
+   "cand_Prior_SR": 6.56,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-139A.pdos_ldos_loss_suppression",
+   "surface_layer": "L2.1"
+  },
+  {
+   "Prior_I": 3.333333333333334,
+   "Prior_SR": 6.3933333333333335,
+   "cand_Prior_I": 3.5,
+   "cand_Prior_SR": 6.56,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-139.pdos_csf_format",
+   "surface_layer": "L2.1"
+  },
+  {
+   "Prior_I": 6.666666666666668,
+   "Prior_SR": 8.753333333333334,
+   "cand_Prior_I": 6.833333,
+   "cand_Prior_SR": 8.919999666666666,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-142.robot_semantic_dos_alignment_weaponized",
+   "surface_layer": "L4.1"
+  },
+  {
+   "Prior_I": 6.666666666666668,
+   "Prior_SR": 9.526666666666667,
+   "cand_Prior_I": 6.833333,
+   "cand_Prior_SR": 9.693332999999999,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-143.lvlm_scene_text_overthink_slowdown",
+   "surface_layer": "L4.1"
+  },
+  {
+   "Prior_I": 0.0,
+   "Prior_SR": 2.91,
+   "cand_Prior_I": 0.0,
+   "cand_Prior_SR": 2.91,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-144.vtia_verbose_text_induction",
+   "surface_layer": "L1.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.76,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.926667,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-T07-01.otora_reasoning_level_dos",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.960000000000001,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.126667000000001,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-T07-02.draincode_coerced_verbosity",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.32,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 8.653333,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-T07-03.guardrail_false_positive_abuse",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.219999999999999,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.386667,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-T07-04.reasoningbomb_pathological_reasoning",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.195,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 7.695,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-T07-05.mobius_injection_abo_ddos",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.26,
+   "cand_Prior_I": 5.5,
+   "cand_Prior_SR": 7.76,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-T07-06.clawdrain_trojanized_skill",
+   "surface_layer": "L3.3"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.960000000000001,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.126667000000001,
+   "case_id": "T07",
+   "method_id": "T07.LIT-B-T07-07.overthink_decoy_reasoning_injection",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.432499999999999,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 7.765832999999999,
+   "case_id": "T08",
+   "method_id": "T08.B-T08-01.implicit_knowledge_extraction_benign_queries",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.51,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 7.8433329999999994,
+   "case_id": "T08",
+   "method_id": "T08.B-T08-02.intent_inversion_tool_call_logs",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.67,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 8.003333,
+   "case_id": "T08",
+   "method_id": "T08.B-T08-03.context_disclosure_tool_call_args",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.27,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 7.603332999999999,
+   "case_id": "T08",
+   "method_id": "T08.B-T08-04.context_inference_agent_tool_calls",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 6.7325,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 7.065833,
+   "case_id": "T08",
+   "method_id": "T08.B-T08-06.dormant_memory_topic_trigger_exfiltration",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.91,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 8.076667,
+   "case_id": "T08",
+   "method_id": "T08.B-T08-07.two_step_data_stealing_arm",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.120000000000001,
+   "cand_Prior_I": 5.166667,
+   "cand_Prior_SR": 7.286667000000001,
+   "case_id": "T08",
+   "method_id": "T08.B-T08-08.template_prompt_training_pii_extraction",
+   "surface_layer": "L3.1"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.51,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 7.8433329999999994,
+   "case_id": "T08",
+   "method_id": "T08.B-T08-09.parasitic_parameter_memory_exfiltration",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.526666666666667,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 7.859999666666667,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-145.semantic_trigger_memory_exfiltration",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.42,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 7.753333,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-147.instructional_text_leakage_chain",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.34,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 7.6733329999999995,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-148.knowledge_asymmetry_extraction",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 8.393332999999998,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-149.dataflow_injection_personal_data",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 6.986666666666666,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 7.319999666666666,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-150.mas_controlflow_hijack_exfiltration",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 8.393332999999998,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-151.silent_egress_implicit_injection",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.91,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 8.243333,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-152.cross_user_data_disclosure",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.82,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 8.153333,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-154.pii_solicitation_injection",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.220000000000001,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 7.553333,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-155.persistence_memory_extraction",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.432499999999999,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 7.765832999999999,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-158.instruction_following_datastore_extraction",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.66,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 7.993333,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-160.persistent_memory_image_exfiltration",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.82,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 8.153333,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-161.codebook_url_bitwise_exfiltration",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.720000000000001,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 8.053333,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-162.readme_embedded_instruction_exfiltration",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.059999999999999,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 8.393332999999998,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-163B.sampling_system_prompt_override",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 7.66,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 7.993333,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-163.cross_channel_fragmentation",
+   "surface_layer": "L3.2"
+  },
+  {
+   "Prior_I": 5.0,
+   "Prior_SR": 8.219999999999999,
+   "cand_Prior_I": 5.333333,
+   "cand_Prior_SR": 8.553332999999999,
+   "case_id": "T08",
+   "method_id": "T08.LIT-B-164.framing_matched_exfiltration",
+   "surface_layer": "L3.2"
+  }
+ ],
+ "distinct": {
+  "candidate_sublevel": {
+   "IQR": 0.55,
+   "max": 10.0,
+   "min": 2.52,
+   "中位": 8.22,
+   "唯一值数": 79,
+   "跨度": 7.48
+  },
+  "current": {
+   "IQR": 0.6275,
+   "max": 10.0,
+   "min": 2.52,
+   "中位": 7.86,
+   "唯一值数": 61,
+   "跨度": 7.48
+  }
+ },
+ "frozen_tables_hash": "b1dfbcb8c2d3c5f22fbcdff3b0e9d0f2cfd92c909533acc215bdb3ea8675c194",
+ "invariant": "不施加目标闸门、不改权重、不改 k_scale；只改 L→I_infosec 的取数",
+ "schema": "prior_sublevel_shadow_v1",
+ "why": "候选 A 的影子测算：亚级以 0.1 步长进 I_infosec。**不改冻结表、不改公式**，仅供决定。"
+}

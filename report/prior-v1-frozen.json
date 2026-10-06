@@ -1,0 +1,73 @@
+{
+ "caliber": {
+  "Prior_EXP_components": [
+   "reach",
+   "rounds",
+   "depth",
+   "pre",
+   "adapt"
+  ],
+  "constants_in_the_library": {
+   "adapt": 0.5,
+   "note": "两项在 186 格上恒为常量 ⇒ 45% 权重不携带信息",
+   "reach": 1.0
+  },
+  "formula": "Prior_SR = min(Prior_I + k * Prior_EXP, 10)",
+  "k_scale": 0.4,
+  "weights": {
+   "adapt": 0.2,
+   "depth": 0.2,
+   "pre": 0.15,
+   "reach": 0.25,
+   "rounds": 0.2
+  },
+  "weights_sum": 1.0
+ },
+ "coverage": {
+  "caliber_a_scored": 186,
+  "caliber_b_scored_any_target": 54,
+  "n_cards": 186,
+  "saturated_cells": 16
+ },
+ "date": "2026-10-03",
+ "freeze_label": "prior-v1-frozen",
+ "frozen_artifact": {
+  "bytes": 1156357,
+  "note": "冻结的是**盘上这份报告**的内容哈希；不重算（重算会把改动后的实现混进冻结件）。",
+  "path": "report/prior-three-column-v1.json",
+  "sha256": "0eec9b35b8325e0c28489f539c6505f1ce8a4280f0275eea4ac8b0fa5ed542c9"
+ },
+ "prior_sr_distribution_caliber_a": {
+  "iqr_linear": 0.6227083333333319,
+  "max": 10.0,
+  "median": 7.859999999999999,
+  "min": 2.52,
+  "p25": 7.437291666666667,
+  "p75": 8.059999999999999,
+  "unique": 61
+ },
+ "provenance": {
+  "frozen_at_commit": "f08e34ce3a97f92ce19b179faefee0ab2a45dae4",
+  "frozen_at_commit_subject": "定位收口（D30）+ 全部文档更新 + 新交接文档 + 新对话提示词：先验分改定位为「成本/可达性描述性指数」（不再预测强度，但同报深度/绕过难易/后果/效果四个描述性维度）；spec/prior.md 加 §0.2 与 v1.3；ROADMAP 更新 G-32 并新增 G-39（深度载体缺口）/G-40（后果覆盖率与可靠性）/G-41（代码工作令未执行）；新出 交接说明"
+ },
+ "rebuttals_must_be_reported_with_any_citation": [
+  "首次对账不过：T06（n=8）Spearman(先验分, 实测复原率) = -0.3571（banking）/ -0.2143（travel）（该口径的实测指标见 results/README.md；本次改用 by_ngram['12'] 复算得 -0.3500 / -0.3210，两套口径并列，不静默择一）",
+  "T06 八方法里失败三张与成功五张在 16 个字段中 15 个上无法区分，实测相差 33 倍（0.030 vs 0.997）",
+  "三轴试点四轮未复现：κ_linear 0.560 / 0.4857 / 0.8043 / 0.7584，四组独立配对没有一组稳在 0.8 以上",
+  "八类里四类被压成单值：T03 L5 94% · T05 L5 95% · T06 未取得 94% · T07 轴外 96%",
+  "Prior_I 的输入读错字段（G-32）：读 surface_layer，而 spec/prior.md 与 spec/scoring.md 里该字段各出现 0 次"
+ ],
+ "spec": {
+  "file": "spec/prior.md",
+  "note": "§0.2 定位（D30）已写入规范；公式改动由本冻结之后执行",
+  "version_line": "prior-v1.3"
+ },
+ "tables": {
+  "frozen_actual": "b1dfbcb8c2d3c5f22fbcdff3b0e9d0f2cfd92c909533acc215bdb3ea8675c194",
+  "frozen_ok": true,
+  "frozen_recorded": "b1dfbcb8c2d3c5f22fbcdff3b0e9d0f2cfd92c909533acc215bdb3ea8675c194",
+  "hash_scope": "canonical_json(T1_l_to_infosec, T2_mechanism_to_depth, T3_target_adaptation, weights, k_scale, interval)；不含 _why/_frozen/notes",
+  "tables_version": "prior-tables-v1"
+ },
+ "why": "按 spec/scoring.md 的 B3：先验分口径即将变更（G-41：去 reach/adapt 常量并重归一、depth 改名 bypass_ease、新增层深与效果两列）。变更前的这一期分数在此冻结，任何权重/口径改动进 prior-v2。"
+}

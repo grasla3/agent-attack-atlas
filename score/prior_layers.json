@@ -1,0 +1,158 @@
+{
+ "by_evasion_family": {
+  "authorization_signal_spoof": {
+   "deepest_layer": "high_risk_action_control",
+   "depth": 0.666667,
+   "depth_index": 6,
+   "depth_max": 9,
+   "depth_text": "6/9（最内层：high_risk_action_control）",
+   "target_layers": [
+    "gateway_deny",
+    "high_risk_action_control",
+    "input_text_filter"
+   ]
+  },
+  "carrier_out_of_band": {
+   "deepest_layer": "input_semantic_review",
+   "depth": 0.222222,
+   "depth_index": 2,
+   "depth_max": 9,
+   "depth_text": "2/9（最内层：input_semantic_review）",
+   "target_layers": [
+    "input_semantic_review",
+    "input_text_filter"
+   ]
+  },
+  "chat_template": {
+   "deepest_layer": "input_semantic_review",
+   "depth": 0.222222,
+   "depth_index": 2,
+   "depth_max": 9,
+   "depth_text": "2/9（最内层：input_semantic_review）",
+   "target_layers": [
+    "input_semantic_review",
+    "input_text_filter"
+   ]
+  },
+  "evade_input_encoding": {
+   "deepest_layer": "input_text_filter",
+   "depth": 0.111111,
+   "depth_index": 1,
+   "depth_max": 9,
+   "depth_text": "1/9（最内层：input_text_filter）",
+   "target_layers": [
+    "input_text_filter"
+   ]
+  },
+  "evade_input_keyword": {
+   "deepest_layer": "input_text_filter",
+   "depth": 0.111111,
+   "depth_index": 1,
+   "depth_max": 9,
+   "depth_text": "1/9（最内层：input_text_filter）",
+   "target_layers": [
+    "input_text_filter"
+   ]
+  },
+  "lateral_entity_probe": {
+   "deepest_layer": "entity_acl",
+   "depth": 0.555556,
+   "depth_index": 5,
+   "depth_max": 9,
+   "depth_text": "5/9（最内层：entity_acl）",
+   "target_layers": [
+    "entity_acl"
+   ]
+  },
+  "multi_turn_accumulate": {
+   "deepest_layer": "input_semantic_review",
+   "depth": 0.222222,
+   "depth_index": 2,
+   "depth_max": 9,
+   "depth_text": "2/9（最内层：input_semantic_review）",
+   "target_layers": [
+    "input_semantic_review",
+    "input_text_filter"
+   ]
+  },
+  "multi_turn_authority": {
+   "deepest_layer": "session_isolation",
+   "depth": 0.777778,
+   "depth_index": 7,
+   "depth_max": 9,
+   "depth_text": "7/9（最内层：session_isolation）",
+   "target_layers": [
+    "input_semantic_review",
+    "session_isolation"
+   ]
+  },
+  "param_channel_injection": {
+   "deepest_layer": "tool_param_validation",
+   "depth": 0.333333,
+   "depth_index": 3,
+   "depth_max": 9,
+   "depth_text": "3/9（最内层：tool_param_validation）",
+   "target_layers": [
+    "input_semantic_review",
+    "input_text_filter",
+    "tool_param_validation"
+   ]
+  },
+  "role_motive_engineering": {
+   "deepest_layer": "input_semantic_review",
+   "depth": 0.222222,
+   "depth_index": 2,
+   "depth_max": 9,
+   "depth_text": "2/9（最内层：input_semantic_review）",
+   "target_layers": [
+    "input_semantic_review"
+   ]
+  }
+ },
+ "date": "2026-10-03",
+ "distinct_depth_index": [
+  1,
+  2,
+  3,
+  5,
+  6,
+  7
+ ],
+ "fallback": {
+  "action": "depth = null；**不给一个猜的层深**",
+  "reason_code": "unknown_evasion_family",
+  "when": "evasion_family 不在 by_evasion_family 里"
+ },
+ "layer_order": [
+  "input_text_filter",
+  "input_semantic_review",
+  "tool_param_validation",
+  "gateway_deny",
+  "entity_acl",
+  "high_risk_action_control",
+  "session_isolation",
+  "output_filter",
+  "audit_trace"
+ ],
+ "n_layer_order": 9,
+ "provenance": {
+  "depth_definition": {
+   "form": "depth_index = 1 + index_of_deepest(target_layers) in LAYER_ORDER",
+   "kind": "derived",
+   "note": "一行算术，不是新标尺；层深只作描述列（G-39 实测：加进分里更差）"
+  },
+  "family_to_target_layers": {
+   "kind": "external",
+ "note": "直读抄录；路径按 gate abs_paths 的规矩只写在 results/README.md",
+   "read_at": "2026-10-03",
+ "source": " /evasion_families.py 的 EVASION_FAMILIES[*]['target_layers']"
+  },
+  "layer_order": {
+   "kind": "in_repo",
+ "note": "该常量的注释自述来源为 /defense_layers.py:68",
+   "source": "score/core.py 的 LAYER_ORDER（9 层，由外到内）"
+  }
+ },
+ "version": "prior-layers-v1",
+ "what": "evasion_family → 目标防护层 → 层深（描述性维度，供 D30 的『深度』一列）"
+}
