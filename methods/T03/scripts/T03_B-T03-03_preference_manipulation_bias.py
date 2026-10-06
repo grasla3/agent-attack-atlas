@@ -1,0 +1,104 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""偏好操纵（BiasAgent）：把 agent 自身偏置当作投毒数据，重定向 MCP 内的工具选择而不改任何工具描述
+
+派生自 methods/T03/T03.py + 卡 T03.B-T03-03.preference_manipulation_bias（源/派生两层结构，见 docs/delivery-form.md）。
+本文件是构造规格，不是成品载荷：不含载荷正文、不含真实凭据（禁令 9 / 标准 S4）。
+
+用法:
+  python T03_B-T03-03_preference_manipulation_bias.py --plan         # 打印执行计划（不执行）
+  python T03_B-T03-03_preference_manipulation_bias.py --plan --grid  # 按维度档位展开
+  python T03_B-T03-03_preference_manipulation_bias.py --params       # 打印参数与引用块
+"""
+from __future__ import annotations
+
+import io
+import json
+import sys
+from pathlib import Path
+
+# Windows 控制台默认 GBK，卡上文本含 ⇒ 等非 GBK 字符时 json.dumps 会 UnicodeEncodeError。
+# T01 的生成器带这一行，本模块此前漏了 —— 实测 B-54/B-55 两张卡因此崩溃。
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+import T03  # noqa: E402
+
+METHOD_ID = "T03.B-T03-03.preference_manipulation_bias"
+
+#: 参数：档位可变项（S3）
+PARAMS = {
+    "entry_point": "工具返回",
+    "entry_tool": "tool_result",
+    "artifact_kind": "tool_return",
+    "privilege_surface_grid": [
+        "工具调用",
+        "浏览器状态",
+        "人机确认界面",
+        "视觉通道",
+        "配置钩子"
+    ],
+    "delegation_hops_grid": [
+        1,
+        2,
+        3
+    ],
+    "authorization_mode": "名称+schema 静态门",
+    "capability_class": "none",
+    "prompt_composition": "singular",
+    "turns": 1,
+    "custom_logic_required": False,
+    "distinctness_axis": "mechanism_first_step"
+}
+
+#: 引用块：关键构造对回卡上 provenance_components（S2）
+REFERENCE = {
+    "mechanism": "LIT-B-T03-03",
+    "mechanism_source": "B-T03-03 IEEE Trans. Cognitive Communications and Networking Vol.12 2026 (BiasAgent) 摘要贡献段与 TABLE II",
+    "vector": "工具返回",
+    "technique": "自动生成",
+    "transform_chain": [
+        "none"
+    ],
+    "provenance_kind": "interpolation",
+    "source_grade": "A",
+    "numeric_evidence": "original_table",
+    "source_refs": [
+        "B-T03-03 TABLE II（DPMA / GAPMA 与 BiasAgent 在不同 MCP server 上的 ASR% 对比）",
+        "B-T03-03 摘要与贡献段：ASR 超过 90% 且保持 agent 正常功能",
+        "B-T03-03 贡献段原文：We propose the first preference manipulation attack that requires no modification to any tool descriptions",
+        "B-T03-03 方法段：构造偏向指定 provider 的 biased dataset（Fig. 1）；bias 本身作为 attack vector / poisoned data"
+    ],
+    "distinctness_evidence": {
+        "axis": "mechanism_first_step",
+        "ref": "LIT-B-T03-03",
+        "locator": "B-T03-03 贡献段（requires no modification to any tool descriptions）与 TABLE II：机制首步是操纵 agent 自身的偏好/偏置，而非改写工具描述或元数据",
+        "value": "LIT-B-T03-03"
+    },
+    "verifier": "scenario_contract",
+    "evidence_layer": "authorization",
+    "negative_control": "T03.B-T03-01.mcp_metadata_tool_selection_hijack"
+}
+
+
+def main(argv=None):
+    argv = list(sys.argv[1:] if argv is None else argv)
+    spec = T03.spec_from_card(METHOD_ID)
+    spec.delivery.delegation_hops = PARAMS["delegation_hops_grid"][0]
+    spec.delivery.privilege_surface = PARAMS["privilege_surface_grid"][0]
+
+    if "--params" in argv:
+        print(json.dumps({"method_id": METHOD_ID, "params": PARAMS,
+                           "reference": REFERENCE}, ensure_ascii=False, indent=1))
+    elif "--plan" in argv:
+        plans = T03.plan_grid(spec) if "--grid" in argv else [T03.build_plan(spec)]
+        print(json.dumps(plans if "--grid" in argv else plans[0],
+                         ensure_ascii=False, indent=1))
+    else:
+        print(__doc__)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

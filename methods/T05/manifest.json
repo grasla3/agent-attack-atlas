@@ -1,0 +1,46 @@
+{
+ "case_id": "T05",
+ "min_mechanisms": 24,
+ "min_methods": 24,
+ "mechanisms_shortfall_rationale": "本类实测落卡 24 张（全部非变体），不同 mechanism_ref 共 24 个（LIT-B-85…LIT-B-101 与 LIT-B-T05-01…13），距全局目标 30 差 6。本行只陈述【证据可达性】与【构造去重】，不陈述【文献不存在】——按 E3，负向断言须附检索式与轮次；本类检索归档见 results/README.md*.json 与 T05-sat-*.json（饱和检索 8 角度）。【容量的三次重估】(1) 开工时依表1（46 条无 T05 族）与共享池（4 篇全带问号）判『确认可切数 0』——该取样只覆盖旧语料，是错的；(2) 五轮定向检索后落 11 卡；(3) 追问『完整检索呢』后做饱和检索，发现当前实现自写的临时脚本用了 all:多词引号短语写法，在 arXiv API 上静默归零（22/24 次返回 0；而 tools/bibsearch.py 早已修好此缺陷，当前实现绕开它而重犯），修正后 arXiv 单源产出 297 条候选、0 失败 ⇒ 候选由 19 篇增至 40+ 篇。【最终 24 的构成】11（首轮）+ 13（饱和检索）；写入轴分布见 docs/method-capacity-audit.md。【仍不足 30 的原因】本类候选高度同轴：描述字段轴已挤 8 条；技能族 5 篇经抽取组按『算法变了吗』判据合并为 4 个机制；权重轴 4 条（Sleeper Cell / Philosopher's Stone / Watch Out / BadAgent）亦有塌缩风险 ⇒ 严读口径下本类可能为 21–22。【证据等级代价】新增 13 条中 9 条为 arXiv 预印本，多条 n 极小或无 CI（MCP-ITP 自陈每设置只跑一次；ElasticBack n=50、温度 0、单次运行），并发现一处 venue 造假嫌疑（AgentWorm 印 NDSS 版式但 DOI 为未填占位符 ndss.2026.[23|24]xxxx）⇒ 按预印本记 B。按 search-protocol.md §2.3 如实披露，不以收录数量掩盖来源等级下滑。",
+ "dimensions": {
+  "injection_entry": [
+   "工具描述（注册期）",
+   "工具描述（会话中）",
+   "工具集合（再注册）",
+   "工具库（新增文档）",
+   "智能体卡（发现层）",
+   "模型参数（训练期）"
+  ],
+  "artifact_kind": [
+   "工具描述",
+   "工具schema",
+   "工具集合",
+   "工具文档",
+   "智能体卡",
+   "模型权重"
+  ],
+  "write_timing": [
+   "注册期",
+   "会话中",
+   "发现时",
+   "训练期"
+  ],
+  "trigger_condition": [
+   "立即",
+   "阈值触发",
+   "日期触发"
+  ],
+  "optimization": [
+   "遗传算法",
+   "梯度",
+   "DAPO",
+   "few-shot",
+   "无"
+  ]
+ },
+ "strength": 2,
+ "anchor_methods": [],
+ "allow_text_fallback": false,
+ "purpose": "评测【以智能体定义（写侧）为终点资产】的攻击方法：篡改 agent 对自身可用动作与身份的认知——工具描述/工具 schema/MCP descriptor（A 轴）、可被 agent 发现的工具集合（B 轴）、承载 agent 行为的模型参数或训练期策略（C 轴）、以及智能体卡/发现层（D 轴，A2A）。本类判据锚在 state_diff（oracle_kinds = authoritative_state_delta / recovery_probe；evidence_layers = state/causal），因此 allow_text_fallback 取 false：『模型复述了被改写的工具描述』不构成本类成功，必须是权威定义状态被实际改写（项目说明 E1：模型自述不可作为证据）。physical_consequence 一律取 none 的理由：本类判据验证的是【定义被写入】这一终点，其下游物理后果需在可运行靶标上另证，一期不主张（I_physical = 0），避免与 impact_class 的 A/F 重复计分。本类一期为 8 个独立机制（宽松口径 11），缺口说明见 mechanisms_shortfall_rationale。"
+}
