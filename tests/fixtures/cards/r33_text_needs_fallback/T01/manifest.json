@@ -1,0 +1,20 @@
+{
+  "case_id": "T01",
+  "min_mechanisms": 30,
+  "dimensions": {
+    "dose": [
+      "1",
+      "2",
+      "3"
+    ],
+    "position": [
+      "head",
+      "middle",
+      "tail"
+    ]
+  },
+  "strength": 2,
+  "allow_text_fallback": false,
+  "purpose": "校验器自测用清单：本目录不是真实方法库，仅用于让每条规则都有东西可咬。",
+  "mechanisms_shortfall_rationale": "夹具目录只放少量真卡，缺口说明在此占位以满足规则 7 的 WARN 分支。"
+}

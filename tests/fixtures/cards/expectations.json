@@ -1,0 +1,144 @@
+{
+  "cases": [
+    {
+      "dir": "valid",
+      "expect_error": false,
+      "expect_rule": null
+    },
+    {
+      "dir": "r01_dup_method_id",
+      "expect_error": true,
+      "expect_rule": 1
+    },
+    {
+      "dir": "r03_negative_control_missing",
+      "expect_error": true,
+      "expect_rule": 3
+    },
+    {
+      "dir": "r06_mechanism_ref_transform",
+      "expect_error": true,
+      "expect_rule": 6
+    },
+    {
+      "dir": "r07_no_shortfall_rationale",
+      "expect_error": true,
+      "expect_rule": 7
+    },
+    {
+      "dir": "r09_script_missing",
+      "expect_error": true,
+      "expect_rule": 9
+    },
+    {
+      "dir": "r10_cleanup_fields",
+      "expect_error": true,
+      "expect_rule": 10
+    },
+    {
+      "dir": "r12_variant_missing",
+      "expect_error": true,
+      "expect_rule": 12
+    },
+    {
+      "dir": "r15_design_class_negative_control",
+      "expect_error": true,
+      "expect_rule": 15
+    },
+    {
+      "dir": "r16_control_follow_rate",
+      "expect_error": true,
+      "expect_rule": 16
+    },
+    {
+      "dir": "r21_missing_grade",
+      "expect_error": true,
+      "expect_rule": 0
+    },
+    {
+      "dir": "r25_physical_needs_state",
+      "expect_error": true,
+      "expect_rule": 25
+    },
+    {
+      "dir": "r26_composition_of_missing",
+      "expect_error": true,
+      "expect_rule": 26
+    },
+    {
+      "dir": "r27_ext_ratio",
+      "expect_error": true,
+      "expect_rule": 27
+    },
+    {
+      "dir": "r28_source_grade_dash",
+      "expect_error": true,
+      "expect_rule": 28
+    },
+    {
+      "dir": "r29_preconditions_bad_key",
+      "expect_error": true,
+      "expect_rule": 29
+    },
+    {
+      "dir": "r30_preconditions_bad_level",
+      "expect_error": true,
+      "expect_rule": 30
+    },
+    {
+      "dir": "r33_text_needs_fallback",
+      "expect_error": true,
+      "expect_rule": 33
+    },
+    {
+      "dir": "r37_unregistered_verifier",
+      "expect_error": true,
+      "expect_rule": 37
+    },
+    {
+      "dir": "r38_canary_missing",
+      "expect_error": true,
+      "expect_rule": 38
+    },
+    {
+      "dir": "r39_ext_prefix_kind",
+      "expect_error": true,
+      "expect_rule": 39
+    },
+    {
+      "dir": "r40_lit_unresolvable",
+      "expect_error": true,
+      "expect_rule": 40
+    },
+    {
+      "dir": "r42_c11_missing_evidence",
+      "expect_error": true,
+      "expect_rule": 42
+    },
+    {
+      "dir": "c11_with_evidence",
+      "expect_error": false,
+      "expect_rule": null
+    },
+    {
+      "dir": "r47_original_table_no_locator",
+      "expect_error": true,
+      "expect_rule": 47
+    },
+    {
+      "dir": "r46_atk_prefix_not_in_table1",
+      "expect_error": true,
+      "expect_rule": 46
+    },
+    {
+      "dir": "r45_args_payload_body",
+      "expect_error": true,
+      "expect_rule": 45
+    },
+    {
+      "dir": "r44_required_actions_prose",
+      "expect_error": true,
+      "expect_rule": 44
+    }
+  ]
+}
