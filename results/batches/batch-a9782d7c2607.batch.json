@@ -1,0 +1,54 @@
+{
+  "batch_id": "batch-a9782d7c2607",
+  "caps": {
+    "cleanup_supported": false,
+    "receipt_supported": false
+  },
+  "design_dimensions": {
+    "access_sensitivity": 3,
+    "action": 3,
+    "input_trust": 3,
+    "memory": 2,
+    "tool": 2,
+    "user_interface": 1,
+    "workflow": 2
+  },
+  "env": {
+    "model": "deepseek/deepseek-chat-v3-0324",
+    "probe": "generic"
+  },
+  "methods": [
+    "T06.LIT-B-105.intent_inference_equivalent_prompt"
+  ],
+  "n": 3,
+  "started_at": "2026-10-02T07:13:31+00:00",
+  "target_id": "agentdojo-workspace",
+  "tools": [
+    "user_turn",
+    "response_generate",
+    "send_email",
+    "delete_email",
+    "get_unread_emails",
+    "get_sent_emails",
+    "get_received_emails",
+    "get_draft_emails",
+    "search_emails",
+    "search_contacts_by_name",
+    "search_contacts_by_email",
+    "get_current_day",
+    "search_calendar_events",
+    "get_day_calendar_events",
+    "create_calendar_event",
+    "cancel_calendar_event",
+    "reschedule_calendar_event",
+    "add_calendar_event_participants",
+    "append_to_file",
+    "search_files_by_filename",
+    "create_file",
+    "delete_file",
+    "get_file_by_id",
+    "list_files",
+    "share_file",
+    "search_files"
+  ]
+}
