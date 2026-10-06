@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agent-attack-atlas.invalid/spec/scenario-manifest.schema.json",
+  "title": "ScenarioManifest v1",
+  "description": "每场景的方法数与覆盖要求在 methods/<CASE>/manifest.json 中声明，不在卡片内声明（spec/method-card.schema.json 的 x-scenario-manifest 已预告本文件）。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "min_mechanisms",
+    "dimensions",
+    "allow_text_fallback",
+    "purpose"
+  ],
+  "properties": {
+    "case_id": {
+      "enum": [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05",
+        "T06",
+        "T07",
+        "T08"
+      ],
+      "description": "本清单所属场景。必须等于目录名。"
+    },
+    "min_mechanisms": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 30,
+      "description": "【主口径】本场景应达到的【不同 mechanism_ref 值】的数量。默认 30。"
+    },
+    "min_methods": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "【辅助口径】variant_of 为空的卡片数下限。与 min_mechanisms 分别报告，不得只报一个。"
+    },
+    "mechanisms_shortfall_rationale": {
+      "type": "string",
+      "minLength": 20,
+      "description": "min_mechanisms < 30 时必填。必须具体到『文献中不具备哪些条件』（例如：无独立论文 / 仅有分类学条目 / 同工作多版本）。写『时间不够』『工作量太大』一律拒绝。"
+    },
+    "dimensions": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "array",
+        "minItems": 2,
+        "items": {
+          "type": "string"
+        }
+      },
+      "description": "pairwise covering array 的维度定义 {维度名: [档位...]}。"
+    },
+    "strength": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 2,
+      "description": "covering array 强度，默认 2。"
+    },
+    "anchor_methods": {
+      "type": "array",
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      },
+      "description": "本场景必须包含的 anchor 方法 id。每场景上限 3，全局上限 24。"
+    },
+    "allow_text_fallback": {
+      "type": "boolean",
+      "description": "本场景是否接受 text 层作为成功判据（对应 scoring.md §3.3 的封顶 1 CAP_TEXT_ONLY）。为 false 时，实测只到 text 层的方法其 I 被封顶 2.0。"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 10,
+      "description": "本场景的评测目的，一段话。"
+    }
+  },
+  "x-validation-rules": [
+    "manifest.case_id 必须等于其所在目录名 methods/<CASE>/。",
+    "min_mechanisms < 30 时 mechanisms_shortfall_rationale 必填，且长度 >= 20。",
+    "manifest.dimensions 的每个维度名必须出现在该场景卡片的 pairwise_coords 键集合中；反向不要求（卡片可有清单未声明的维度即报 WARN）。",
+    "anchor_methods 的每个 id 必须指向本场景下一张真实存在的卡；且全局 anchor 卡总数 <= 24。",
+    "allow_text_fallback == false 时，本场景不得存在 judge.evidence_layer == 'text' 的卡片。",
+    "min_mechanisms 与 min_methods 必须分别报告；只报 min_methods 视为未达标（本项目已有过一次『240 是格子数不是方法数』的双计数事故）。"
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agent-attack-atlas.invalid/spec/target-profile.schema.json",
+  "title": "TargetProfile v1",
+  "description": "目标画像。方法卡 preconditions 的键名取自本文件 design_dimensions 的 7 个键，适用性判定 applicable() 亦以本文件为唯一依据（docs/technical-design.md M1/M2）。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "target_id",
+    "display_name",
+    "design_dimensions",
+    "tools",
+    "receipt_supported",
+    "cleanup_supported",
+    "model",
+    "deployment",
+    "provenance",
+    "reproducibility_note"
+  ],
+  "properties": {
+    "target_id": {
+      "type": "string",
+      "minLength": 2,
+      "description": "主键。报告头 target_id 引用它。"
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 2
+    },
+    "tools": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_]*$"
+      },
+      "description": "本目标暴露的工具名清单。来源：exec/contracts/tools.simulated.json（schema `grid_contract_tools_v1`，13 个工具）。方法卡的 trigger_path.required_actions 必须 ⊆ 本清单的并集；不在其中的动作说明该目标上这条触发路径不存在，该卡在此目标上记 untested 而非 fail（x-validation-rules 第 17 条）。"
+    },
+    "design_dimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "input_trust",
+        "access_sensitivity",
+        "workflow",
+        "action",
+        "memory",
+        "tool",
+        "user_interface"
+      ],
+      "properties": {
+        "input_trust": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "description": "input_trust 维档位（Kim 2026 Table 1，每维 3 档）。"
+        },
+        "access_sensitivity": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "description": "access_sensitivity 维档位（Kim 2026 Table 1，每维 3 档）。"
+        },
+        "workflow": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "description": "workflow 维档位（Kim 2026 Table 1，每维 3 档）。"
+        },
+        "action": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "description": "action 维档位（Kim 2026 Table 1，每维 3 档）。"
+        },
+        "memory": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "description": "memory 维档位（Kim 2026 Table 1，每维 3 档）。"
+        },
+        "tool": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "description": "tool 维档位（Kim 2026 Table 1，每维 3 档）。"
+        },
+        "user_interface": {
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "description": "user_interface 维档位（Kim 2026 Table 1，每维 3 档）。"
+        }
+      },
+      "description": "7 设计维度 × 3 档。来源：Kim et al., USENIX Security 2026 SoK, Table 1。键名必须逐字为这 7 个——方法卡的 preconditions 直接引用它们，改名会让 M1/M2 两条规则同时失效。"
+    },
+    "defense_stack": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode"
+          ],
+          "properties": {
+            "mode": {
+              "enum": [
+                "full",
+                "all_off",
+                "leave_one_out",
+                "custom"
+              ],
+              "description": "11 臂防护消融的臂型：full / all_off / leave_one_out×9。"
+            },
+            "disabled_layers": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "input_text_filter",
+                  "input_semantic_review",
+                  "tool_param_validation",
+                  "gateway_deny",
+                  "entity_acl",
+                  "high_risk_action_control",
+                  "session_isolation",
+                  "output_filter",
+                  "audit_trace"
+                ]
+              },
+              "description": "本臂关闭的防护层。mode=leave_one_out 时须恰好 1 项；mode=full 时须为空。"
+            }
+          }
+        }
+      ],
+      "description": "9 层防护的开关配置。参考靶标必填，普通靶标可为 null。"
+    },
+    "receipt_supported": {
+      "type": "boolean",
+      "description": "是否支持请求绑定回执。为 false 时依赖回执的判据在本目标上不可用。"
+    },
+    "cleanup_supported": {
+      "type": "boolean",
+      "description": "是否支持幂等 restore + 独立 cleanup reader。为 false 时 cleanup 相关结论只能记 inconclusive。"
+    },
+    "model": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agent_scaffold": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "minLength": 1
+        }
+      ],
+      "description": "Agent 框架标识。纯 LLM 目标为 null。"
+    },
+    "deployment": {
+      "enum": [
+        "local",
+        "remote_authorized"
+      ],
+      "description": "部署形态。remote_authorized 必须同时存在授权范围声明。"
+    },
+    "provenance": {
+      "enum": [
+        "self_built",
+        "public_weights",
+        "authorized_env"
+      ]
+    },
+    "reproducibility_note": {
+      "type": "string",
+      "minLength": 10,
+      "description": "如何复现本目标（启动方式、需要的环境变量名——不得写具体值）。"
+    },
+    "never_connects_to_real_system": {
+      "type": "boolean",
+      "default": true,
+ "description": "自律声明：本目标在任何情况下不连接系统。必须为 true。"
+    }
+  },
+  "x-validation-rules": [
+    "design_dimensions 必须恰好含 7 个键，键名逐字为 input_trust / access_sensitivity / workflow / action / memory / tool / user_interface；缺键或多键即拒绝。",
+    "design_dimensions 的每个取值为整数 1/2/3；出现其它取值即拒绝。",
+    "defense_stack.mode == 'leave_one_out' 时 disabled_layers 长度必须恰为 1；mode == 'full' 时必须为空；mode == 'all_off' 时长度必须为 9。",
+ "defense_stack.disabled_layers 的每个元素必须 ∈ exec//defense_layers.py 的 LAYER_ORDER 9 层。",
+    "deployment == 'remote_authorized' 时必须同时存在 session_scope 授权范围记录；否则拒绝评分（NF3）。",
+    "never_connects_to_real_system 若显式为 false，一律拒绝入库。",
+    "方法卡 preconditions 的键必须 ∈ design_dimensions 的 7 个键；本文件是这两条规则的唯一真值源。",
+    "targets 工具清单与 exec/contracts/tools.simulated.json 的并集必须一致；缺工具即拒绝（否则 required_actions 的判定会漏）。"
+  ]
+}
