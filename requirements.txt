@@ -1,0 +1,5 @@
+# 运行依赖：与一致的最小集（docs/README.md A4）
+# 纪律：只从 approved offline wheelhouse 安装，且 hash-pinned。
+requests==2.34.2
+cryptography==44.0.3
+PyYAML==6.0.2

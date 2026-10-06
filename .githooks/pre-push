@@ -1,0 +1,39 @@
+#!/bin/sh
+# Git 质量阀门 · 发布门禁（慢，跑全部已实现的 Gate）
+set -e
+cd "$(git rev-parse --show-toplevel)"
+
+__find_python() {
+  for c in python python3 py; do
+    if command -v "$c" >/dev/null 2>&1; then
+      if [ "$c" = "py" ]; then
+        if py -3 -c "import sys" >/dev/null 2>&1; then echo "py -3"; return 0; fi
+      else
+        if "$c" -c "import sys" >/dev/null 2>&1; then echo "$c"; return 0; fi
+      fi
+    fi
+  done
+  return 1
+}
+
+PY="$(__find_python)" || { echo "[gate] 找不到 Python 3；跳过发布门禁" >&2; exit 0; }
+export PYTHONIOENCODING=utf-8
+
+echo "[gate] 发布门禁：全部 Gate ..."
+if ! $PY tools/gates.py --gate all; then
+  cat >&2 <<'MSG'
+
+────────────────────────────────────────────────────────────
+[gate] 发布门禁未通过，push 被拒绝。
+
+Gate 1 / Gate 2 中标记为 [TODO] 的是尚未实现的检查——
+它们不阻塞，但会在输出中可见。真正阻塞的是 [FAIL]。
+
+若某项 [FAIL] 源于「前提未满足」（如方法卡还没写），
+可临时绕过： git push --no-verify
+但绕过前请确认你知道自己在绕什么。
+────────────────────────────────────────────────────────────
+MSG
+  exit 1
+fi
+echo "[gate] 发布门禁通过"

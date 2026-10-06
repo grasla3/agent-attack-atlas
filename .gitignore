@@ -1,0 +1,48 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── 运行产物（D1：文件为真相源，但不入库）──
+runs/
+*.log
+logs/
+
+targets/private/
+calibration/
+*.enc.json
+
+# ── 出版商的论文 PDF（**不得随开源仓库分发**；本地留档可以，但不入库）──
+*.pdf
+!docs/**/*.pdf
+
+*_key.txt
+*_secret*
+*.pem
+*.key
+.env
+.env.*
+
+# ── 门禁生成物（由快照 tag 保存，不入库以免 churn）──
+gate-manifest.json
+gate-report.json
+
+# ── 归档 ──
+_archive/
+
+# ── 系统 ──
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 检索会话的临时脚本（下划线前缀）；正式产物是 *.json / *.md
+
+# 全文抽取的原文（可复现但不入库；门禁 secrets 会命中论文里的测试 IP）
+# ── 论文摘要/题录缓存（可复现、不随开源仓库分发；与 .pdfcache 同规）──
+
+tools/_commit_with_msg.py

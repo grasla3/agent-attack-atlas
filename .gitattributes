@@ -1,0 +1,20 @@
+# C2（逐位可复算）要求行尾一致：全部文本文件强制 LF。
+# 不加这条，Windows 的 CRLF 会让文件哈希在不同机器上不同。
+* text=auto eol=lf
+
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.ico  binary
+
+*.svg  text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml  text eol=lf
+*.md   text eol=lf
+*.py   text eol=lf
+
+# 门禁产物按内容比对，不做行尾归一
+gate-report.json -text

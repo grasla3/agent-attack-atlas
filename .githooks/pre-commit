@@ -1,0 +1,44 @@
+#!/bin/sh
+# Git 质量阀门 · 入库门禁（快，只跑 Gate 0）
+set -e
+cd "$(git rev-parse --show-toplevel)"
+
+__find_python() {
+  for c in python python3 py; do
+    if command -v "$c" >/dev/null 2>&1; then
+      if [ "$c" = "py" ]; then
+        if py -3 -c "import sys" >/dev/null 2>&1; then echo "py -3"; return 0; fi
+      else
+        if "$c" -c "import sys" >/dev/null 2>&1; then echo "$c"; return 0; fi
+      fi
+    fi
+  done
+  return 1
+}
+
+PY="$(__find_python)" || { echo "[gate] 找不到 Python 3；跳过门禁（提交未校验）" >&2; exit 0; }
+
+export PYTHONIOENCODING=utf-8
+echo "[gate] Gate 0 入库检查 ..."
+if ! $PY tools/gates.py --gate 0; then
+  cat >&2 <<'MSG'
+
+────────────────────────────────────────────────────────────
+[gate] Gate 0 未通过，提交被拒绝。
+
+怎么处理：
+  · 看上面的 ERROR 行，按 file:line 定位
+  · 只想知道哪一项挂了： python tools/gates.py --list
+  · 只想跑某一项：     python tools/gates.py --check <name>
+  · 确实要绕过（仅限紧急）：
+        git commit --no-verify -m "..."
+    绕过会在提交信息里留下痕迹，事后应补跑。
+
+注意：门禁失败通常意味着真有东西写错了，不是工具在找麻烦。
+     本项目已两次因未做多轮检索的断言犯错，line_endings 那条
+     更是直接关系到「逐位可复算」——CRLF 会让哈希跨机器不同。
+────────────────────────────────────────────────────────────
+MSG
+  exit 1
+fi
+echo "[gate] Gate 0 通过"

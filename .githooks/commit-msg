@@ -1,0 +1,33 @@
+#!/bin/sh
+# 提交信息格式门禁（Conventional Commits 子集）
+# 允许格式： <type>(<scope>): <subject>   或   <type>: <subject>
+# 也允许：   Merge / Revert / fixup! / squash! 开头
+set -e
+MSG_FILE="$1"
+FIRST="$(head -n 1 "$MSG_FILE" | tr -d '\r')"
+
+case "$FIRST" in
+  Merge*|Revert*|fixup!*|squash!*) exit 0 ;;
+esac
+
+if echo "$FIRST" | grep -Eq '^(feat|fix|docs|spec|chore|refactor|test|gate|data|build|ci)(\([a-zA-Z0-9_./-]+\))?: .{4,}$'; then
+  exit 0
+fi
+
+cat >&2 <<'MSG'
+[gate] 提交信息格式不合规，提交被拒绝。
+
+要求：  <type>(<scope>): <subject>
+type ∈ feat | fix | docs | spec | chore | refactor | test | gate | data | build | ci
+
+示例：
+  feat(methods): 新增 T01 的 12 张方法卡
+  spec(scoring): 组合方式改为 CVSS 式加法
+  docs(category-taxonomy): 补 T02 的类定义
+  gate(tools): 负向断言扫描支持 HTML 注释豁免
+  data(bibliography): 收录 B-25..B-31
+
+为什么要管：本项目大量产物是规范与卡，
+提交信息是唯一能看出「这次改的是规范还是数据」的地方。
+MSG
+exit 1

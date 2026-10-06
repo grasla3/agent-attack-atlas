@@ -1,0 +1,17 @@
+# 参考靶标的依赖（与 requirements.txt 分开：那一份是"最小运行时"，这一份只在跑靶标时需要）
+# 依据：docs/README.md B2「参考目标引入 = pip 依赖 + pin 版本 + 哈希，不 vendor」
+#      docs/README.md D15（把实测结果纳入交付）+ docs/benchmark-matrix.md §7
+#
+# 安装：
+#   python -m pip install -r requirements-target.txt
+#
+# 已验证（2026-10-01，本机 Python 3.10.7）：
+#   安装版 workspace 工具清单与 targets/agentdojo-workspace.json **逐字一致**（24 个，一个不差）
+
+agentdojo==0.1.35 --hash=sha256:364bea4219716b716bf639f504d195943f7f6a5535d312ca41d7098704a2affd
+
+# ⚠️ 已知缺口（登记在案，不隐藏）：
+#   agentdojo 会拉进大量传递依赖（langchain / openai / anthropic / google-genai / pydantic …），
+#   本文件**只 pin 了顶层包**。完整可复现需要把传递依赖也逐条 hash-pin
+#   （标准做法：pip-compile --generate-hashes）。在此之前，"跑出来的数字逐位可复算"
+#   这条要求对本靶标**尚未满足**，报告里必须如实标注。
