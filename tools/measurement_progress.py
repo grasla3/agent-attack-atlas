@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""攻击脚本实测进度：逐类 × 五级口径。全部从 runs/ 真实批次重建。"""
+"""攻击脚本实测进度：逐类 × 五级口径。从批次汇总重建（随包 `results/batches/` 优先）。"""
 import io, sys, os, glob, re, json, collections
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 ROOT = os.getcwd(); sys.path.insert(0, ROOT)
@@ -9,6 +9,12 @@ cards = collections.defaultdict(list)
 for p in glob.glob("methods/T0*/cards/*.yaml"):
     cls = os.path.basename(os.path.dirname(os.path.dirname(p)))
     cards[cls].append(os.path.splitext(os.path.basename(p))[0])
+
+def _summaries():
+    """批次汇总的来源：随包的 `results/batches/` 优先，本地运行目录 `runs/` 兜底。"""
+    got = sorted(glob.glob("results/batches/*.summary.json"))
+    return got or sorted(glob.glob("runs/*/summary.json"))
+
 
 def ck(cls, stem):
     s = stem.replace(".", "_")
@@ -23,7 +29,7 @@ for cls, ss in cards.items():
 
 seen, determ, pos = set(), collections.defaultdict(set), collections.defaultdict(set)
 nadv = {}
-for sj in glob.glob("runs/*/summary.json"):
+for sj in _summaries():
     try: s = json.load(open(sj, encoding="utf-8"))
     except Exception: continue
     for c in (s.get("detail") or []):
@@ -72,7 +78,7 @@ for case in sorted(cards):
 print("=" * 72)
 print("攻击脚本实测进度（逐类）")
 print("=" * 72)
-print("%-5s %5s %8s %9s %10s %11s %9s" % ("类", "卡数", "可跑", "真跑过", "有确定判定", "Adv̂>0(卡)", "Adv̂>0(格)"))
+print("%-5s %5s %8s %9s %10s %11s" % ("类", "卡数", "可跑", "真跑过", "有确定判定", "Adv̂>0(卡)"))
 print("-" * 72)
 T = collections.Counter()
 for case in sorted(cards):
@@ -101,7 +107,7 @@ print("⚠️ 本节**未按键去重**：同一格在多个批次里出现过�
 print("   故其 Adv̂>0 的**计数不可直接引用**；要口径干净的逐格数请用")
 print("   `report/per-class-measured-coverage.md`（那份每格取最新一次）。")
 rows = []
-for sj in glob.glob("runs/*/summary.json"):
+for sj in _summaries():
     try: ss = json.load(open(sj, encoding="utf-8"))
     except Exception: continue
     for c in (ss.get("detail") or []):
