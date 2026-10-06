@@ -7,7 +7,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 L = json.load(open(os.path.join(ROOT, 'report', 'script-usability-ledger.json'), encoding='utf-8'))
 M = json.load(open(os.path.join(ROOT, 'report', 'per-class-measured-coverage.json'), encoding='utf-8'))
 rows = L['rows']
-TITLE = {'T01': '记忆与知识污染', 'T02': '审计与日志破坏', 'T03': '权限与授权提升',
+TITLE = {'T01': '记忆与知识污染', 'T02': '审计轨迹破坏', 'T03': '权限与授权提升',
          'T04': '物理/具身动作', 'T05': '工具与技能投毒', 'T06': '提示词与系统信息外泄',
          'T07': '资源与成本耗尽', 'T08': '敏感数据外泄'}
 CASES = sorted(TITLE)

@@ -11,7 +11,7 @@ import yaml
 import importlib
 from harness.adapter_mcp_local import McpLocalTarget
 
-TITLE = {'T01': '记忆与知识污染', 'T02': '审计与日志破坏', 'T03': '权限与授权提升',
+TITLE = {'T01': '记忆与知识污染', 'T02': '审计轨迹破坏', 'T03': '权限与授权提升',
          'T04': '物理/具身动作', 'T05': '工具与技能投毒', 'T06': '提示词与系统信息外泄',
          'T07': '资源与成本耗尽', 'T08': '敏感数据外泄'}
 CASES = sorted(TITLE)

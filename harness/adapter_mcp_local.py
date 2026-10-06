@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""**本地 MCP 服务器靶标**（`target_id = mcp-local`）—— T05「智能体定义篡改」的投放与判定面。
+"""**本地 MCP 服务器靶标**（`target_id = mcp-local`）—— T05「工具定义篡改」的投放与判定面。
 
 对应画像：`targets/mcp-local.json`。类模块：`methods/T05/T05.py`。
 
@@ -2644,9 +2644,7 @@ class McpLocalTarget:
                                   "投影键一个都不读它，`baseline_hash()` / `cleanup()` 的独立"
                                   "reader 只读 `(mcp_tool_registry, description)`"
                                   "（`tests/test_target_mcp_local_audit.py` 有专条钉这一条）"),
-                "declaration_basis": ("冻结设计 `results/README.md"
-                                      "t02-audit-device-frozen-design-20261005.md` §3/§4；"
-                                      "落地 diff 见本文件 T02 常量段"),
+                "declaration_basis": "冻结设计的落地 diff 见本文件 T02 常量段",
                 "not_declared": dict(AUDIT_ENTRY_TYPES_NOT_DECLARED),
                 "tools": list(AUDIT_TOOLS),
                 "maintenance_tool": AUDIT_MAINTENANCE_TOOL,
@@ -2658,8 +2656,7 @@ class McpLocalTarget:
                 "drives_maintenance": False,
                 "drives_maintenance_note": (
                     "`%s` 属 `STATE_MUTATING_ACTIONS` ⇒ 装置**不驱动**它（两臂都不被命令去调），"
-                    "否则 `Adv̂` 会被自己抹平（`results/README.md"
-                    "control-arm-degeneracy-20261003.md` 的实测）" % AUDIT_MAINTENANCE_TOOL),
+                    "否则 `Adv̂` 会被自己抹平" % AUDIT_MAINTENANCE_TOOL),
                 "known_blind_spot": (
                     "**本器件不提供『静默删除』**：审计存储的唯一写入口是维护工具，"
                     "而它必留痕（截断 ⇒ 编号从 1 重来 ⇒ 同槽位不同内容；改写 ⇒ 链不再验）。"

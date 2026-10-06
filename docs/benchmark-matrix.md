@@ -14,7 +14,7 @@
 
 ## 0. 一句话结论
 
-> **八类里 6 类有可用候选，T02（审计与日志破坏）与 T07（可用性与资源耗尽）本次未取得专用靶场。**
+> **八类里 6 类有可用候选，T02（审计轨迹破坏）与 T07（服务可用性耗尽）本次未取得专用靶场。**
 > 但"没有专用靶场"不等于"不能测"——见 §3 的换判据方案。
 
 **AgentDojo 优先是对的**，但要清楚它的覆盖边界：**它只能挂 T06 与 T08**，
@@ -29,27 +29,27 @@
 
 | 类 | 终点资产 | 候选靶场 | 入口匹配 | 来源 | 状态 |
 |---|---|---|---|---|---|
-| **T01** 知识库与记忆投毒 | KB / 长期记忆 | **Trojan Hippo Bench**（AISec '26，持久记忆攻击与防御） | ✅ 记忆写入面 | 仓库 `docs/domain-and-literature.md` B-T08-06 | 可试 |
+| **T01** 知识库与长期记忆投毒 | KB / 长期记忆 | **Trojan Hippo Bench**（AISec '26，持久记忆攻击与防御） | ✅ 记忆写入面 | 仓库 `docs/domain-and-literature.md` B-T08-06 | 可试 |
 | | | **AgentShield Bench v2**（Memory Security / Persistent Jailbreak / Cross-Session） | ✅ 记忆面 | 检索 | `[待核]` |
 | | | KDD'26 RAG 知识抽取基准 | ⚠️ 终点偏"抽取" | 仓库 `docs/domain-and-literature.md` B-T08-10 | 可作辅 |
 | | | PoisonedRAG / TrustRAG 自带 RAG 语料设置 | ✅ 检索语料 | 仓库 `docs/domain-and-literature.md` / T01 卡 | 可试 |
-| **T02** 审计与日志破坏 | 审计记录 / 可追溯性 | **EvasionBench**（50 题，监控规避） | ⚠️ 是"规避检测"不是"破坏记录" | 仓库 `docs/domain-and-literature.md` B-428 | 部分 |
+| **T02** 审计轨迹破坏 | 审计记录 / 可追溯性 | **EvasionBench**（50 题，监控规避） | ⚠️ 是"规避检测"不是"破坏记录" | 仓库 `docs/domain-and-literature.md` B-428 | 部分 |
 | | | NovaFabric（`2609.12582`，tamper-evident 可重放证据） | —— **是机制/框架，不是靶场** | 检索 | 作判据参照 |
 | | | Tamper-Evident ≠ Trustworthy（Zenodo，代理行为归因） | —— **同上** | 检索 | 作判据参照 |
-| **T03** 身份与权限提升 | 身份 / 权限 | **HALLPERM**（AAAI-SS，隐式权限提升与语义风险） | ✅ 权限面 | 检索 | `[待核]` |
+| **T03** 权限提升 | 身份 / 权限 | **HALLPERM**（AAAI-SS，隐式权限提升与语义风险） | ✅ 权限面 | 检索 | `[待核]` |
 | | | **PrivEscalate**（`2609.09087`，Linux 提权测量） | ⚠️ 偏向 OS 层 | 仓库 `docs/domain-and-literature.md` | 可试 |
 | | | HPC LLM-Agent Security（`2607.18485`） | ⚠️ 场景专用 | 仓库 `docs/domain-and-literature.md` | 可试 |
-| **T04** 控制执行链诱导 | 控制 / 执行动作 | **SENTINEL-Physical-Safety-Benchmark** | ✅ 物理安全面 | 检索 | `[待核]` |
+| **T04** 控制面动作劫持 | 控制 / 执行动作 | **SENTINEL-Physical-Safety-Benchmark** | ✅ 物理安全面 | 检索 | `[待核]` |
 | | | **PLCBench**（HIL 台架） | ✅ ICS/OT 控制面 | 仓库 本项目取证记录 | 可试 |
 | | | **RoboJailBench**（`2605.19328`） | ✅ 具身面 | 仓库 `docs/domain-and-literature.md` | 可作靶场 |
 | | | SafeAgentBench（`2412.13178`） | ⚠️ **无攻击者**，只能当靶场 | 仓库 `docs/domain-and-literature.md` | 作靶场 |
-| **T05** 智能体定义篡改 | 工具描述 / 定义 | **MCPTox**（AAAI 2026，`2508.14925`，真实 MCP 服务器） | ✅ **直接对口** | 仓库 `docs/domain-and-literature.md` B-96 | **首选** |
+| **T05** 工具定义篡改 | 工具描述 / 定义 | **MCPTox**（AAAI 2026，`2508.14925`，真实 MCP 服务器） | ✅ **直接对口** | 仓库 `docs/domain-and-literature.md` B-96 | **首选** |
 | | | MCP Security Bench（`2510.15994`） | ✅ 工具面 | 仓库 `docs/domain-and-literature.md` | 可试 |
-| **T06** 智能体定义提取 | 系统提示 / 工具 schema | **AgentDojo** | ✅ **已论证** | `docs/benchmark-matrix.md` | **首选** |
-| **T07** 可用性与资源耗尽 | 服务可用性 | BUDGETBENCH（`2609.13149`，预算分层） | ⚠️ 观测的是"预算/成本"，不是"可用性" | 检索 | `[待核]` |
+| **T06** 系统提示与工具定义提取 | 系统提示 / 工具 schema | **AgentDojo** | ✅ **已论证** | `docs/benchmark-matrix.md` | **首选** |
+| **T07** 服务可用性耗尽 | 服务可用性 | BUDGETBENCH（`2609.13149`，预算分层） | ⚠️ 观测的是"预算/成本"，不是"可用性" | 检索 | `[待核]` |
 | | | ballast（budget-aware runtime + cost/quality benchmark） | ⚠️ 同上 | 检索 | `[待核]` |
 | | | LivePI（`2605.17986`，VPS 上真实部署 OpenClaw） | ⚠️ 是 IPI 靶场，但**有真实部署环境** | 检索 | 可借环境 |
-| **T08** 敏感业务数据提取 | 敏感业务数据 | **AgentDojo**（workspace/travel/banking） | ✅ **已论证** | `docs/benchmark-matrix.md` | **首选** |
+| **T08** 业务数据外泄 | 敏感业务数据 | **AgentDojo**（workspace/travel/banking） | ✅ **已论证** | `docs/benchmark-matrix.md` | **首选** |
 | | | **InjecAgent**（data stealing 臂） | ✅ 数据窃取 | 仓库 `docs/domain-and-literature.md` B-159 | 首选 |
 | | | LivePI（`2605.17986`） | ✅ 更真实 | 检索 | `[待核]` |
 | | | ReadSecBench（`2603.11862`） | ✅ README 内嵌指令致私有数据外泄（85%） | 仓库 `docs/domain-and-literature.md` | 可试 |
@@ -158,7 +158,7 @@ agent audit log tampering benchmark · agent denial of service resource exhausti
 
 ---
 
-## 8. T06（智能体定义提取 / 提示词泄漏）专项：**指标有，靶场没有**（2026-10-01 补查）
+## 8. T06（系统提示与工具定义提取 / 提示词泄漏）专项：**指标有，靶场没有**（2026-10-01 补查）
 
 ### 8.1 分类归属（三个独立来源，互相印证）
 
@@ -166,7 +166,7 @@ agent audit log tampering benchmark · agent denial of service resource exhausti
 |---|---|
 | **OWASP** | LLM Top 10 2025 的 **LLM07 System Prompt Leakage**；测试程序见 OWASP AI Testing Guide **AITG-APP-07 Testing for Prompt Disclosure** |
 | **IETF** | `draft-han-bmwg-agent-security-benchmark-00` §5.1.4 **Model Reverse Engineering and Extraction Defense** —— 原文：*"resist bulk API calls, membership inference, and interactive enticement aimed at stealing system prompts, training data, and model structures"* |
-| **本项目** | **T06 智能体定义提取**（终点资产 = 系统提示 / 工具 schema，仅读；`impact_class` = C 泄露） |
+| **本项目** | **T06 系统提示与工具定义提取**（终点资产 = 系统提示 / 工具 schema，仅读；`impact_class` = C 泄露） |
 
 ⇒ **分类明确，且有标准化-track 的落点。** 本子的分类学可以对上。
 

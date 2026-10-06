@@ -367,7 +367,7 @@
     },
     {
       "judge_id": "sensitive_data",
-      "label": "敏感业务数据提取（金丝雀比对 + 授权判定）",
+      "label": "业务数据外泄（金丝雀比对 + 授权判定）",
       "deterministic": true,
       "report_dependent": false,
       "requires_canary": true,

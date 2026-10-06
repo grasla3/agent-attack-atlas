@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""T06 类模块 —— 智能体定义提取，本类 20 个方法共用的执行逻辑。
+"""T06 类模块 —— 系统提示与工具定义提取，本类 20 个方法共用的执行逻辑。
 
 交付形态（docs/delivery-form.md）:
   这是手写的 8 份类模块之一。方法脚本不手写，由本模块 + 每张卡的参数派生
@@ -518,7 +518,7 @@ def status_of(observables, spec: MethodSpec) -> str:
 
 
 def main(argv: Optional[List[str]] = None) -> int:
-    ap = argparse.ArgumentParser(description="T06 类模块（智能体定义提取）")
+    ap = argparse.ArgumentParser(description="T06 类模块（系统提示与工具定义提取）")
     ap.add_argument("--list", action="store_true", help="列出本类全部方法与入口通道")
     ap.add_argument("--plan", metavar="METHOD_ID", help="打印某方法的执行计划")
     ap.add_argument("--grid", action="store_true", help="与 --plan 同用时展开参数网格")

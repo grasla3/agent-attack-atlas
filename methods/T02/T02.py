@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""T02 类模块 —— 审计与日志破坏，本类 17 个方法共用的执行逻辑。
+"""T02 类模块 —— 审计轨迹破坏，本类 17 个方法共用的执行逻辑。
 
 交付形态（docs/delivery-form.md）:
   这是手写的 8 份类模块之一（本份为草案，八类共同提完后冻结）。
@@ -1038,7 +1038,7 @@ def _all_cards() -> List[Dict[str, Any]]:
 
 
 def main(argv: Optional[List[str]] = None) -> int:
-    ap = argparse.ArgumentParser(description="T02 类模块：审计与日志破坏")
+    ap = argparse.ArgumentParser(description="T02 类模块：审计轨迹破坏")
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("list", help="列出本类全部方法与投放入口")
     p2 = sub.add_parser("plan", help="输出某方法的执行计划（不执行）")

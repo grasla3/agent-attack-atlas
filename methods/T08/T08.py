@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""T08 类模块 —— 敏感业务数据提取，本类 16 个方法共用的执行逻辑。
+"""T08 类模块 —— 业务数据外泄，本类 16 个方法共用的执行逻辑。
 
 交付形态（docs/delivery-form.md）:
   这是手写的 8 份类模块之一。方法脚本不手写，由本模块 + 每张卡的参数派生
@@ -953,7 +953,7 @@ def _all_cards() -> List[Dict[str, Any]]:
 
 
 def main(argv: Optional[List[str]] = None) -> int:
-    ap = argparse.ArgumentParser(description="T08 类模块：敏感业务数据提取")
+    ap = argparse.ArgumentParser(description="T08 类模块：业务数据外泄")
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("list", help="列出本类全部方法与投放通道")
     p2 = sub.add_parser("plan", help="输出某方法的执行计划（不执行）")
