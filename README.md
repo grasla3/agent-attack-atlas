@@ -9,7 +9,7 @@
   并声明注入通道、前提条件、触发条件与可观测后果。
 - **测量框架** —— 配对对照设计。同一方法在对抗载荷臂与良性对照臂下各跑 n 次，两臂共用代码路径、
   任务与靶标，唯一变量是载荷；效应量取 `Adv̂ = v_adv − v_ctrl`。
-- **先验评分** —— 不依赖运行即覆盖全部方法的先验分；实测结果用于检验先验排序，两者可逐分量对账。
+- **先验评分** —— 不依赖运行即覆盖全部方法的先验分，用于相对排序、选样指导与覆盖率。
 
 方法本身来自公开文献，本项目不发明攻击方法，做的是分类、判据与测量。
 
@@ -90,7 +90,41 @@ against an MCP server and AgentDojo's public suites.*
 完整机读台账见 `results/RESULTS.json`：109 项 `Adv̂ > 0` 的读数，来自 35 个批次，
 逐项记录批次编号、靶标指纹、样本量与模型端点；读取方式见 `results/README.md`。
 
-## 五、判据与可信度
+## 五、先验分
+
+先验分给的是**方法卡本身**的分：不需要任何一次实跑，186 张方法卡全部有分。
+它用于方法库的相对排序、选样指导与覆盖率统计。
+
+```
+Prior_SR(m, t) = min( Prior_I(m, t) + Prior_EXP(m, t) × k , 10 )
+Prior_EXP      = 10 × ( 0.3636·rounds + 0.3636·bypass_ease + 0.2727·pre )
+```
+
+| 分量 | 权重 | 取值来源 |
+|---|---|---|
+| `Prior_I` 后果先验 | —— | L0–L6 严重度分级与物理后果轴（分级 rubric 见 `docs/scoring-framework-summary.md`） |
+| `rounds` 交互轮次 | 0.3636 | 方法卡声明的 `turns` |
+| `bypass_ease` 绕过难易 | 0.3636 | 机制推演（`spec/prior.md` §4.1） |
+| `pre` 前置权限 | 0.2727 | 方法卡声明的 `preconditions` |
+
+缩放系数 `k = 0.4`；权重与 `k` 冻结在 `score/prior_tables.json`，带自校验摘要。
+
+**输出是区间，不是点值**：按均匀分布做 2000 次抽样（固定种子，stdlib `random.Random`），
+可逐位复现。
+
+**它给出什么**：相对排序 · 选样指导 · 覆盖率。
+**它不给出什么**：强度预测；也没有 `Critical`/`High`/`Medium`/`Low` 档位。当前权重为
+初始设定，未做标定。
+
+**产物**
+
+| 文件 | 内容 |
+|---|---|
+| `score/prior_tables.json` | 权重、区间参数与缩放系数（冻结，改动即被测试与提交闸门发现） |
+| `report/prior-three-column-v1.json` | 三列台账：口径 A（方法内在，186 张卡）· 口径 B（按靶标，54 张至少在 1 个靶标上可评）· 逐类分布 |
+| `score/prior_measured.json` | 实测通道台账（85 张方法有实测数据），与先验分分列 |
+
+## 六、判据与可信度
 
 判据（judge）不是打分器，是确定性断言。整体取向是：**观测不足时降级为 `inconclusive`，
 而不是给出一个好看的数字。**
@@ -105,7 +139,7 @@ against an MCP server and AgentDojo's public suites.*
 离线复算是一条命令：`python tools/rescore.py --all`——用随包证据重算全部格级读数，
 不需要模型凭据。实测 155 个格级单元中 143 个逐条复现，未覆盖项见 `results/README.md`。
 
-## 六、仓库结构
+## 七、仓库结构
 
 ```
 methods/   8 个类别的方法定义（YAML）+ 类模块 + 由定义派生的脚本
@@ -121,7 +155,7 @@ tools/     质量门禁、批次驱动（run_batch.py）、离线复算（rescor
 tests/     1602 条单元测试
 ```
 
-## 七、快速开始
+## 八、快速开始
 
 ```powershell
 pip install -r requirements.txt
@@ -161,19 +195,19 @@ python tools\rescore.py --batch batch-52ab975ca245   # 只复算一个批次
 
 以 T03 那一行为例，复算输出 `pass`、`Adv̂ = +0.600`，与证据自述逐条一致。
 
-## 八、适用范围
+## 九、适用范围
 
 本仓库发布方法原理、判据与自带靶标，不发布针对真实目标的成品载荷。
 靶标是可插拔接口，自有资产可经同一接口接入为私有实例。
 
 这些方法仅允许在你拥有或已获授权的目标上运行。安全与披露渠道见 `SECURITY.md`。
 
-## 九、许可与出处
+## 十、许可与出处
 
 MIT，见 `LICENSE`；版本变更见 `CHANGELOG.md`。方法出处登记在方法定义的 `provenance_components.mechanism.source`
 字段（论文、图号、表号、章节），逐类文献表见 docs/domain-and-literature.md。
 判据与评分借用的已发表工作，见 `docs/borrowed-works-explained.md`。
 
-## 十、下一步
+## 十一、下一步
 
 尚未覆盖的部分与后续工作见 [`ROADMAP.md`](ROADMAP.md)。
