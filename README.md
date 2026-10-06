@@ -76,8 +76,9 @@ against an MCP server and AgentDojo's public suites.*
 
 靶标是可插拔接口，仓库内自带两个：
 
-- **mcp-local** —— 自建 MCP 服务器，31 个工具，含授权网关（PEP）、知识库与权威真值目录、
-  链式哈希审计存储、具身控制面。它刻意保留可指认的弱点，否则攻击无从落地。
+- **mcp-local** —— 形态依 MCPTox（AAAI 2026）与 Kim et al.（USENIX Security 2026 SoK）Table 1
+  搭成的自建 MCP 服务器（JSON-RPC 2.0 over stdio），31 个工具，含授权网关（PEP）、知识库与权威
+  真值目录、链式哈希审计存储、具身控制面；弱点据其留出，否则攻击无从落地。
 - **AgentDojo** —— 公开基准的 workspace / banking / travel 三个套件，版本已固定。
   用于检验方法在第三方定义的目标上是否同样成立。
 
