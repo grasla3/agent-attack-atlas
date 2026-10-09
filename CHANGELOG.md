@@ -53,7 +53,7 @@
 
 | 检查 | 结果 |
 |---|---|
-| 单元测试 | **1602 项全绿**（`python -m unittest discover -s tests`） |
+| 单元测试 | **1607 项通过**（`python -m unittest discover -s tests`，其中 2 项按环境跳过） |
 | 提交前检查 | `python tools/gates.py --gate 0`：**10 项通过 / 0 失败 / 1 跳过** |
 
 跳过项 `dod_count` 需要内部需求文档对账，该文档不在本仓库发布范围内。

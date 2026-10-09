@@ -5,7 +5,7 @@
 ```powershell
 pip install -r requirements.txt
 python tools\cardcheck.py              # 校验 methods/ 下的全部方法卡（47 条规则）
-python -m unittest discover -s tests   # 1602 条单元测试
+python -m unittest discover -s tests   # 1607 条单元测试（2 项按环境跳过）
 python tools\gates.py --gate 0         # 10 项提交前检查
 ```
 

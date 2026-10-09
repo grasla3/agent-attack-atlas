@@ -226,7 +226,11 @@ def check_negative_assertions() -> CheckResult:
 
 
 SECRET_PATTERNS = [
-    (re.compile(r"sk-[A-Za-z0-9_\-]{20,}"), "OpenAI 风格 API key"),
+    # 实测假阳性（2026-10-06）：检索档案里他人仓库的路径片段
+    # `docs/studies/task-conditioned-least-privilege-head-to-head.md` 含子串 `sk-`，
+    # 在无左边界时被报成 key。加左边界后 `sk-` 须自成词首；真 key 总以引号 / 空白 /
+    # 行首 / `=` 分隔，故检出不受影响。
+    (re.compile(r"(?<![A-Za-z0-9_\-])sk-[A-Za-z0-9][A-Za-z0-9_\-]{19,}"), "OpenAI 风格 API key"),
     (re.compile(r"AKIA[0-9A-Z]{16}"), "AWS Access Key ID"),
     (re.compile(r"-----BEGIN (RSA |EC |OPENSSH |DSA )?PRIVATE KEY-----"), "私钥正文"),
     (re.compile(r"(?i)\b(api[_-]?key|secret[_-]?key|session[_-]?secret|access[_-]?token|password|passwd)\b\s*[:=]\s*[\"'][^\"'\s]{12,}[\"']"), "硬编码凭据"),

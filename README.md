@@ -162,7 +162,7 @@ report/    先验评分与覆盖率的产出
 results/   实测台账 + 批次元数据 + 逐试验证据
 docs/      设计与规范、文献综述与文献出处
 tools/     质量门禁、批次驱动（run_batch.py）、离线复算（rescore.py）与台账脚本
-tests/     1602 条单元测试
+tests/     1607 条单元测试
 ```
 
 ## 八、快速开始
@@ -171,7 +171,7 @@ tests/     1602 条单元测试
 pip install -r requirements.txt
 
 python tools\cardcheck.py              # 校验 methods/ 下的全部方法卡（47 条规则）
-python -m unittest discover -s tests   # 1602 条单元测试
+python -m unittest discover -s tests   # 1607 条单元测试（2 项按环境跳过）
 python tools\gates.py --gate 0         # 10 项提交前检查
 ```
 
