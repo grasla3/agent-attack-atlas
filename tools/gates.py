@@ -511,6 +511,15 @@ def _appendix_a_start(text: str) -> int:
 
 
 # ───────────────────────── Gate 1 / 2（占位） ─────────────────────────
+# schema 计数引用模式：独立成常量，以便把判据本身钉进回归测试。
+# `(?!\d)` 是必需的：否则「46 条规则22 WARN」（意为「20 条『规则22』的 WARN」）会被误读成
+#   「本行声明了 46 条规则」。实测被 T06 的上报文档撞出过这个假阳性。
+# `(?<![\d.])` 同样是必需的：否则小节标题「### 4.2 属性分布图」里的「2 属性」会被误读成
+#   「本行声明了 2 个属性」（schema 实为 37）。实测被检索证据文档撞出过这个假阳性（2026-10-10）。
+# 左边界后，计数必须自成词首：小节号（点号或数字之后）不再计入。
+SCHEMA_COUNT_PAT = re.compile(
+    r"(?<![\d.])(\d+)\s*(个?必填|个?属性|条\s*`?x-validation-rules`?|条\s*校验规则|条规则)(?!\d)")
+
 
 def check_card_contract_sync() -> CheckResult:
     """设计文档 ↔ schema 的字段对账。
@@ -608,9 +617,7 @@ def check_card_contract_sync() -> CheckResult:
         want = {"必填": len(S["required"]), "属性": len(S["properties"]),
                 "规则": len(S["x-validation-rules"]), "校验规则": len(S["x-validation-rules"]),
                 "x-validation-rules": len(S["x-validation-rules"])}
-        # `(?!\d)` 是必需的：否则「46 条规则22 WARN」（意为「20 条『规则22』的 WARN」）
-        # 会被误读成「本行声明了 47 条规则」。实测被 T06 的上报文档撞出过这个假阳性。
-        pat = re.compile(r"(\d+)\s*(个?必填|个?属性|条\s*`?x-validation-rules`?|条\s*校验规则|条规则)(?!\d)")
+        pat = SCHEMA_COUNT_PAT
         scanned = 0
         for p in list(ROOT.glob("*.md")) + list((ROOT / "docs").glob("*.md")) + \
                  list((ROOT / "项目说明").glob("*.md")) + list((ROOT / "spec").glob("*.md")):
