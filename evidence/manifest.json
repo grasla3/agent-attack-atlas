@@ -1,0 +1,370 @@
+{
+  "schema": "search-evidence-manifest-v1",
+  "package": "agent-attack-atlas / evidence",
+  "note": "本清单由 tools/verify_evidence.py 在 CI 中重算比对；哈希不一致即失败。",
+  "files": [
+    {
+      "file": "raw/prior-art-toolkits-r1-name.json",
+      "kind": "literature",
+      "source": "Crossref · DBLP · arXiv · OpenAIRE · Europe PMC · OpenAlex",
+      "label": "按名称",
+      "bytes": 33616,
+      "sha256": "bd266a28fd8dd1e38c684384341b755ac4d40d02268b935f8bf0af902a5fe192",
+      "round": 1,
+      "run_time": "2026-10-09T16:24:28",
+      "queries": [
+        "garak LLM vulnerability scanner",
+        "PyRIT Python Risk Identification Tool generative AI",
+        "promptfoo LLM red teaming evaluation",
+        "DeepTeam red teaming framework large language models",
+        "Agent Security Bench attacks defenses LLM-based agents"
+      ],
+      "query_count": 5,
+      "deduped_hits": 47,
+      "sources_failed": {
+        "openaire": {
+          "alive": true,
+          "errors": [
+            "openaire:Agent Security Bench TimeoutError",
+            "openaire:Agent Security TimeoutError",
+            "openaire:Agent Security TimeoutError",
+            "openaire:Agent Security TimeoutError"
+          ]
+        }
+      }
+    },
+    {
+      "file": "raw/prior-art-toolkits-r2-capability.json",
+      "kind": "literature",
+      "source": "Crossref · DBLP · arXiv · OpenAIRE · Europe PMC · OpenAlex",
+      "label": "按能力",
+      "bytes": 48419,
+      "sha256": "1555a60599b6cdf61ebcc143fb3a648d51ec95e32fa81b6f6ff4222ef1516019",
+      "round": 2,
+      "run_time": "2026-10-09T16:47:05",
+      "queries": [
+        "open source library of prompt injection attacks for LLM agents",
+        "attack toolkit for tool-calling LLM agents",
+        "collection of adversarial attacks against LLM agents benchmark",
+        "agent security evaluation framework paired control arms"
+      ],
+      "query_count": 4,
+      "deduped_hits": 76,
+      "sources_failed": {
+        "openaire": {
+          "alive": true,
+          "errors": [
+            "openaire:agent security evalu TimeoutError",
+            "openaire:agent security TimeoutError",
+            "openaire:agent security TimeoutError",
+            "openaire:agent security TimeoutError"
+          ]
+        }
+      }
+    },
+    {
+      "file": "raw/prior-art-toolkits-r3-framing.json",
+      "kind": "literature",
+      "source": "Crossref · DBLP · arXiv · OpenAIRE · Europe PMC · OpenAlex",
+      "label": "换措辞",
+      "bytes": 26309,
+      "sha256": "f42187e086dd2ba126901c8265ae906ede65a01cc76611bf2c17f92af2685491",
+      "round": 3,
+      "run_time": "2026-10-09T18:16:11",
+      "queries": [
+        "attack method taxonomy for agentic AI systems",
+        "reproducible adversarial prompt library tool-calling agents",
+        "agent red teaming benchmark open source code"
+      ],
+      "query_count": 3,
+      "deduped_hits": 37,
+      "sources_failed": {}
+    },
+    {
+      "file": "raw/prior-art-toolkits-r4-asset.json",
+      "kind": "literature",
+      "source": "Crossref · DBLP · arXiv · OpenAIRE · Europe PMC · OpenAlex",
+      "label": "按后果终点",
+      "bytes": 74262,
+      "sha256": "bb5bb8846399266bb6a84eec1d788a57b477ca3f57ad70d76bac3cd19e733a3f",
+      "round": 4,
+      "run_time": "2026-10-09T18:16:42",
+      "queries": [
+        "memory poisoning attack LLM agent",
+        "audit log tampering LLM agent",
+        "tool metadata poisoning MCP server",
+        "data exfiltration tool calling LLM agent",
+        "resource exhaustion denial of service LLM agent"
+      ],
+      "query_count": 5,
+      "deduped_hits": 105,
+      "sources_failed": {
+        "openaire": {
+          "alive": true,
+          "errors": [
+            "openaire:audit log tampering  TimeoutError",
+            "openaire:audit log tampering  TimeoutError"
+          ]
+        }
+      }
+    },
+    {
+      "file": "raw/prior-art-toolkits-r5-methodology.json",
+      "kind": "literature",
+      "source": "Crossref · DBLP · arXiv · OpenAIRE · Europe PMC · OpenAlex",
+      "label": "按评测方法学",
+      "bytes": 30905,
+      "sha256": "bf6b6addf2ecb08f5f7ec5e8457b62765d43fd31e3f7fb1ddff651bbdd2a2ed7",
+      "round": 5,
+      "run_time": "2026-10-09T18:17:40",
+      "queries": [
+        "paired control evaluation attack success rate LLM agents",
+        "benchmark attack success rate tool-using LLM agents reproducibility",
+        "deterministic judge evaluation adversarial LLM agent",
+        "evidence bundle reproducible evaluation LLM security"
+      ],
+      "query_count": 4,
+      "deduped_hits": 45,
+      "sources_failed": {
+        "dblp": {
+          "alive": true,
+          "errors": [
+            "dblp:paired control evaluation at URLError"
+          ]
+        },
+        "openaire": {
+          "alive": true,
+          "errors": [
+            "openaire:audit log tampering  TimeoutError",
+            "openaire:audit log tampering  TimeoutError"
+          ]
+        }
+      }
+    },
+    {
+      "file": "raw/prior-art-github-sweep-20261006.json",
+      "kind": "repository-metadata",
+      "source": "GitHub repository search",
+      "label": "按星排序的 10 组取向",
+      "bytes": 13159,
+      "sha256": "fb43307003d37e1fb652f32f5fcc97f10c45d0581f1ab64869e1472e58a3c1f1",
+      "run_date": "2026-10-09",
+      "orientation_count": 10,
+      "orientations": [
+        {
+          "query": "agent security attack",
+          "source": null,
+          "hits": 967,
+          "represented": null
+        },
+        {
+          "query": "mcp attack poisoning",
+          "source": null,
+          "hits": 74,
+          "represented": null
+        },
+        {
+          "query": "prompt injection tool-calling agent",
+          "source": null,
+          "hits": 72,
+          "represented": null
+        },
+        {
+          "query": "topic:agent-security",
+          "source": null,
+          "hits": 1786,
+          "represented": null
+        },
+        {
+          "query": "awesome agent security",
+          "source": null,
+          "hits": 151,
+          "represented": null
+        },
+        {
+          "query": "agent red team benchmark",
+          "source": null,
+          "hits": 54,
+          "represented": null
+        },
+        {
+          "query": "topic:mcp-security",
+          "source": null,
+          "hits": 519,
+          "represented": null
+        },
+        {
+          "query": "topic:llm-security agent attack",
+          "source": null,
+          "hits": 224,
+          "represented": null
+        },
+        {
+          "query": "agent attack method library",
+          "source": null,
+          "hits": 2,
+          "represented": null
+        },
+        {
+          "query": "tool poisoning benchmark",
+          "source": null,
+          "hits": 18,
+          "represented": null
+        }
+      ]
+    },
+    {
+      "file": "raw/prior-art-sweep2-20261006.json",
+      "kind": "repository-metadata",
+      "source": "GitHub topics · PyPI · Gitee · HuggingFace",
+      "label": "topics 长尾与其它源",
+      "bytes": 11909,
+      "sha256": "3abfa97dad36a4f98d4a2cbef280761824780187915ed0d6a2cb305373fc7f00",
+      "run_date": "2026-10-06",
+      "orientation_count": 9,
+      "orientations": [
+        {
+          "query": "topic:prompt-injection",
+          "source": "github-topic",
+          "hits": 5086,
+          "represented": null
+        },
+        {
+          "query": "topic:llm-security",
+          "source": "github-topic",
+          "hits": 4280,
+          "represented": null
+        },
+        {
+          "query": "topic:adversarial-attacks",
+          "source": "github-topic",
+          "hits": 1251,
+          "represented": null
+        },
+        {
+          "query": "topic:agentic-security",
+          "source": "github-topic",
+          "hits": 82,
+          "represented": null
+        },
+        {
+          "query": "topic:ai-security-tool",
+          "source": "github-topic",
+          "hits": 144,
+          "represented": null
+        },
+        {
+          "query": "智能体攻击",
+          "source": "gitee",
+          "hits": null,
+          "represented": null
+        },
+        {
+          "query": "提示注入",
+          "source": "gitee",
+          "hits": null,
+          "represented": null
+        },
+        {
+          "query": "大模型安全评测",
+          "source": "gitee",
+          "hits": null,
+          "represented": null
+        },
+        {
+          "query": null,
+          "source": "pypi-simple-index",
+          "hits": null,
+          "represented": null
+        }
+      ]
+    },
+    {
+      "file": "raw/prior-art-sweep3-20261006.json",
+      "kind": "repository-metadata",
+      "source": "PyPI index · GitHub candidate check",
+      "label": "PyPI 收紧候选与逐仓库核实",
+      "bytes": 3087,
+      "sha256": "a52490f53a97a3710af0312ebf5cd415bfce3c8ba0c1861bc33489ddfad25e69",
+      "run_date": "2026-10-06",
+      "orientation_count": 0,
+      "orientations": [],
+      "pypi_refined_candidates": 58,
+      "verified_repos": [
+        "samvallad33/vestige",
+        "secureagentics/Adrian",
+        "elder-plinius/L1B3RT4S",
+        "Trusted-AI/adversarial-robustness-toolbox"
+      ]
+    },
+    {
+      "file": "raw/prior-art-codesearch-20261006.json",
+      "kind": "code-search",
+      "source": "GitHub code search (authenticated)",
+      "label": "8 个代码级检索式",
+      "bytes": 10563,
+      "sha256": "90331b5134242c7fce5943186616c30aac45b4c241b397e50c732d6829ec6792",
+      "run_date": "2026-10-06",
+      "orientation_count": 8,
+      "orientations": [
+        {
+          "query": "\"attack method library\"",
+          "source": null,
+          "hits": 6,
+          "represented": "Tencent/AI-Infra-Guard"
+        },
+        {
+          "query": "\"method cards\" attack agent",
+          "source": null,
+          "hits": 128,
+          "represented": "carbonphysicsai/Carbon"
+        },
+        {
+          "query": "\"attack catalog\" LLM",
+          "source": null,
+          "hits": 936,
+          "represented": "davepoon/buildwithclaude"
+        },
+        {
+          "query": "\"paired control arm\"",
+          "source": null,
+          "hits": 95,
+          "represented": "AgentEvalHQ/AgentEval"
+        },
+        {
+          "query": "\"benign control arm\" injection",
+          "source": null,
+          "hits": 26,
+          "represented": "QuantaMinds/QuantaMind"
+        },
+        {
+          "query": "\"attack methods\" \"tool-calling\"",
+          "source": null,
+          "hits": 255,
+          "represented": "Tencent/AI-Infra-Guard"
+        },
+        {
+          "query": "\"indirect prompt injection\" \"ground truth\" dataset",
+          "source": null,
+          "hits": 3224,
+          "represented": "Abraheem13/iobnt-agentjack"
+        },
+        {
+          "query": "\"literature\" \"attack methods\" agent benchmark",
+          "source": null,
+          "hits": 4536,
+          "represented": "CSQianDong/Awesome-arXiv-Daily-Reporter"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "literature_sources": 6,
+    "literature_rounds": 5,
+    "literature_queries": 21,
+    "repository_orientations": 27,
+    "code_search_queries": 8,
+    "run_window": "2026-10-06 至 2026-10-09（各文件 run_time / run_date 为准）",
+    "raw_files": 9
+  }
+}

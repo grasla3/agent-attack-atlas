@@ -1,0 +1,358 @@
+{
+  "date": "2026-10-06",
+  "kind": "github-code-search (authenticated)",
+  "orientations": [
+    {
+      "query": "\"attack method library\"",
+      "total": 6,
+      "items": [
+        {
+          "repo": "Tencent/AI-Infra-Guard",
+          "path": "frontend/public/aigdocs/docs/prompt-eval_openSource_en.md"
+        },
+        {
+          "repo": "Tencent/AI-Infra-Guard",
+          "path": "common/websocket/static/aigdocs/docs/prompt-eval_openSource_en.md"
+        },
+        {
+          "repo": "tools-only/X-Skills",
+          "path": "development/web/727-prompt-eval_opensource_en_dc5023d6/skill.md"
+        },
+        {
+          "repo": "Atindra11Mishra/tencent-red-agent",
+          "path": "common/websocket/static/aigdocs/docs/prompt-eval_en.md"
+        },
+        {
+          "repo": "Atindra11Mishra/tencent-red-agent",
+          "path": "common/websocket/static/aigdocs/docs/prompt-eval_openSource_en.md"
+        },
+        {
+          "repo": "lzy18001500226/MoSim",
+          "path": "References/Agent/Security/AI-Infra-Guard/common/websocket/static/aigdocs/docs/prompt-eval_openSource_en.md"
+        }
+      ]
+    },
+    {
+      "query": "\"method cards\" attack agent",
+      "total": 128,
+      "items": [
+        {
+          "repo": "carbonphysicsai/Carbon",
+          "path": ".agent/decisions/2026-10-04-GRAPHITE-ATTACKER-AT-D.md"
+        },
+        {
+          "repo": "carbonphysicsai/Carbon",
+          "path": "carbon/agent_campaign/attack/knowledge.py"
+        },
+        {
+          "repo": "carbonphysicsai/Carbon",
+          "path": "docs/development/GRAPHITE_TESTING_AGENT_PLAN.md"
+        },
+        {
+          "repo": "carbonphysicsai/Carbon",
+          "path": ".agent/tickets/GRAPHITE-01_in_house_testing_agent.md"
+        },
+        {
+          "repo": "suboss87/FDEOps",
+          "path": "CHANGELOG.md"
+        },
+        {
+          "repo": "JaredTambala/Trader",
+          "path": "docs/history/research_agents/agent_operating_model.md"
+        },
+        {
+          "repo": "pssah4/digital-innovation-agents",
+          "path": "docs/reference/methods-ideation.md"
+        },
+        {
+          "repo": "Rimagination/good-question",
+          "path": "README.md"
+        },
+        {
+          "repo": "samhvw8/dotfiles",
+          "path": "home/.ccp/hub/skills/debate/SKILL.md"
+        },
+        {
+          "repo": "pssah4/digital-innovation-agents",
+          "path": "skills/business-analysis/references/innovation-methods.md"
+        }
+      ]
+    },
+    {
+      "query": "\"attack catalog\" LLM",
+      "total": 936,
+      "items": [
+        {
+          "repo": "davepoon/buildwithclaude",
+          "path": "plugins/production-fast-api-template/README.md"
+        },
+        {
+          "repo": "icdev-ai/icdev",
+          "path": "tools/security/llm_red_team.py"
+        },
+        {
+          "repo": "icdev-ai/icdev",
+          "path": "icdev/tools/security/llm_red_team.py"
+        },
+        {
+          "repo": "Kevin-hDev/BMAD-HARDENED",
+          "path": "src/bmm/data/security/atk-llm-prompt-injection.md"
+        },
+        {
+          "repo": "icdev-ai/icdev",
+          "path": "args/llm_red_team_catalog.yaml"
+        },
+        {
+          "repo": "icdev-ai/icdev",
+          "path": "icdev/data/args/llm_red_team_catalog.yaml"
+        },
+        {
+          "repo": "Liorrr/mltk",
+          "path": "src/mltk/domains/llm/red_team/__init__.py"
+        },
+        {
+          "repo": "samugit83/redamon",
+          "path": "scanners/ai_attack_surface_scan/adapters/pyrit/objectives.py"
+        },
+        {
+          "repo": "Liorrr/mltk",
+          "path": "src/mltk/domains/llm/red_team/catalog.py"
+        },
+        {
+          "repo": "wallarm/product-documentation",
+          "path": "docs/6.x/llms.md"
+        }
+      ]
+    },
+    {
+      "query": "\"paired control arm\"",
+      "total": 95,
+      "items": [
+        {
+          "repo": "AgentEvalHQ/AgentEval",
+          "path": "docs/findings/README.md"
+        },
+        {
+          "repo": "AgentEvalHQ/AgentEval",
+          "path": "docs/findings/RUN_PROTOCOL.md"
+        },
+        {
+          "repo": "AgentEvalHQ/AgentEval",
+          "path": "docs/findings/SUITE_SUMMARY.md"
+        },
+        {
+          "repo": "joshuaswarren/omarchy-mlx",
+          "path": "receipts/2026-10-01-jw16-mesa-transfer-land.md"
+        },
+        {
+          "repo": "ostertagmatthieu-dev/saac-jepa",
+          "path": "docs/llms.txt"
+        },
+        {
+          "repo": "Ephemeral-AI-Lab/layerfs",
+          "path": "docs/roadmap/0.1/0.1.5/issue102/requalification-current-source-20260910.md"
+        },
+        {
+          "repo": "tpurtell/ds41rt",
+          "path": "docs/release-v10-tp3-official-1x-3spark.md"
+        },
+        {
+          "repo": "tpurtell/ds41rt",
+          "path": "scripts/qualify-ds41-tp-ep-e2e-six.py"
+        },
+        {
+          "repo": "amingclawdev/charting-loop",
+          "path": "public/results/cl030/treatment/SUMMARY.md"
+        },
+        {
+          "repo": "amingclawdev/charting-loop",
+          "path": "public/results/cl032/treatment/SUMMARY.md"
+        }
+      ]
+    },
+    {
+      "query": "\"benign control arm\" injection",
+      "total": 26,
+      "items": [
+        {
+          "repo": "QuantaMinds/QuantaMind",
+          "path": "backend/src/inference/eval/agentic/scoring/boundary.rs"
+        },
+        {
+          "repo": "sattyamjjain/agent-airlock",
+          "path": "docs/studies/task-conditioned-least-privilege-head-to-head.md"
+        },
+        {
+          "repo": "BertinAm/guichet",
+          "path": "TASKS.md"
+        },
+        {
+          "repo": "provael/provael",
+          "path": "PRIOR_ART.md"
+        },
+        {
+          "repo": "provael/provael",
+          "path": "examples/python-api/benign_floor_beside_asr.py"
+        },
+        {
+          "repo": "trust-ai-governance/trustworthy-ai-core",
+          "path": "docs/issues/EV-CAPCTRL.md"
+        },
+        {
+          "repo": "riptide-06/phi-canary",
+          "path": "src/report.py"
+        },
+        {
+          "repo": "riptide-06/phi-canary",
+          "path": "paper/body/abstract.tex"
+        },
+        {
+          "repo": "QuantaMinds/QuantaMind",
+          "path": "frontend/src/features/eval/components/scoreboard/BoundaryPanel.tsx"
+        },
+        {
+          "repo": "trust-ai-governance/trustworthy-ai-core",
+          "path": "treval/cli/pair.py"
+        }
+      ]
+    },
+    {
+      "query": "\"attack methods\" \"tool-calling\"",
+      "total": 255,
+      "items": [
+        {
+          "repo": "Tencent/AI-Infra-Guard",
+          "path": "Research/pikit/README.md"
+        },
+        {
+          "repo": "tmgthb/Autonomous-Agents",
+          "path": "README.md"
+        },
+        {
+          "repo": "jacobdjwilson/awesome-annual-security-reports",
+          "path": "Markdown Conversions/2026/Trendmicro-Security-Predictions-2026.md"
+        },
+        {
+          "repo": "Doragd/Algorithm-Practice-in-Industry",
+          "path": "paperBotV2/arxiv_daily/data/20260122.json"
+        },
+        {
+          "repo": "LLMSecurity/awesome-agent-skills-security",
+          "path": "README.md"
+        },
+        {
+          "repo": "fullsend-ai/fullsend",
+          "path": "docs/problems/testing-agents.md"
+        },
+        {
+          "repo": "TTXS123OK/CVPapers",
+          "path": "cs.CV/2026/03/20260323.md"
+        },
+        {
+          "repo": "Haozhe-Xing/agent_learning",
+          "path": "src/en/chapter_21_security/06_paper_readings.md"
+        },
+        {
+          "repo": "OWASP/AISVS",
+          "path": "1.0/research/chapters/C12-Monitoring-and-Logging/C12-02-Abuse-Detection-Alerting.md"
+        },
+        {
+          "repo": "OWASP/AISVS",
+          "path": "1.01/research/chapters/C12-Monitoring-and-Logging/C12-02-Abuse-Detection-Alerting.md"
+        }
+      ]
+    },
+    {
+      "query": "\"indirect prompt injection\" \"ground truth\" dataset",
+      "total": 3224,
+      "items": [
+        {
+          "repo": "Abraheem13/iobnt-agentjack",
+          "path": "src/agentjack/data/registry.py"
+        },
+        {
+          "repo": "ydyjya/Awesome-LLM-Safety",
+          "path": "subtopic/Datasets&Benchmark.md"
+        },
+        {
+          "repo": "hoomanesteki/toolsmith-small-llm-agent-uplift",
+          "path": "docs/cards/dataset-card.qmd"
+        },
+        {
+          "repo": "ydyjya/Awesome-LLM-Safety",
+          "path": "subtopic_html/Datasets&Benchmark.html"
+        },
+        {
+          "repo": "MLNLP-World/Top-AI-Conferences-Paper-with-Code",
+          "path": "NAACL/2025/NAACL2025.md"
+        },
+        {
+          "repo": "ydyjya/Awesome-LLM-Safety",
+          "path": "subtopic_html_cn/Datasets&Benchmark.html"
+        },
+        {
+          "repo": "RakanBarakat/finalYearProject",
+          "path": "DATASET_ANALYSIS.md"
+        },
+        {
+          "repo": "tmgthb/Autonomous-Agents",
+          "path": "README.md"
+        },
+        {
+          "repo": "luo-junyu/Awesome-Agent-Papers",
+          "path": "README.md"
+        },
+        {
+          "repo": "chawins/llm-sp",
+          "path": "README.md"
+        }
+      ]
+    },
+    {
+      "query": "\"literature\" \"attack methods\" agent benchmark",
+      "total": 4536,
+      "items": [
+        {
+          "repo": "CSQianDong/Awesome-arXiv-Daily-Reporter",
+          "path": "3-Feb-2025/topic/Agent_related_papers.md"
+        },
+        {
+          "repo": "rakshithsajjan/learning-to-jailbreak",
+          "path": "docs/references/comprehensive_literature_review.md"
+        },
+        {
+          "repo": "RedtRocks/promptSecurity",
+          "path": "docs/LITERATURE.md"
+        },
+        {
+          "repo": "tmgthb/Autonomous-Agents",
+          "path": "README.md"
+        },
+        {
+          "repo": "AutoTrustAI/PaperGuru-Benchmark",
+          "path": "SurveyBench/markdown/safety-in-large-language-models.md"
+        },
+        {
+          "repo": "Doragd/Algorithm-Practice-in-Industry",
+          "path": "paperBotV2/conf_summary/data/papers/wsdm/wsdm2025.md"
+        },
+        {
+          "repo": "dschlesinger/redhacks-2.0-models",
+          "path": "literature/mech-interp-red-team-literature.md"
+        },
+        {
+          "repo": "Elliot-Sones/AgentGate",
+          "path": "research/adversarial_agent_systems.md"
+        },
+        {
+          "repo": "chawins/llm-sp",
+          "path": "README.md"
+        },
+        {
+          "repo": "Shyamistic/S.A.R.T.H.I",
+          "path": "research/04-literature-review.md"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,814 @@
+{
+ "class": "PRIOR-ART",
+ "time": "2026-10-09T18:16:11",
+ "round": 3,
+ "queries": [
+  "attack method taxonomy for agentic AI systems",
+  "reproducible adversarial prompt library tool-calling agents",
+  "agent red teaming benchmark open source code"
+ ],
+ "per_query": [
+  {
+   "query": "attack method taxonomy for agentic AI systems",
+   "per_source": {
+    "crossref": 40,
+    "dblp": 0,
+    "arxiv": 0,
+    "openaire": 2,
+    "europepmc": 25,
+    "openalex": 33
+   }
+  },
+  {
+   "query": "reproducible adversarial prompt library tool-calling agents",
+   "per_source": {
+    "crossref": 40,
+    "dblp": 0,
+    "arxiv": 0,
+    "openaire": 0,
+    "europepmc": 25,
+    "openalex": 0
+   }
+  },
+  {
+   "query": "agent red teaming benchmark open source code",
+   "per_source": {
+    "crossref": 40,
+    "dblp": 0,
+    "arxiv": 6,
+    "openaire": 6,
+    "europepmc": 25,
+    "openalex": 10
+   }
+  }
+ ],
+ "items": {
+  "theatmosphereattackposturalmanipulationandthehiddenthreatina": {
+   "title": "The Atmosphere Attack: Postural Manipulation and the Hidden Threat in Agentic AI",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.2139/ssrn.6494918",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "adversarialmlopsandtheprotectionoftheagenticattacksurfaceind": {
+   "title": "Adversarial MLOps and the Protection of the Agentic Attack Surface in Distributed Autonomous AI Systems",
+   "year": 2026,
+   "venue": "International Journal of Computer Applications Technology and Research",
+   "venue_type": "journal-article",
+   "doi": "10.7753/ijcatr1501.1004",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Association of Technology and Science",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "fromarchitecturetoattacksurface": {
+   "title": "From Architecture to Attack Surface",
+   "year": 2026,
+   "venue": "Breaking the Model Context Protocol",
+   "venue_type": "book-chapter",
+   "doi": "10.1007/979-8-8688-2968-0_1",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Apress",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "agenticaidrivenmachinelearningframeworkforproactivecyberatta": {
+   "title": "Agentic AI-Driven Machine Learning Framework for Proactive Cyber-Attack Detection and Early Threat Warning Systems",
+   "year": 2026,
+   "venue": "2026 International Conference on Smart Electronic Devices and Intelligent Systems (ICSEDIS)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/icsedis68157.2026.11518252",
+   "cited_by": 2,
+   "source": "crossref",
+   "raw_event": "2026 International Conference on Smart Electronic Devices and Intelligent Systems (ICSEDIS)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "A",
+   "tier_reason": "Tier A 会议",
+   "is_journal": false
+  },
+  "advancedtoolpoisoningattackatpaoutputpoisoning": {
+   "title": "Advanced Tool Poisoning Attack (ATPA): Output Poisoning",
+   "year": 2026,
+   "venue": "Breaking the Model Context Protocol",
+   "venue_type": "book-chapter",
+   "doi": "10.1007/979-8-8688-2968-0_4",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Apress",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "webmcpsecurityandtheauthenticatedattacksurface": {
+   "title": "WebMCP Security and the Authenticated Attack Surface",
+   "year": 2026,
+   "venue": "Breaking the Model Context Protocol",
+   "venue_type": "book-chapter",
+   "doi": "10.1007/979-8-8688-2968-0_11",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Apress",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "thenewwebattacksurfaceataxonomyofsemanticandagenticthreatsin": {
+   "title": "The New Web Attack Surface: A Taxonomy of Semantic and Agentic Threats in AI Browsers",
+   "year": 2026,
+   "venue": "IEEE Access",
+   "venue_type": "journal-article",
+   "doi": "10.1109/access.2026.3680147",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+   "sources": [
+    "crossref"
+   ],
+   "survey": true,
+   "tier": "B",
+   "tier_reason": "Tier B",
+   "is_journal": true
+  },
+  "agenticaicybersubversionthesemanticlayerintegrityattackasane": {
+   "title": "Agentic AI Cyber Subversion: The Semantic Layer Integrity Attack as a New Threat Class Against the Reasoning Layer",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.2139/ssrn.6926219",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "tamperevidenceinaiagentmemorystoresamethodataxonomyandameasu": {
+   "title": "Tamper Evidence in AI Agent Memory Stores: A Method, a Taxonomy, and a Measurement",
+   "year": null,
+   "venue": "OpenAIRE",
+   "venue_type": "aggregated",
+   "doi": null,
+   "cited_by": null,
+   "source": "openaire",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "openaire"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "temporaladversarialattacksontimeseriesandreinforcementlearni": {
+   "title": "Temporal Adversarial Attacks on Time Series and Reinforcement Learning Systems: A Systematic Survey, Taxonomy, and Benchmarking Roadmap",
+   "year": 2026,
+   "venue": "Preprints.org",
+   "venue_type": "repository",
+   "doi": "10.20944/preprints202601.0598.v1",
+   "cited_by": 3,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "openalex"
+   ],
+   "survey": true,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(preprints.org)",
+   "is_journal": false
+  },
+  "adversarialmachinelearningforsecureandexplainableaisystemsac": {
+   "title": "Adversarial Machine Learning for Secure and Explainable AI Systems: A Comprehensive Review",
+   "year": 2026,
+   "venue": "Journal of Cybersecurity and Privacy",
+   "venue_type": "journal",
+   "doi": "10.3390/jcp6040132",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "Multidisciplinary Digital Publishing Institute",
+   "sources": [
+    "openalex"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "evaluatinganddefendingagainstadversarialthreatsinmultimodala": {
+   "title": "Evaluating and Defending against Adversarial Threats in Multimodal AI",
+   "year": 2026,
+   "venue": "Applied Cybersecurity & Internet Governance",
+   "venue_type": "journal",
+   "doi": "10.60097/acig/220237",
+   "cited_by": 1,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "detectingaimemorypoisoningfromobservablebehaviorbehavioralsh": {
+   "title": "Detecting AI Memory Poisoning from Observable Behavior: Behavioral Shadow Inference, Semantic Intent Decomposition, and Three-Tier Agentic Remediation",
+   "year": 2026,
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "venue_type": "repository",
+   "doi": "10.5281/zenodo.18789460",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "European Organization for Nuclear Research",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(zenodo)",
+   "is_journal": false
+  },
+  "adversarialassessmentofagenticsystemsadeterministicgroundtru": {
+   "title": "Adversarial Assessment of Agentic Systems: A Deterministic-Ground-Truth Methodology, Demonstrated Across an Industrial Control Stack",
+   "year": 2026,
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "venue_type": "repository",
+   "doi": "10.5281/zenodo.23043955",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "European Organization for Nuclear Research",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(zenodo)",
+   "is_journal": false
+  },
+  "hijackingthepromptasurveyofpromptinjectionattacksdetectionan": {
+   "title": "Hijacking the Prompt: A Survey of Prompt Injection Attacks, Detection, and Defense in Large Language Models",
+   "year": 2026,
+   "venue": "ODU Digital Commons (Old Dominion University)",
+   "venue_type": "repository",
+   "doi": "10.25776/mvhf-w867",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "Old Dominion University",
+   "sources": [
+    "openalex"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "asurveyongnssspoofingattacksonuavswarmschallengescurrentsolu": {
+   "title": "A Survey on GNSS Spoofing Attacks on UAV Swarms: Challenges, Current Solutions, and Future Directions",
+   "year": 2026,
+   "venue": "Lecture notes in networks and systems",
+   "venue_type": "book series",
+   "doi": "10.1007/978-3-032-18910-3_43",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "Springer International Publishing",
+   "sources": [
+    "openalex"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "iacdminteractiveadversarialconvergencedevelopmentmethodology": {
+   "title": "IACDM: Interactive Adversarial Convergence Development Methodology -- A Structured Framework for AI-Assisted Software Development",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "10.48550/arxiv.2604.16399",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "Cornell University",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "injectionendsatprimingwhyenforcementagainstadversarialagents": {
+   "title": "Injection Ends at Priming: Why Enforcement Against Adversarial Agents Must Be Out-of-Band",
+   "year": 2026,
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "venue_type": "repository",
+   "doi": "10.5281/zenodo.21154339",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "European Organization for Nuclear Research",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(zenodo)",
+   "is_journal": false
+  },
+  "thegovernancepatchgapmachinespeedexploitdiscoveryagainsthuma": {
+   "title": "The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair",
+   "year": 2026,
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "venue_type": "repository",
+   "doi": "10.5281/zenodo.21910874",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "European Organization for Nuclear Research",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(zenodo)",
+   "is_journal": false
+  },
+  "chronosattackadversarialtoolschedulingattacksonllmagents": {
+   "title": "ChronosAttack: Adversarial Tool Scheduling Attacks on LLM Agents",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.21203/rs.3.rs-10854515/v1",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Springer Science and Business Media LLC",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "interpretableagenticintelligenceandadversarialpromptsecurity": {
+   "title": "Interpretable Agentic Intelligence and Adversarial Prompt Security: Tool-Use Governance, Sparse Autoencoders and Cyber-Resilient AI Systems",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "reference-book",
+   "doi": "10.62311/nesx/rb7jy-978-81-689790-3-1",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "National Education Services",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "signedbutunsafesecuringruntimetoolselectioninllmagentsundera": {
+   "title": "Signed but Unsafe: Securing Runtime Tool Selection in LLM Agents under Adversarial Metadata Injection",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.2139/ssrn.7199341",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "reviewforpromptintegratedadversarialunsuperviseddomainadapta": {
+   "title": "Review for \"Prompt-Integrated Adversarial Unsupervised Domain Adaptation for Scene Recognition\"",
+   "year": 2024,
+   "venue": "?",
+   "venue_type": "peer-review",
+   "doi": "10.1109/tgrs.2025.3531424/v3/review2",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+   "sources": [
+    "crossref"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "evaluatingindirectpromptinjectiondefensesintoolusingllmagent": {
+   "title": "Evaluating Indirect Prompt Injection Defenses in Tool-Using LLM Agents: Security, Utility, and Replication",
+   "year": 2026,
+   "venue": "Computers",
+   "venue_type": "journal-article",
+   "doi": "10.3390/computers15090570",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "MDPI AG",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "promptinjectionattacktotoolselectioninllmagents": {
+   "title": "Prompt Injection Attack to Tool Selection in LLM Agents",
+   "year": 2026,
+   "venue": "Proceedings 2026 Network and Distributed System Security Symposium",
+   "venue_type": "proceedings-article",
+   "doi": "10.14722/ndss.2026.230675",
+   "cited_by": 18,
+   "source": "crossref",
+   "raw_event": "Network and Distributed System Security Symposium",
+   "publisher": "Internet Society",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "S",
+   "tier_reason": "Tier S 会议",
+   "is_journal": false
+  },
+  "decisionletterforpromptintegratedadversarialunsuperviseddoma": {
+   "title": "Decision letter for \"Prompt-Integrated Adversarial Unsupervised Domain Adaptation for Scene Recognition\"",
+   "year": 2024,
+   "venue": "?",
+   "venue_type": "peer-review",
+   "doi": "10.1109/tgrs.2025.3531424/v2/decision1",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "continualredteamingandguardraildistillationfortoolusingllmag": {
+   "title": "Continual Red-Teaming and Guardrail Distillation for Tool-Using LLM Agents: Prompt-Injection Resistance with Utility Preservation",
+   "year": 2026,
+   "venue": "Stout in Computer Science and Technology Studies",
+   "venue_type": "journal-article",
+   "doi": "10.61424/hewtat90",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Bluemark Publishers",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "injecagentbenchmarkingindirectpromptinjectionsintoolintegrat": {
+   "title": "InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents",
+   "year": 2024,
+   "venue": "Findings of the Association for Computational Linguistics ACL 2024",
+   "venue_type": "proceedings-article",
+   "doi": "10.18653/v1/2024.findings-acl.624",
+   "cited_by": 134,
+   "source": "crossref",
+   "raw_event": "Findings of the Association for Computational Linguistics ACL 2024",
+   "publisher": "Association for Computational Linguistics",
+   "sources": [
+    "crossref"
+   ],
+   "survey": true,
+   "tier": "B",
+   "tier_reason": "Findings/Workshop（含主会名但非主会正刊）",
+   "is_journal": false
+  },
+  "adversarialchannelequilibriaforqldpcbenchmarksadversarialcha": {
+   "title": "Adversarial channel equilibria for qLDPC benchmarks]{Adversarial channel equilibria for bivariate-bicycle qLDPC memories: minimax fidelity guarantees and reproducible decoder benchmarks",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.21203/rs.3.rs-10039013/v1",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Springer Science and Business Media LLC",
+   "sources": [
+    "crossref"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "whenadversarialtrainingmeetsprompttuningadversarialdualpromp": {
+   "title": "When Adversarial Training Meets Prompt Tuning: Adversarial Dual Prompt Tuning for Unsupervised Domain Adaptation",
+   "year": 2025,
+   "venue": "IEEE Transactions on Image Processing",
+   "venue_type": "journal-article",
+   "doi": "10.1109/tip.2025.3541868",
+   "cited_by": 23,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "A",
+   "tier_reason": "Tier A 期刊",
+   "is_journal": true
+  },
+  "tapdatextadversarialpurificationasdefenseagainstadversarialp": {
+   "title": "TAPDA: Text Adversarial Purification as Defense Against Adversarial Prompt Attack for Large Language Models",
+   "year": 2025,
+   "venue": "2025 8th International Conference on Advanced Algorithms and Control Engineering (ICAACE)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/icaace65325.2025.11020575",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": "2025 8th International Conference on Advanced Algorithms and Control Engineering (ICAACE)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "whoisdoingthecognitivelaborataxonomyofadversarialpromptengin": {
+   "title": "Who Is Doing the Cognitive Labor? A Taxonomy of Adversarial Prompt Engineering and Shadow Literacies",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.2139/ssrn.7516239",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "authorresponseforpromptintegratedadversarialunsuperviseddoma": {
+   "title": "Author response for \"Prompt-Integrated Adversarial Unsupervised Domain Adaptation for Scene Recognition\"",
+   "year": 2024,
+   "venue": "?",
+   "venue_type": "peer-review",
+   "doi": "10.1109/tgrs.2025.3531424/v3/response1",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "llmadversarialpromptattackdetectionandmitigationengineanovel": {
+   "title": "LLM Adversarial Prompt Attack Detection and Mitigation Engine: A  Novel Framework for Securing Generative AI Systems",
+   "year": 2025,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.36227/techrxiv.175416873.36395198/v1",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "redteamingllmmultiagentsystemsviacommunicationattacks": {
+   "title": "Red-Teaming LLM Multi-Agent Systems via Communication Attacks",
+   "year": 2025,
+   "venue": "Findings of the Association for Computational Linguistics: ACL 2025",
+   "venue_type": "proceedings-article",
+   "doi": "10.18653/v1/2025.findings-acl.349",
+   "cited_by": 17,
+   "source": "crossref",
+   "raw_event": "Findings of the Association for Computational Linguistics: ACL 2025",
+   "publisher": "Association for Computational Linguistics",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "B",
+   "tier_reason": "Findings/Workshop（含主会名但非主会正刊）",
+   "is_journal": false
+  },
+  "ipiproxyaninterceptingproxyforredteamingwebbrowsingaiagentsa": {
+   "title": "IPI-proxy: An Intercepting Proxy for Red-Teaming Web-Browsing AI Agents Against Indirect Prompt Injection",
+   "year": 2026,
+   "venue": "arXiv",
+   "venue_type": "preprint",
+   "doi": "http://arxiv.org/abs/2605.11868v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:agent AND all:red AND all:teaming AND all:benchmark AND all:open AND all:source AND all:code",
+   "sources": [
+    "arxiv"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "pismithreinforcementlearningbasedredteamingforpromptinjectio": {
+   "title": "PISmith: Reinforcement Learning-based Red Teaming for Prompt Injection Defenses",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2603.13026v2",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:agent AND all:red AND all:teaming AND all:benchmark AND all:open AND all:source AND all:code",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "howvulnerableareaiagentstoindirectpromptinjectionsinsightsfr": {
+   "title": "How Vulnerable Are AI Agents to Indirect Prompt Injections? Insights from a Large-Scale Public Competition",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2603.15714v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:agent AND all:red AND all:teaming AND all:benchmark AND all:open AND all:source AND all:code",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "hiddenghosthandunveilingbackdoorvulnerabilitiesinmllmpowered": {
+   "title": "Hidden Ghost Hand: Unveiling Backdoor Vulnerabilities in MLLM-Powered Mobile GUI Agents",
+   "year": 2025,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2505.14418v3",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:agent AND all:red AND all:teaming AND all:benchmark AND all:open AND all:source AND all:code",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "promptguardastructuredframeworkforinjectionresilientlanguage": {
+   "title": "PromptGuard a structured framework for injection resilient language models.",
+   "year": 2026,
+   "venue": "Sci Rep",
+   "venue_type": "journal-article",
+   "doi": "10.1038/s41598-025-31086-y",
+   "cited_by": 0,
+   "source": "europepmc",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "europepmc"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "nemesisanadversarialmultiagentaiframeworkforproactivevulnera": {
+   "title": "Nemesis: An Adversarial Multi-Agent AI Framework for Proactive Vulnerability Discovery and Patch Synthesis",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "conference-paper",
+   "doi": "10.1109/icei65890.2026.11448038",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "adversarialaidefenseinlargelanguagemodelsgenerativeai": {
+   "title": "Adversarial AI Defense in Large Language Models & Generative AI",
+   "year": 2025,
+   "venue": "International Journal of Artificial Intelligence Data Science and Machine Learning",
+   "venue_type": "journal",
+   "doi": "10.63282/3050-9262.ijaidsml-v6i3p111",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  }
+ },
+ "sources_failed": {},
+ "count": 37,
+ "count_rejected": 5,
+ "count_attack": 28
+}

@@ -1,0 +1,310 @@
+{
+  "date": "2026-10-09",
+  "orientations": [
+    {
+      "query": "agent security attack",
+      "label": "agent security attack",
+      "total_count": 967,
+      "top": [
+        {
+          "full_name": "gadievron/raptor",
+          "stars": 3876,
+          "description": "Raptor turns Claude Code into a general-purpose AI offensive/defensive security agent. By using Claude.md and creating r"
+        },
+        {
+          "full_name": "cirosantilli/china-dictatorship",
+          "stars": 3254,
+          "description": "反中共政治宣传库。Anti Chinese government propaganda. 住在中国真名用户的网友请别给星星，不然你要被警察请喝茶。常见问答集，新闻集和饭店和音乐建议。卐习万岁卐。冠状病毒审查郝海东新疆改造中心六四事件法轮功 "
+        },
+        {
+          "full_name": "gege-circle/.github",
+          "stars": 2036,
+          "description": "这里是GitHub的草场，也是戈戈圈爱好者的交流地，主要讨论动漫、游戏、科技、人文、生活等所有话题，欢迎各位小伙伴们在此讨论趣事。This is GitHub grassland, and the community place for G"
+        },
+        {
+          "full_name": "capitalone/VulnHunter",
+          "stars": 1082,
+          "description": "Agentic AI security tool that applies proactive, attacker-first analysis directly to source code."
+        },
+        {
+          "full_name": "ethz-spylab/agentdojo",
+          "stars": 900,
+          "description": "A Dynamic Environment to Evaluate Attacks and Defenses for LLM Agents."
+        }
+      ]
+    },
+    {
+      "query": "mcp attack poisoning",
+      "label": "mcp attack poisoning",
+      "total_count": 74,
+      "top": [
+        {
+          "full_name": "adithyan-ak/AgentHound",
+          "stars": 446,
+          "description": "Offensive security framework for AI agent infrastructure - recon, credential looting, model exfiltration, poisoning, and"
+        },
+        {
+          "full_name": "Agent-Threat-Rule/agent-threat-rules",
+          "stars": 409,
+          "description": "Open detection-rule standard for AI agent security threats — like Sigma, but for AI agents. Executable, testable rules f"
+        },
+        {
+          "full_name": "getagentseal/agentseal",
+          "stars": 377,
+          "description": "Security toolkit for AI agents. Scan your machine for dangerous skills and MCP configs, monitor for supply chain attacks"
+        },
+        {
+          "full_name": "invariantlabs-ai/mcp-injection-experiments",
+          "stars": 206,
+          "description": "Code snippets to reproduce MCP tool poisoning attacks."
+        },
+        {
+          "full_name": "makalin/SecureMCP",
+          "stars": 140,
+          "description": "SecureMCP is a security auditing tool designed to detect vulnerabilities and misconfigurations in applications using the"
+        }
+      ]
+    },
+    {
+      "query": "prompt injection tool-calling agent",
+      "label": "prompt injection tool-calling agent",
+      "total_count": 72,
+      "top": [
+        {
+          "full_name": "calmrocks/ai-engineer-notebooks",
+          "stars": 691,
+          "description": "Hands-on, framework-free Colab notebooks for the AI Engineer / Forward Deployed Engineer (FDE) skill set — model APIs, s"
+        },
+        {
+          "full_name": "Szesnasty/ai-protector",
+          "stars": 44,
+          "description": "Ship AI agents with guardrails — not prayers. Self-hosted runtime protection for LLMs and tool-calling agents: block pro"
+        },
+        {
+          "full_name": "Agentic-AI-Risk-Mitigation/Janus",
+          "stars": 17,
+          "description": "  System-level security for LLM agents: fine-grained policy enforcement on tool calls to defend against indirect prompt "
+        },
+        {
+          "full_name": "pie-script/llm-agent-testbed",
+          "stars": 16,
+          "description": "An empirical security testbed evaluating prompt injection, confused-deputy vulnerabilities, and tool-calling defenses in"
+        },
+        {
+          "full_name": "Harshit-J004/toolguard",
+          "stars": 15,
+          "description": "The \"Cloudflare for AI Agents\". 7-layer security interceptor, real-time observability dashboard, and automated reliabili"
+        }
+      ]
+    },
+    {
+      "query": "topic:agent-security",
+      "label": "topic:agent-security",
+      "total_count": 1786,
+      "top": [
+        {
+          "full_name": "NVIDIA/SkillSpector",
+          "stars": 19745,
+          "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data"
+        },
+        {
+          "full_name": "Nasiko-Labs/nasiko",
+          "stars": 9510,
+          "description": "The Open Runtime for AI Agents"
+        },
+        {
+          "full_name": "Tencent/AI-Infra-Guard",
+          "stars": 6799,
+          "description": "A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM"
+        },
+        {
+          "full_name": "nolabs-ai/nono",
+          "stars": 4410,
+          "description": "agent runtime security - zero trust, zero setup, zero latency agent sandbox"
+        },
+        {
+          "full_name": "msoedov/agentic_security",
+          "stars": 2019,
+          "description": "Agentic LLM Vulnerability Scanner / AI red teaming kit 🧪"
+        }
+      ]
+    },
+    {
+      "query": "awesome agent security",
+      "label": "awesome agent security",
+      "total_count": 151,
+      "top": [
+        {
+          "full_name": "cirosantilli/china-dictatorship",
+          "stars": 3254,
+          "description": "反中共政治宣传库。Anti Chinese government propaganda. 住在中国真名用户的网友请别给星星，不然你要被警察请喝茶。常见问答集，新闻集和饭店和音乐建议。卐习万岁卐。冠状病毒审查郝海东新疆改造中心六四事件法轮功 "
+        },
+        {
+          "full_name": "gege-circle/.github",
+          "stars": 2036,
+          "description": "这里是GitHub的草场，也是戈戈圈爱好者的交流地，主要讨论动漫、游戏、科技、人文、生活等所有话题，欢迎各位小伙伴们在此讨论趣事。This is GitHub grassland, and the community place for G"
+        },
+        {
+          "full_name": "scadastrangelove/awesome-ai-security-tools",
+          "stars": 1596,
+          "description": "A curated list of public-source, research, and commercial tools for AI security and AI-assisted cybersecurity — autotria"
+        },
+        {
+          "full_name": "huhusmang/Awesome-LLMs-for-Vulnerability-Detection",
+          "stars": 1477,
+          "description": "The community's most comprehensive, continuously-updated index of research on Large Language Models for software vulnera"
+        },
+        {
+          "full_name": "zhuyansen/awesome-claude-video-skills",
+          "stars": 493,
+          "description": "Open-source skills and toolkits that let Claude Code, Codex and other coding agents make video. 180 repos by type, each "
+        }
+      ]
+    },
+    {
+      "query": "agent red team benchmark",
+      "label": "agent red team benchmark",
+      "total_count": 54,
+      "top": [
+        {
+          "full_name": "Yeti-791/Awesome-Offensive-AI-Agentic-Landscape",
+          "stars": 344,
+          "description": "This document curates open-source projects, academic papers, capability benchmarks, and commercial solutions (internatio"
+        },
+        {
+          "full_name": "claudlos/hermes-katana",
+          "stars": 49,
+          "description": "Defense-in-depth security toolkit for LLM agents — taint tracking, proxy secret guard, policy engine, and red-team bench"
+        },
+        {
+          "full_name": "msaleme/red-team-blue-team-agent-fabric",
+          "stars": 32,
+          "description": "AI agent security harness, adversarial testing: 640 executable tests in the v4.26.1 release, across MCP, A2A, x402/L402,"
+        },
+        {
+          "full_name": "debesheedas/trojan-hippo-benchmark",
+          "stars": 9,
+          "description": "Trojan Hippo: Weaponizing Agent Memory for Data Exfiltration — benchmark, adaptive red-teaming, and defenses for persist"
+        },
+        {
+          "full_name": "KardelRuveyda/agenteval-dotnet-samples",
+          "stars": 6,
+          "description": "Guidance and xUnit samples for evaluating .NET AI agents with AgentEval — stochastic tests, red-team scanning, trace rep"
+        }
+      ]
+    },
+    {
+      "query": "topic:mcp-security",
+      "label": "topic:mcp-security",
+      "total_count": 519,
+      "top": [
+        {
+          "full_name": "microsoft/mcp-for-beginners",
+          "stars": 17418,
+          "description": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-langua"
+        },
+        {
+          "full_name": "nolabs-ai/nono",
+          "stars": 4410,
+          "description": "agent runtime security - zero trust, zero setup, zero latency agent sandbox"
+        },
+        {
+          "full_name": "stacklok/toolhive",
+          "stars": 2259,
+          "description": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers."
+        },
+        {
+          "full_name": "luckyPipewrench/pipelock",
+          "stars": 921,
+          "description": "Open-source AI agent firewall for MCP security and agent egress. Scans mediated HTTP, MCP, A2A, and WebSocket traffic fo"
+        },
+        {
+          "full_name": "hashgraph-online/hol-guard",
+          "stars": 828,
+          "description": "Open-source antivirus for AI agents: block risky tools, secret access, prompt injection, malicious packages, MCP servers"
+        }
+      ]
+    },
+    {
+      "query": "topic:llm-security agent attack",
+      "label": "topic:llm-security agent",
+      "total_count": 224,
+      "top": [
+        {
+          "full_name": "adithyan-ak/AgentHound",
+          "stars": 446,
+          "description": "Offensive security framework for AI agent infrastructure - recon, credential looting, model exfiltration, poisoning, and"
+        },
+        {
+          "full_name": "Agent-Threat-Rule/agent-threat-rules",
+          "stars": 409,
+          "description": "Open detection-rule standard for AI agent security threats — like Sigma, but for AI agents. Executable, testable rules f"
+        },
+        {
+          "full_name": "getagentseal/agentseal",
+          "stars": 377,
+          "description": "Security toolkit for AI agents. Scan your machine for dangerous skills and MCP configs, monitor for supply chain attacks"
+        },
+        {
+          "full_name": "LLMSecurity/awesome-agent-skills-security",
+          "stars": 245,
+          "description": "🛡️ A curated list of resources on agent skills security: attacks, defenses, frameworks, and benchmarks for securing AI a"
+        },
+        {
+          "full_name": "LLAMATOR-Core/llamator",
+          "stars": 223,
+          "description": "Red Teaming python-framework for testing chatbots and GenAI systems."
+        }
+      ]
+    },
+    {
+      "query": "agent attack method library",
+      "label": "agent attack method library",
+      "total_count": 2,
+      "top": [
+        {
+          "full_name": "jettbrains/-L-",
+          "stars": 161,
+          "description": "W3C Strategic Highlights  September 2019  This report was prepared for the September 2019 W3C Advisory Committee Meeting"
+        },
+        {
+          "full_name": "HlaingPhyoAung/sqlmap",
+          "stars": 17,
+          "description": "Usage: python sqlmap.py [options] Options: -h, --help Show basic help message and exit -hh Show advanced help message an"
+        }
+      ]
+    },
+    {
+      "query": "tool poisoning benchmark",
+      "label": "tool poisoning benchmark",
+      "total_count": 18,
+      "top": [
+        {
+          "full_name": "AI45Lab/OpenART",
+          "stars": 232,
+          "description": "OpenART is an open-source framework designed to evaluate the safety and robustness of autonomous AI agents in dynamic, l"
+        },
+        {
+          "full_name": "zhiqiangwang4/MCPTox-Benchmark",
+          "stars": 13,
+          "description": "MCPTox: A Benchmark for Tool Poisoning Attack on Real-World MCP Servers"
+        },
+        {
+          "full_name": "ImanMontajabi/mcp-shield",
+          "stars": 1,
+          "description": "A 6-step MCP tool-poisoning screening pipeline, validated against the MCPTox benchmark"
+        },
+        {
+          "full_name": "Manishmaurya89/mcp-guardbench",
+          "stars": 1,
+          "description": "Check your MCP servers for tool poisoning and rug pulls, and benchmark MCP security tools under verifiable conditions."
+        },
+        {
+          "full_name": "SCP-3114/Agent-Injection-Lab",
+          "stars": 1,
+          "description": "A safe, local benchmark and CTF platform for indirect prompt injection, tool misuse, secret exfiltration, and memory poi"
+        }
+      ]
+    }
+  ]
+}

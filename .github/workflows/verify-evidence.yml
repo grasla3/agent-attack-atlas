@@ -1,0 +1,50 @@
+name: verify-evidence
+
+# 目的：由平台（GitHub）在指定时间重算证据包哈希并与 manifest 对账。
+# 运行记录页（含平台签发的执行时间与 artifact 摘要）即为第三方认证件。
+#
+# 本工作流不需要任何密钥：只做本地文件哈希对账，不发起任何网络检索。
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'evidence/**'
+      - 'tools/verify_evidence.py'
+      - '.github/workflows/verify-evidence.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (pinned to the commit under verification)
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Recompute SHA-256 and reconcile with manifest
+        run: |
+          set -o pipefail
+          python tools/verify_evidence.py \
+            --manifest evidence/manifest.json \
+            --root evidence \
+            --summary "$GITHUB_STEP_SUMMARY" | tee verify-output.txt
+
+      - name: Show commit under verification
+        run: |
+          echo "commit: $GITHUB_SHA" | tee -a "$GITHUB_STEP_SUMMARY"
+          echo "run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload evidence package
+        uses: actions/upload-artifact@v4
+        with:
+          name: search-evidence-${{ github.sha }}
+          path: evidence/
+          if-no-files-found: error
+          retention-days: 90

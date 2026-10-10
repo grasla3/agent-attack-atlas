@@ -1,0 +1,957 @@
+{
+ "class": "PRIOR-ART",
+ "time": "2026-10-09T18:17:40",
+ "round": 5,
+ "queries": [
+  "paired control evaluation attack success rate LLM agents",
+  "benchmark attack success rate tool-using LLM agents reproducibility",
+  "deterministic judge evaluation adversarial LLM agent",
+  "evidence bundle reproducible evaluation LLM security"
+ ],
+ "per_query": [
+  {
+   "query": "paired control evaluation attack success rate LLM agents",
+   "per_source": {
+    "crossref": 40,
+    "dblp": 0,
+    "arxiv": 4,
+    "openaire": 0,
+    "europepmc": 25,
+    "openalex": 7
+   }
+  },
+  {
+   "query": "benchmark attack success rate tool-using LLM agents reproducibility",
+   "per_source": {
+    "crossref": 40,
+    "dblp": 0,
+    "arxiv": 5,
+    "openaire": 0,
+    "europepmc": 25,
+    "openalex": 8
+   }
+  },
+  {
+   "query": "deterministic judge evaluation adversarial LLM agent",
+   "per_source": {
+    "crossref": 40,
+    "dblp": 0,
+    "arxiv": 19,
+    "openaire": 0,
+    "europepmc": 25,
+    "openalex": 32
+   }
+  },
+  {
+   "query": "evidence bundle reproducible evaluation LLM security",
+   "per_source": {
+    "crossref": 40,
+    "dblp": 0,
+    "arxiv": 2,
+    "openaire": 0,
+    "europepmc": 25,
+    "openalex": 1
+   }
+  }
+ ],
+ "items": {
+  "beyondattacksuccessrateamultimetricevaluationofadversarialtr": {
+   "title": "Beyond Attack Success Rate: A Multi-Metric Evaluation of Adversarial Transferability in Medical Imaging Models",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.20944/preprints202604.1221.v1",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "MDPI AG",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "evidenceguidedllmagentsforofflinemicroarchitecturalattacktri": {
+   "title": "Evidence-Guided LLM Agents for Offline Microarchitectural Attack Triage",
+   "year": 2026,
+   "venue": "2026 8th International Conference on Electronic Engineering and Informatics (EEI)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/eei70303.2026.11640639",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "2026 8th International Conference on Electronic Engineering and Informatics (EEI)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "attractivemetadataattackinducingllmagentstoinvokemaliciousto": {
+   "title": "Attractive Metadata Attack: Inducing LLM Agents to Invoke Malicious Tools",
+   "year": 2025,
+   "venue": "Advances in Neural Information Processing Systems 38",
+   "venue_type": "proceedings-article",
+   "doi": "10.52202/085713-5434",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": "Advances in Neural Information Processing Systems 38",
+   "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "S",
+   "tier_reason": "Tier S 会议",
+   "is_journal": false
+  },
+  "obliinjectionorderobliviouspromptinjectionattacktollmagentsw": {
+   "title": "ObliInjection: Order-Oblivious Prompt Injection Attack to LLM Agents with Multi-source Data",
+   "year": 2026,
+   "venue": "Proceedings 2026 Network and Distributed System Security Symposium",
+   "venue_type": "proceedings-article",
+   "doi": "10.14722/ndss.2026.240702",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": "Network and Distributed System Security Symposium",
+   "publisher": "Internet Society",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "S",
+   "tier_reason": "Tier S 会议",
+   "is_journal": false
+  },
+  "promptinjectionattacktotoolselectioninllmagents": {
+   "title": "Prompt Injection Attack to Tool Selection in LLM Agents",
+   "year": 2026,
+   "venue": "Proceedings 2026 Network and Distributed System Security Symposium",
+   "venue_type": "proceedings-article",
+   "doi": "10.14722/ndss.2026.230675",
+   "cited_by": 18,
+   "source": "crossref",
+   "raw_event": "Network and Distributed System Security Symposium",
+   "publisher": "Internet Society",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "S",
+   "tier_reason": "Tier S 会议",
+   "is_journal": false
+  },
+  "securegovagentagovernancecentricmultiagentframeworkforprivac": {
+   "title": "SecureGov-Agent: A Governance-Centric Multi-Agent Framework for Privacy-Preserving and Attack-Resilient LLM Agents",
+   "year": 2025,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.20944/preprints202512.2497.v1",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "MDPI AG",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "spaiwareuncoveringanovelartificialintelligenceattackvectorth": {
+   "title": "SpAIware: Uncovering a novel artificial intelligence attack vector through persistent memory in LLM applications and agents",
+   "year": 2026,
+   "venue": "Future Generation Computer Systems",
+   "venue_type": "journal-article",
+   "doi": "10.1016/j.future.2025.107994",
+   "cited_by": 8,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "A",
+   "tier_reason": "Tier A 期刊",
+   "is_journal": true
+  },
+  "pentestaianllmpoweredmultiagentsframeworkforpenetrationtesti": {
+   "title": "PENTEST-AI, an LLM-Powered Multi-Agents Framework for Penetration Testing Automation Leveraging Mitre Attack",
+   "year": 2024,
+   "venue": "2024 IEEE International Conference on Cyber Security and Resilience (CSR)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/csr61664.2024.10679480",
+   "cited_by": 21,
+   "source": "crossref",
+   "raw_event": "2024 IEEE International Conference on Cyber Security and Resilience (CSR)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "analyzingdefensivemisdirectionagainstmodelguidedautomatedatt": {
+   "title": "Analyzing Defensive Misdirection Against Model-Guided Automated Attacks on Agentic AI Systems",
+   "year": 2026,
+   "venue": "arXiv",
+   "venue_type": "preprint",
+   "doi": "http://arxiv.org/abs/2606.20470v4",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:paired AND all:control AND all:evaluation AND all:attack AND all:success AND all:rate AND all:LLM AND all:agents",
+   "sources": [
+    "arxiv"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "architecturematterscomparingragsystemsunderknowledgebasepois": {
+   "title": "Architecture Matters: Comparing RAG Systems under Knowledge Base Poisoning",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2605.05632v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:paired AND all:control AND all:evaluation AND all:attack AND all:success AND all:rate AND all:LLM AND all:agents",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "countersteersuppressingindirectpromptinjectionwithactivation": {
+   "title": "CounterSteer: Suppressing Indirect Prompt Injection with Activation Steering",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2609.36570v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:paired AND all:control AND all:evaluation AND all:attack AND all:success AND all:rate AND all:LLM AND all:agents",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "tristreammultimodelarchitectureforrealtimedetectionofbeidous": {
+   "title": "Tri-stream multi-model architecture for real-time detection of BeiDou signal manipulation in UAV swarms.",
+   "year": 2026,
+   "venue": "Sci Rep",
+   "venue_type": "journal-article",
+   "doi": "10.1038/s41598-026-46655-y",
+   "cited_by": 0,
+   "source": "europepmc",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "europepmc"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "mitigatingadversarialmanipulationinllmsapromptbasedapproacht": {
+   "title": "Mitigating adversarial manipulation in LLMs: a prompt-based approach to counter Jailbreak attacks (Prompt-G).",
+   "year": 2024,
+   "venue": "PeerJ Comput Sci",
+   "venue_type": "journal-article",
+   "doi": "10.7717/peerj-cs.2374",
+   "cited_by": 3,
+   "source": "europepmc",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "europepmc"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "evaluatingindirectpromptinjectiondefensesintoolusingllmagent": {
+   "title": "Evaluating Indirect Prompt Injection Defenses in Tool-Using LLM Agents: Security, Utility, and Replication",
+   "year": 2026,
+   "venue": "Computers",
+   "venue_type": "journal",
+   "doi": "10.3390/computers15090570",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "Multidisciplinary Digital Publishing Institute",
+   "sources": [
+    "crossref",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "evaluatingagenticaiworkflowsinfinanceaharnessforgroundingsta": {
+   "title": "Evaluating Agentic AI Workflows in Finance: A Harness for Grounding, Stability, Permissioning, Prompt Injection, and Workflow Ablation",
+   "year": 2026,
+   "venue": "SSRN Electronic Journal",
+   "venue_type": "repository",
+   "doi": "10.2139/ssrn.6939818",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "RELX Group (Netherlands)",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(ssrn)",
+   "is_journal": true
+  },
+  "chronosattackadversarialtoolschedulingattacksonllmagents": {
+   "title": "ChronosAttack: Adversarial Tool Scheduling Attacks on LLM Agents",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.21203/rs.3.rs-10854515/v1",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Springer Science and Business Media LLC",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "llmabusepreventiontoolusinggcgjailbreakattackdetectionanddis": {
+   "title": "LLM Abuse Prevention Tool Using GCG Jailbreak Attack Detection and DistilBERT-Based Ethics Judgment",
+   "year": 2025,
+   "venue": "Information",
+   "venue_type": "journal-article",
+   "doi": "10.3390/info16030204",
+   "cited_by": 3,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "MDPI AG",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "adversarialconsensusverificationforreliablellmagentsinfinanc": {
+   "title": "Adversarial Consensus Verification for Reliable LLM agents in Financial Forensics: The Pave Interchange Benchmark",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.2139/ssrn.6944801",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "cybllmaunifiedbenchmarkforevaluatingllmsincyberattackampdefe": {
+   "title": "Cyb-LLM: A Unified Benchmark for Evaluating LLMs in Cyber Attack &amp; Defense",
+   "year": 2026,
+   "venue": "2026 International Conference on Visual Analytics and Data Visualization (ICVADV)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/icvadv67766.2026.11470531",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": "2026 International Conference on Visual Analytics and Data Visualization (ICVADV)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "analysisofsemanticbenchmarkdatacontaminationattackforllmdriv": {
+   "title": "Analysis of Semantic Benchmark Data Contamination Attack for LLM-Driven Fake News Detection",
+   "year": 2025,
+   "venue": "2025 IEEE International Conference on Big Data (BigData)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/bigdata66926.2025.11402039",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "2025 IEEE International Conference on Big Data (BigData)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "continualredteamingandguardraildistillationfortoolusingllmag": {
+   "title": "Continual Red-Teaming and Guardrail Distillation for Tool-Using LLM Agents: Prompt-Injection Resistance with Utility Preservation",
+   "year": 2026,
+   "venue": "Stout in Computer Science and Technology Studies",
+   "venue_type": "journal-article",
+   "doi": "10.61424/hewtat90",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Bluemark Publishers",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "contextfractureddecompositionattacksontoolusingllmagentsexpl": {
+   "title": "Context-Fractured Decomposition Attacks on Tool-Using LLM Agents: Exploiting Artifact Provenance Gaps",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2606.09084v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:benchmark AND all:attack AND all:success AND all:rate AND all:tool-using AND all:LLM AND all:agents AND all:reproducibility",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "mcppitfalllabexposingdeveloperpitfallsinmcptoolserversecurit": {
+   "title": "MCP Pitfall Lab: Exposing Developer Pitfalls in MCP Tool Server Security under Multi-Vector Attacks",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2604.21477v2",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:benchmark AND all:attack AND all:success AND all:rate AND all:tool-using AND all:LLM AND all:agents AND all:reproducibility",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "promptguardastructuredframeworkforinjectionresilientlanguage": {
+   "title": "PromptGuard a structured framework for injection resilient language models.",
+   "year": 2026,
+   "venue": "Sci Rep",
+   "venue_type": "journal-article",
+   "doi": "10.1038/s41598-025-31086-y",
+   "cited_by": 0,
+   "source": "europepmc",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "europepmc"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "cyberdetectmlpabigdataenabledoptimizeddeeplearningframeworkf": {
+   "title": "CyberDetect MLP a big data enabled optimized deep learning framework for scalable cyberattack detection in IoT environments.",
+   "year": 2025,
+   "venue": "Sci Rep",
+   "venue_type": "journal-article",
+   "doi": "10.1038/s41598-025-24459-w",
+   "cited_by": 2,
+   "source": "europepmc",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "europepmc"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "afocusedsurveyofcodeagentsecurityattacksdefensesandevaluatio": {
+   "title": "A focused survey of code agent security: Attacks, defenses, and evaluation",
+   "year": 2026,
+   "venue": "Information and Software Technology",
+   "venue_type": "journal",
+   "doi": "10.1016/j.infsof.2026.108288",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "openalex"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "evaluatingpromptinjectionvulnerabilitiesinaiagents": {
+   "title": "Evaluating Prompt Injection Vulnerabilities in AI Agents",
+   "year": 2026,
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "venue_type": "repository",
+   "doi": "10.5281/zenodo.20631344",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "European Organization for Nuclear Research",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(zenodo)",
+   "is_journal": false
+  },
+  "ariadneadaptivehumanintheloopdefenseforaiagentsagainstindire": {
+   "title": "Ariadne: Adaptive, Human-in-the-Loop Defense for AI Agents against Indirect Prompt Injection",
+   "year": 2026,
+   "venue": "SSRN Electronic Journal",
+   "venue_type": "repository",
+   "doi": "10.2139/ssrn.6870178",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "RELX Group (Netherlands)",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(ssrn)",
+   "is_journal": true
+  },
+  "socrasynthadversarialmultillmreasoning": {
+   "title": "SocraSynth: Adversarial Multi-LLM Reasoning",
+   "year": 2025,
+   "venue": "Multi-LLM Agent Collaborative Intelligence",
+   "venue_type": "book-chapter",
+   "doi": "10.1145/3749421.3749430",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "ACM",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "evinceoptimizingadversarialllmdialoguesviaconditionalstatist": {
+   "title": "EVINCE: Optimizing Adversarial LLM Dialogues via Conditional Statistics and Information Theory",
+   "year": 2025,
+   "venue": "Multi-LLM Agent Collaborative Intelligence",
+   "venue_type": "book-chapter",
+   "doi": "10.1145/3749421.3749431",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "ACM",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "isllmasajudgerobustinvestigatinguniversaladversarialattackso": {
+   "title": "Is LLM-as-a-Judge Robust? Investigating Universal Adversarial Attacks on Zero-shot LLM Assessment",
+   "year": 2024,
+   "venue": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+   "venue_type": "proceedings-article",
+   "doi": "10.18653/v1/2024.emnlp-main.427",
+   "cited_by": 36,
+   "source": "crossref",
+   "raw_event": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+   "publisher": "Association for Computational Linguistics",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "llmtocllmdriventheoryofmindadversarialcurriculumformultiagen": {
+   "title": "LLM-TOC: LLM-Driven Theory-of-Mind Adversarial Curriculum for Multi-Agent Generalization",
+   "year": 2026,
+   "venue": "Mathematics",
+   "venue_type": "journal-article",
+   "doi": "10.20944/preprints202602.1147.v1",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "MDPI AG",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "reliabilityandconstructvalidityofamultimodelllmasjudgeevalua": {
+   "title": "Reliability and construct validity of a multi-model LLM-as-judge evaluator battery for clinician-facing clinical question answering: a controlled adversarial benchmark study (Preprint)",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.2196/preprints.112207",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "JMIR Publications Inc.",
+   "sources": [
+    "crossref"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "autonomousevaluationarchitecturesmultiagentllmpipelinesbrows": {
+   "title": "Autonomous Evaluation Architectures: Multi-Agent LLM Pipelines, Browser-Grounded Testing: Programmatic Alignment via DSPy, and Adversarial Robustness in Production Orchestration Systems",
+   "year": 2026,
+   "venue": "Computer Fraud and Security",
+   "venue_type": "journal-article",
+   "doi": "10.52710/cfs.1067",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Auricle Global Society of Education and Research",
+   "sources": [
+    "crossref",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "adversarialevidenceplanerobustnessforboundedagentassurancede": {
+   "title": "Adversarial Evidence-Plane Robustness for Bounded Agent Assurance: Deterministic Mutation Testing of Claim Admissibility",
+   "year": 2026,
+   "venue": "Computers",
+   "venue_type": "journal-article",
+   "doi": "10.3390/computers15100655",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "MDPI AG",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "cognitivecamouflagespecificationgaminginllmgeneratedcodeevad": {
+   "title": "Cognitive Camouflage: Specification Gaming in LLM-Generated Code Evades Holistic Evaluation but Not Adversarial Execution",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.2139/ssrn.6512960",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "redteamingmedicalaisystematicadversarialevaluationofllmsafet": {
+   "title": "Red-Teaming Medical AI: Systematic Adversarial Evaluation of LLM Safety Guardrails in Clinical Contexts",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.64898/2026.02.26.26347212",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "openRxiv",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "elderlycareagentanllmempoweredadversarialinteractionsystemfo": {
+   "title": "Elderly Care Agent: An LLM-Empowered Adversarial Interaction System for Elderly Care",
+   "year": 2025,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.2139/ssrn.5900589",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "valuecrucibleforevaluatingrobustnessofvalueattributedllmresp": {
+   "title": "Value crucible for evaluating robustness of value attributed LLM response profiles via agent adversarial debates",
+   "year": 2026,
+   "venue": "Scientific Reports",
+   "venue_type": "journal-article",
+   "doi": "10.1038/s41598-026-59433-7",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Springer Science and Business Media LLC",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "A",
+   "tier_reason": "Tier A 期刊",
+   "is_journal": true
+  },
+  "benchmarkingadversarialrobustnesstobiaselicitationinlargelan": {
+   "title": "Benchmarking adversarial robustness to bias elicitation in large language models: scalable automated assessment with LLM-as-a-judge",
+   "year": 2025,
+   "venue": "Machine Learning",
+   "venue_type": "journal-article",
+   "doi": "10.1007/s10994-025-06862-6",
+   "cited_by": 10,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Springer Science and Business Media LLC",
+   "sources": [
+    "crossref"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "thereproductionnumberofaiwormsepidemicmodelingofadversariala": {
+   "title": "The Reproduction Number of AI Worms: Epidemic Modeling of Adversarial Attacks in LLM Agent Ecosystems",
+   "year": 2026,
+   "venue": "IEEE Security &amp; Privacy",
+   "venue_type": "journal-article",
+   "doi": "10.1109/msec.2026.3713527",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "bringingthedualllmpatterntopracticeingoogleadkfordeterminist": {
+   "title": "Bringing the Dual-LLM pattern to practice in Google ADK for deterministic AI agent security against prompt injection",
+   "year": 2026,
+   "venue": "Artificial Life and Robotics",
+   "venue_type": "journal-article",
+   "doi": "10.1007/s10015-026-01152-3",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Springer Science and Business Media LLC",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "adversarialrobustnessofllmbasedmultiagentsystemsforengineeri": {
+   "title": "Adversarial robustness of LLM-based multi-agent systems for engineering problems",
+   "year": 2026,
+   "venue": "Frontiers in Artificial Intelligence",
+   "venue_type": "journal-article",
+   "doi": "10.3389/frai.2026.1784484",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Frontiers Media SA",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "dynamicattentionalcontextscopingagenttriggeredfocussessionsf": {
+   "title": "Dynamic Attentional Context Scoping: Agent-Triggered Focus Sessions for Isolated Per-Agent Steering in Multi-Agent LLM Orchestration",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2604.07911v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:deterministic AND all:judge AND all:evaluation AND all:adversarial AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "autonomousadversaryredteamingintheageofllm": {
+   "title": "Autonomous Adversary: Red-Teaming in the age of LLM",
+   "year": 2026,
+   "venue": "arXiv",
+   "venue_type": "preprint",
+   "doi": "http://arxiv.org/abs/2605.06486v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:deterministic AND all:judge AND all:evaluation AND all:adversarial AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "towardsariskassessmentofmaliciousskillfilesincodingagents": {
+   "title": "Towards a Risk Assessment of Malicious Skill Files in Coding Agents",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2608.05223v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:deterministic AND all:judge AND all:evaluation AND all:adversarial AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "whencollaborationfailspersuasiondrivenadversarialinfluencein": {
+   "title": "When collaboration fails: persuasion driven adversarial influence in multi agent large language model debate.",
+   "year": 2026,
+   "venue": "Sci Rep",
+   "venue_type": "journal-article",
+   "doi": "10.1038/s41598-026-42705-7",
+   "cited_by": 0,
+   "source": "europepmc",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "europepmc"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "llmgridevalmeasuringtheevaluationvaliditygapinsmartgridsecur": {
+   "title": "LLM-GridEval: Measuring the Evaluation Validity Gap in Smart Grid Security with Adaptive LLM Attackers",
+   "year": 2026,
+   "venue": "Proceedings of the 2026 ACM Sustainability Week",
+   "venue_type": "proceedings-article",
+   "doi": "10.1145/3765611.3815146",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "ACM Sustainability Week '26: ACM Sustainability Week 2026",
+   "publisher": "ACM",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  }
+ },
+ "sources_failed": {
+  "dblp": {
+   "alive": true,
+   "errors": [
+    "dblp:paired control evaluation at URLError"
+   ]
+  },
+  "openaire": {
+   "alive": true,
+   "errors": [
+    "openaire:audit log tampering  TimeoutError",
+    "openaire:audit log tampering  TimeoutError"
+   ]
+  }
+ },
+ "count": 45,
+ "count_rejected": 3,
+ "count_attack": 39
+}

@@ -1,0 +1,2243 @@
+{
+ "class": "PRIOR-ART",
+ "time": "2026-10-09T18:16:42",
+ "round": 4,
+ "queries": [
+  "memory poisoning attack LLM agent",
+  "audit log tampering LLM agent",
+  "tool metadata poisoning MCP server",
+  "data exfiltration tool calling LLM agent",
+  "resource exhaustion denial of service LLM agent"
+ ],
+ "per_query": [
+  {
+   "query": "memory poisoning attack LLM agent",
+   "per_source": {
+    "crossref": 40,
+    "dblp": 0,
+    "arxiv": 30,
+    "openaire": 18,
+    "europepmc": 25,
+    "openalex": 40
+   }
+  },
+  {
+   "query": "audit log tampering LLM agent",
+   "per_source": {
+    "crossref": 40,
+    "dblp": 0,
+    "arxiv": 8,
+    "openaire": 0,
+    "europepmc": 13,
+    "openalex": 26
+   }
+  },
+  {
+   "query": "tool metadata poisoning MCP server",
+   "per_source": {
+    "crossref": 40,
+    "dblp": 0,
+    "arxiv": 4,
+    "openaire": 0,
+    "europepmc": 25,
+    "openalex": 14
+   }
+  },
+  {
+   "query": "data exfiltration tool calling LLM agent",
+   "per_source": {
+    "crossref": 40,
+    "dblp": 0,
+    "arxiv": 19,
+    "openaire": 0,
+    "europepmc": 3,
+    "openalex": 7
+   }
+  },
+  {
+   "query": "resource exhaustion denial of service LLM agent",
+   "per_source": {
+    "crossref": 40,
+    "dblp": 0,
+    "arxiv": 0,
+    "openaire": 0,
+    "europepmc": 14,
+    "openalex": 2
+   }
+  }
+ ],
+ "items": {
+  "poisoningllmagentmemoryviawebcontent": {
+   "title": "Poisoning LLM Agent Memory via Web Content",
+   "year": 2026,
+   "venue": "Proceedings of the ACM Turing Award Celebration Conference - China 2026",
+   "venue_type": "proceedings-article",
+   "doi": "10.1145/3833142.3833192",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "ACM-TURC '26: ACM Turing Award Celebration Conference - China 2026",
+   "publisher": "ACM",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "hmarlpentesttowardsautonomouswebapplicationpenetrationtestin": {
+   "title": "HMARL-Pentest: Towards Autonomous Web Application Penetration Testing via LLM-Guided Multi-Agent Reinforcement Learning and Semantic Attack Memory",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.2139/ssrn.7276704",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "promptpersistenceattackslongtermmemorypoisoninginllmbasedsys": {
+   "title": "PROMPT PERSISTENCE ATTACKS: LONG-TERM MEMORY POISONING IN LLM-BASED SYSTEMS",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.2139/ssrn.6183548",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "superlocalmemoryprivacypreservingmultiagentmemorywithbayesia": {
+   "title": "SuperLocalMemory: Privacy-Preserving Multi-Agent Memory with Bayesian Trust Defense Against Memory Poisoning",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "10.2139/ssrn.6273819",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "arxiv",
+    "crossref",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "skillpoisoningattacktaxonomiesanddefensearchitecturesforcomp": {
+   "title": "Skill Poisoning: Attack Taxonomies and Defense Architectures for Composable Agent Skill Ecosystems in AI-Driven Cyber-Physical Systems",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.2139/ssrn.6408998",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "beyondtoolpoisoningattacksurfacesofmaliciousremotemcpservers": {
+   "title": "Beyond Tool Poisoning: Attack Surfaces of Malicious Remote MCP Servers Across LLM Platforms",
+   "year": 2026,
+   "venue": "Electronics",
+   "venue_type": "journal-article",
+   "doi": "10.3390/electronics15102214",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "MDPI AG",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "temporaldynamicsofmemorypoisoninginweb3stylellmagents": {
+   "title": "Temporal Dynamics of Memory Poisoning in Web3-Style LLM Agents",
+   "year": 2026,
+   "venue": "IEEE Access",
+   "venue_type": "journal-article",
+   "doi": "10.1109/access.2026.3693560",
+   "cited_by": 3,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+   "sources": [
+    "crossref",
+    "openaire",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "B",
+   "tier_reason": "Tier B",
+   "is_journal": true
+  },
+  "autonomousllmagentamemoryaugmentededgeoptimizedshapexplanati": {
+   "title": "Autonomous LLM Agent: A Memory-Augmented, Edge-Optimized SHAP Explanations With Zero-Day Attack Resilience in IoT/Industrial IoT Networks",
+   "year": 2026,
+   "venue": "IEEE Internet of Things Journal",
+   "venue_type": "journal-article",
+   "doi": "10.1109/jiot.2025.3648649",
+   "cited_by": 18,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "securegovagentagovernancecentricmultiagentframeworkforprivac": {
+   "title": "SecureGov-Agent: A Governance-Centric Multi-Agent Framework for Privacy-Preserving and Attack-Resilient LLM Agents",
+   "year": 2025,
+   "venue": "Proceedings of the 2025 6th International Conference on Computer Science and Management Technology",
+   "venue_type": "proceedings-article",
+   "doi": "10.20944/preprints202512.2497.v1",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "MDPI AG",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "theconfuseddeputyintheswarmcascadingprivilegeescalationandme": {
+   "title": "The Confused Deputy in the Swarm: Cascading Privilege Escalation and Memory Poisoning in Multi-agent LLMs",
+   "year": 2026,
+   "venue": "SSRN Electronic Journal",
+   "venue_type": "repository",
+   "doi": "10.2139/ssrn.7360399",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "constraintpoisoningandparametricmemoryoverrideafailuretaxono": {
+   "title": "Constraint Poisoning and Parametric Memory Override: A Failure Taxonomy and Intervention Architecture for LLM-Assisted Philological Editing of Historical Texts",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.20944/preprints202606.0820.v1",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "MDPI AG",
+   "sources": [
+    "crossref"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "agentpoisonredteamingllmagentsviapoisoningmemoryorknowledgeb": {
+   "title": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+   "year": 2024,
+   "venue": "Advances in Neural Information Processing Systems 37",
+   "venue_type": "proceedings-article",
+   "doi": "10.52202/079017-4136",
+   "cited_by": 72,
+   "source": "crossref",
+   "raw_event": "Advances in Neural Information Processing Systems 37",
+   "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+   "sources": [
+    "arxiv",
+    "crossref",
+    "openaire"
+   ],
+   "survey": false,
+   "tier": "S",
+   "tier_reason": "Tier S 会议",
+   "is_journal": false
+  },
+  "costminimizedlabelflippingpoisoningattacktollmalignment": {
+   "title": "Cost-Minimized Label-Flipping Poisoning Attack to LLM Alignment",
+   "year": 2026,
+   "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+   "venue_type": "journal-article",
+   "doi": "10.1609/aaai.v40i44.41087",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "A",
+   "tier_reason": "Tier A 会议",
+   "is_journal": false
+  },
+  "vigilantaiamultiagentllmdrivenframeworkforautomatedcyberatta": {
+   "title": "VIGILANT AI: A MULTI-AGENT LLM-DRIVEN FRAMEWORK FOR AUTOMATED CYBER ATTACK SIMULATION, TELEMETRY COLLECTION, AND AUTONOMOUS INCIDENT REPORTING",
+   "year": 2026,
+   "venue": "International Research Journal of Modernization in Engineering Technology &amp; Science",
+   "venue_type": "journal-article",
+   "doi": "10.56726/irjmets93068",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "International Research Journal of Modernization in Engineering Technology and Science",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(international research journal)",
+   "is_journal": true
+  },
+  "memorypoisoningpropagationandrepairmechanisminmultiagentcoll": {
+   "title": "Memory Poisoning Propagation and Repair Mechanism in Multi-Agent Collaborative Environments",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.20944/preprints202602.1188.v1",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "MDPI AG",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "demonagentdynamicallyencryptedmultibackdoorimplantationattac": {
+   "title": "DemonAgent: Dynamically Encrypted Multi-Backdoor Implantation Attack on LLM-based Agent",
+   "year": 2025,
+   "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+   "venue_type": "proceedings-article",
+   "doi": "10.18653/v1/2025.findings-emnlp.157",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+   "publisher": "Association for Computational Linguistics",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "B",
+   "tier_reason": "Findings/Workshop（含主会名但非主会正刊）",
+   "is_journal": false
+  },
+  "spaiwareuncoveringanovelartificialintelligenceattackvectorth": {
+   "title": "SpAIware: Uncovering a novel artificial intelligence attack vector through persistent memory in LLM applications and agents",
+   "year": 2026,
+   "venue": "Future Generation Computer Systems",
+   "venue_type": "journal-article",
+   "doi": "10.1016/j.future.2025.107994",
+   "cited_by": 8,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "A",
+   "tier_reason": "Tier A 期刊",
+   "is_journal": true
+  },
+  "temporalpoisoninganonadversarialtiminginducedinstabilityinlo": {
+   "title": "Temporal Poisoning: a Non-Adversarial, Timing-Induced Instability in Long-Term Memory of LLM Agents",
+   "year": 2026,
+   "venue": "2026 IEEE/ACIS 24th International Conference on Software Engineering Research, Management and Applications (SERA)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/sera69989.2026.11618645",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "2026 IEEE/ACIS 24th International Conference on Software Engineering Research, Management and Applications (SERA)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref",
+    "openaire"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "socrasynthadversarialmultillmreasoning": {
+   "title": "SocraSynth: Adversarial Multi-LLM Reasoning",
+   "year": 2025,
+   "venue": "Multi-LLM Agent Collaborative Intelligence",
+   "venue_type": "book-chapter",
+   "doi": "10.1145/3749421.3749430",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "ACM",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "llmmadmultiagentllmreasoningformultimodalshillingattackdetec": {
+   "title": "LLM-MAD: Multi-agent LLM Reasoning for Multi-modal Shilling Attack Detection in Online Platforms",
+   "year": 2026,
+   "venue": "Lecture Notes in Computer Science",
+   "venue_type": "book-chapter",
+   "doi": "10.1007/978-3-032-14107-1_20",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Springer Nature Switzerland",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "securingllmagentlongtermmemoryagainstpoisoningnonmalleableor": {
+   "title": "Securing LLM-Agent Long-Term Memory Against Poisoning: Non-Malleable, Origin-Bound Authority with Machine-Checked Guarantees",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2606.24322v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openaire",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "fromuntrustedinputtotrustedmemoryasystematicstudyofmemorypoi": {
+   "title": "From Untrusted Input to Trusted Memory: A Systematic Study of Memory Poisoning Attacks in LLM Agents",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2606.04329v2",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openaire",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "memorypoisoningattackanddefenseonmemorybasedllmagents": {
+   "title": "Memory Poisoning Attack and Defense on Memory Based LLM-Agents",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2601.05504v2",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openaire",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "shadowmergeanovelpoisoningattackongraphbasedagentmemoryviare": {
+   "title": "ShadowMerge: A Novel Poisoning Attack on Graph-Based Agent Memory via Relation-Channel Conflicts",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2605.09033v3",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "bileveloptimizationforcovertmemorytamperinginheterogeneousmu": {
+   "title": "Bilevel Optimization for Covert Memory Tampering in Heterogeneous Multi-Agent Architectures (XAMT)",
+   "year": 2025,
+   "venue": "arXiv",
+   "venue_type": "preprint",
+   "doi": "http://arxiv.org/abs/2512.15790v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "poisononceexploitforeverenvironmentinjectedmemorypoisoningat": {
+   "title": "Poison Once, Exploit Forever: Environment-Injected Memory Poisoning Attacks on Web Agents",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2604.02623v2",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "whenmaliciousinstructionspersistpersistentmemorypoisoningatt": {
+   "title": "When Malicious Instructions Persist: Persistent Memory Poisoning Attack on Harness-Based Agents",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2609.13889v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "hiddeninmemorysleepermemorypoisoninginllmagents": {
+   "title": "Hidden in Memory: Sleeper Memory Poisoning in LLM Agents",
+   "year": 2026,
+   "venue": "CISPA",
+   "venue_type": "aggregated",
+   "doi": "http://arxiv.org/abs/2605.15338v2",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openaire",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "memmorphtoolhijackinginllmagentsviamemorypoisoning": {
+   "title": "MemMorph: Tool Hijacking in LLM Agents via Memory Poisoning",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2605.26154v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openaire",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "salamiattackstealthycollusivememorypoisoningagainstopenclaw": {
+   "title": "Salami Attack: Stealthy Collusive Memory Poisoning against OpenClaw",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2608.01637v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "transferableendtoendoptimizationforindirectlongtermmemorypoi": {
+   "title": "Transferable End-to-End Optimization for Indirect Long-Term Memory Poisoning in LLM Agents",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2609.00523v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "capturedisentanglingpreferencedriftfrommemorypoisoninginpers": {
+   "title": "CAPTURE: Disentangling Preference Drift from Memory Poisoning in Personalized LLM Agents",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2609.02265v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "memorypoisoningandsecuremultiagentsystems": {
+   "title": "Memory poisoning and secure multi-agent systems",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2603.20357v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "youragentsmemoriesarenotitsownforgedreasoningattacksonllmage": {
+   "title": "Your Agent's Memories Are Not Its Own: Forged Reasoning Attacks on LLM Agent Memory and Defenses",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2607.05029v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "zombieagentspersistentcontrolofselfevolvingllmagentsviaselfr": {
+   "title": "Zombie Agents: Persistent Control of Self-Evolving LLM Agents via Self-Reinforcing Injections",
+   "year": 2026,
+   "venue": "arXiv",
+   "venue_type": "preprint",
+   "doi": "http://arxiv.org/abs/2602.15654v2",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "memsecbenchtrackingagentmemorypoisoningfrompersistencetocons": {
+   "title": "MemSecBench: Tracking Agent Memory Poisoning from Persistence to Consequence and Repair",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2607.27080v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "trojanhippobenchadynamicbenchmarkforpersistentmemoryattacksa": {
+   "title": "Trojan Hippo Bench: A Dynamic Benchmark for Persistent Memory Attacks and Defenses in LLM Agents",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2605.01970v4",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "agentlabbenchmarkingllmagentsagainstlonghorizonattacks": {
+   "title": "AgentLAB: Benchmarking LLM Agents against Long-Horizon Attacks",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2602.16901v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "mafiaqueryonlymemoryattacksviaprobingandfactualinjectionagai": {
+   "title": "MAFIA: Query-Only Memory Attacks via Probing and Factual Injection against Audited LLM Agents",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2608.03844v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "agentsecuritybenchasbformalizingandbenchmarkingattacksanddef": {
+   "title": "Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents",
+   "year": 2024,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2410.02644v4",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "doagentsdreamoffalsememoriesblackboxvisualattacksonlongtermm": {
+   "title": "Do Agents Dream of False Memories? Black-box Visual Attacks on Long-term Memory in Multimodal AI Agents",
+   "year": 2026,
+   "venue": "arXiv",
+   "venue_type": "preprint",
+   "doi": "http://arxiv.org/abs/2607.15657v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "memorygraftpersistentcompromiseofllmagentsviapoisonedexperie": {
+   "title": "MemoryGraft: Persistent Compromise of LLM Agents via Poisoned Experience Retrieval",
+   "year": 2025,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2512.16962v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "smsrcertifieddefenceagainstruntimememorypoisoninginpersisten": {
+   "title": "SMSR: Certified Defence Against Runtime Memory Poisoning in Persistent LLM Agent Systems",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2606.12703v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openaire",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "mapleguardmemoryawarelinkenforcementagainstmemorylinkpoisoni": {
+   "title": "MAPLE-Guard: Memory-Aware Link Enforcement Against Memory-Link Poisoning in Multi-Agent Systems",
+   "year": 2026,
+   "venue": "arXiv",
+   "venue_type": "preprint",
+   "doi": "http://arxiv.org/abs/2608.00426v2",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "mempoisonbypassingselectivememorymechanismstoplantbackdoorsi": {
+   "title": "MemPoison: Bypassing Selective Memory Mechanisms to Plant Backdoors in LLM Agents",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2605.29960v2",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "oeppoisoningselfevolvingllmagentsvialocallycorrectbutnontran": {
+   "title": "OEP: Poisoning Self-Evolving LLM Agents via Locally Correct but Non-Transferable Experiences",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2605.18930v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:memory AND all:poisoning AND all:attack AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "rankboundedmemoryselfpoisoningandattributionlaunderinginllma": {
+   "title": "Rank-Bounded Memory: Self-Poisoning and Attribution Laundering in LLM Agents",
+   "year": null,
+   "venue": "OpenAIRE",
+   "venue_type": "aggregated",
+   "doi": null,
+   "cited_by": null,
+   "source": "openaire",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "openaire"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "purgebenchabenchmarkandmetricforadversarialmemorypoisonrecov": {
+   "title": "PurgeBench: A Benchmark and Metric for Adversarial Memory-Poison Recovery in LLM Agents",
+   "year": null,
+   "venue": "OpenAIRE",
+   "venue_type": "aggregated",
+   "doi": "10.5281/zenodo.21382515",
+   "cited_by": null,
+   "source": "openaire",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "openaire",
+    "openalex"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "purgebenchaprotocolandmetricforadversarialmemorypoisonrecove": {
+   "title": "PurgeBench: A Protocol and Metric for Adversarial Memory-Poison Recovery in LLM Agents",
+   "year": 2026,
+   "venue": "Zenodo",
+   "venue_type": "aggregated",
+   "doi": "10.5281/zenodo.21379141",
+   "cited_by": null,
+   "source": "openaire",
+   "raw_event": null,
+   "publisher": "Zenodo",
+   "sources": [
+    "openaire"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(zenodo)",
+   "is_journal": false
+  },
+  "attacksurfaceproliferationinagenticaihowskillinjectionmemory": {
+   "title": "Attack Surface Proliferation in Agentic AI: How Skill Injection, Memory Poisoning, Prompt Exfiltration, and Structural Retrieval Manipulation Jointly Define a Candidate Threat Model for Deployed LLM Agents",
+   "year": 2026,
+   "venue": "Zenodo",
+   "venue_type": "aggregated",
+   "doi": "10.5281/zenodo.20745521",
+   "cited_by": null,
+   "source": "openaire",
+   "raw_event": null,
+   "publisher": "Zenodo",
+   "sources": [
+    "openaire",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(zenodo)",
+   "is_journal": false
+  },
+  "attackercontrolledinferencehowcontextpoisoningspeculativedis": {
+   "title": "Attacker-Controlled Inference: How Context Poisoning, Speculative Disclosure, Memory Persistence, and Privilege Hierarchy Failures Converge on a Candidate Framework for LLM Agent Runtime Exploitation",
+   "year": null,
+   "venue": "OpenAIRE",
+   "venue_type": "aggregated",
+   "doi": "10.5281/zenodo.20641803",
+   "cited_by": null,
+   "source": "openaire",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "openaire",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "trustboundariesunderautonomousactionhowmemorypoisoninggraphs": {
+   "title": "Trust Boundaries Under Autonomous Action: How Memory Poisoning, Graph Selection Integrity, Prompt Injection, Agentic Delegation Gaps, and Cryptographic Agility Jointly Define a Candidate Attack Surface Framework for LLM Agent Deployments",
+   "year": 2026,
+   "venue": "Zenodo",
+   "venue_type": "aggregated",
+   "doi": "10.5281/zenodo.20700881",
+   "cited_by": null,
+   "source": "openaire",
+   "raw_event": null,
+   "publisher": "Zenodo",
+   "sources": [
+    "openaire",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(zenodo)",
+   "is_journal": false
+  },
+  "asurveyonpoisoningattacksdefensesandprovabledefenseintheerao": {
+   "title": "A Survey on Poisoning Attacks, Defenses, andProvable Defense in the Era of LLMs",
+   "year": 2026,
+   "venue": "Research Square",
+   "venue_type": "repository",
+   "doi": "10.21203/rs.3.rs-9934951/v1",
+   "cited_by": 0,
+   "source": "europepmc",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "europepmc",
+    "openalex"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": true
+  },
+  "automatedadversarialredteamingforevaluatingrobustnessinllmba": {
+   "title": "Automated adversarial red-teaming for evaluating robustness in LLM-based recommender systems.",
+   "year": 2026,
+   "venue": "Discov Artif Intell",
+   "venue_type": "journal-article",
+   "doi": "10.1007/s44163-026-01546-z",
+   "cited_by": 0,
+   "source": "europepmc",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "europepmc"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "theevolvingsecurityoftheinternetofvehiclesasurveyfromclassic": {
+   "title": "The Evolving Security of the Internet of Vehicles: A Survey from Classical Machine Learning to Large Language Models, Adversarial Robustness, and Explainable AI.",
+   "year": 2026,
+   "venue": "Sensors (Basel)",
+   "venue_type": "journal-article",
+   "doi": "10.3390/s26185862",
+   "cited_by": 0,
+   "source": "europepmc",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "europepmc"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "detectionandanalysisofpromptinjectioninindianmultilinguallar": {
+   "title": "Detection and analysis of prompt injection in indian multilingual large language models.",
+   "year": 2026,
+   "venue": "Sci Rep",
+   "venue_type": "journal-article",
+   "doi": "10.1038/s41598-026-43883-0",
+   "cited_by": 0,
+   "source": "europepmc",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "europepmc"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "applicationofaiincyberattackdetectionareview": {
+   "title": "Application of AI in Cyberattack Detection: A Review.",
+   "year": 2026,
+   "venue": "Sensors (Basel)",
+   "venue_type": "journal-article",
+   "doi": "10.3390/s26051518",
+   "cited_by": 0,
+   "source": "europepmc",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "europepmc"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "aninnovativehybridanninceptionmodelfordetectingandpreventing": {
+   "title": "An innovative hybrid ANN inception model for detecting and preventing man-in-the-middle attacks in smart networks for shielding sensitive data.",
+   "year": 2026,
+   "venue": "Sci Rep",
+   "venue_type": "journal-article",
+   "doi": "10.1038/s41598-026-52513-8",
+   "cited_by": 0,
+   "source": "europepmc",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "europepmc"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "medicallargelanguagemodelsaresusceptibletotargetedmisinforma": {
+   "title": "Medical large language models are susceptible to targeted misinformation attacks.",
+   "year": 2024,
+   "venue": "NPJ Digit Med",
+   "venue_type": "journal-article",
+   "doi": "10.1038/s41746-024-01282-7",
+   "cited_by": 28,
+   "source": "europepmc",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "europepmc"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "poisoningattacksanddefensivestrategiesforllmbasedhealthcares": {
+   "title": "Poisoning attacks and defensive strategies for LLM-based healthcare systems",
+   "year": 2026,
+   "venue": "LUTPub (LUT University)",
+   "venue_type": "repository",
+   "doi": null,
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "Lappeenranta-Lahti University of Technology",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "detectionandmitigationofpromptinjectionandmemorypoisoningatt": {
+   "title": "Detection and Mitigation of Prompt Injection and Memory Poisoning Attacks in Agentic AI Systems",
+   "year": 2026,
+   "venue": "Annual Methodological Archive Research Review",
+   "venue_type": "journal",
+   "doi": null,
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "thepriceofsafetybenigncaseutilityandtokenoverheadofmemorypoi": {
+   "title": "The Price of Safety: Benign-Case Utility and Token Overhead of Memory-Poisoning Defenses in LLM Agents",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "10.48550/arxiv.2609.22818",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "Cornell University",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "rankboundedagentmemoryastoragelevelbydesigndefenseagainstmem": {
+   "title": "Rank-Bounded Agent Memory: A Storage-Level, By-Design Defense Against Memory-Poisoning Attacks",
+   "year": 2026,
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "venue_type": "repository",
+   "doi": "10.5281/zenodo.21994003",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "European Organization for Nuclear Research",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(zenodo)",
+   "is_journal": false
+  },
+  "intentboundmemoryauthorizationagainstpersistentagentpoisonin": {
+   "title": "Intent-Bound Memory Authorization Against Persistent Agent Poisoning",
+   "year": 2026,
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "venue_type": "repository",
+   "doi": "10.5281/zenodo.20426822",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "European Organization for Nuclear Research",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(zenodo)",
+   "is_journal": false
+  },
+  "memorypoisoningpropagationdynamicsanddefensestrategycomparis": {
+   "title": "Memory Poisoning Propagation Dynamics and Defense Strategy Comparison in Multi-Agent LLM Collaboration: An Empirical Study on AutoGen and LangGraph Frameworks",
+   "year": 2026,
+   "venue": "Journal of Global Engineering Review",
+   "venue_type": "journal",
+   "doi": null,
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "evinceoptimizingadversarialllmdialoguesviaconditionalstatist": {
+   "title": "EVINCE: Optimizing Adversarial LLM Dialogues via Conditional Statistics and Information Theory",
+   "year": 2025,
+   "venue": "Multi-LLM Agent Collaborative Intelligence",
+   "venue_type": "book-chapter",
+   "doi": "10.1145/3749421.3749431",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "ACM",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "llmagentscaneasilytamperwiththeirowntraces": {
+   "title": "LLM Agents Can Easily Tamper With Their Own Traces",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2609.30266v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:audit AND all:log AND all:tampering AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "tracekittamperevidentintentreasoningactionauditingforautonom": {
+   "title": "Tracekit: Tamper-Evident Intent-Reasoning-Action Auditing for Autonomous Coding Agents",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2609.35659v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:audit AND all:log AND all:tampering AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "canmodelinternalsdetectmcptoolpoisoningthattextanalysiscanno": {
+   "title": "Can Model Internals Detect MCP Tool Poisoning That Text Analysis Cannot?",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.2139/ssrn.6698259",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "advancedtoolpoisoningattackatpaoutputpoisoning": {
+   "title": "Advanced Tool Poisoning Attack (ATPA): Output Poisoning",
+   "year": 2026,
+   "venue": "Breaking the Model Context Protocol",
+   "venue_type": "book-chapter",
+   "doi": "10.1007/979-8-8688-2968-0_4",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Apress",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "securemcpbasedtoolaugmentedragforindustrialiotdiagnosticsund": {
+   "title": "Secure MCP-Based Tool-Augmented RAG for Industrial IoT Diagnostics Under Indirect Prompt Injection, Retrieval Poisoning, and Modality Outages",
+   "year": 2026,
+   "venue": "2026 6th International Conference on Electrical, Computer and Energy Technologies (ICECET)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/icecet65726.2026.11632629",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "2026 6th International Conference on Electrical, Computer and Energy Technologies (ICECET)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "beyonddetectionautonomousanomalyremediationformcpagainsttool": {
+   "title": "Beyond Detection: Autonomous Anomaly Remediation for MCP Against Tool Poisoning Attacks",
+   "year": 2026,
+   "venue": "Proceedings of the ACM Web Conference 2026",
+   "venue_type": "proceedings-article",
+   "doi": "10.1145/3774904.3792400",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "WWW '26: The ACM Web Conference 2026",
+   "publisher": "ACM",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "A",
+   "tier_reason": "Tier A 会议",
+   "is_journal": false
+  },
+  "mcptoxabenchmarkfortoolpoisoningonrealworldmcpservers": {
+   "title": "MCPTox: A Benchmark for Tool Poisoning on Real-World MCP Servers",
+   "year": 2026,
+   "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+   "venue_type": "journal-article",
+   "doi": "10.1609/aaai.v40i42.40895",
+   "cited_by": 8,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+   "sources": [
+    "crossref",
+    "openalex"
+   ],
+   "survey": true,
+   "tier": "A",
+   "tier_reason": "Tier A 会议",
+   "is_journal": false
+  },
+  "securitythreatsintelecomnetworksbypromptpoisoningofmcpserver": {
+   "title": "Security Threats in Telecom Networks by Prompt Poisoning of MCP Servers and Mitigations",
+   "year": 2026,
+   "venue": "Journal of Computational Analysis and Applications",
+   "venue_type": "journal-article",
+   "doi": "10.48047/jocaaa.2026.35.01.94",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Institute for Advanced Studies",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "mcptoxabenchmarkfortoolpoisoningattackonrealworldmcpservers": {
+   "title": "MCPTox: A Benchmark for Tool Poisoning Attack on Real-World MCP Servers",
+   "year": 2025,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2508.14925v2",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:tool AND all:metadata AND all:poisoning AND all:MCP AND all:server",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "modelcontextprotocolthreatmodelingandanalyzingvulnerabilitie": {
+   "title": "Model Context Protocol Threat Modeling and Analyzing Vulnerabilities to Prompt Injection with Tool Poisoning",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2603.22489v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:tool AND all:metadata AND all:poisoning AND all:MCP AND all:server",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "modelcontextprotocolthreatmodelingandanalysisofvulnerabiliti": {
+   "title": "Model Context Protocol Threat Modeling and Analysis of Vulnerabilities to Prompt Injection with Tool Poisoning",
+   "year": 2026,
+   "venue": "Journal of Cybersecurity and Privacy",
+   "venue_type": "journal",
+   "doi": "10.3390/jcp6030084",
+   "cited_by": 4,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "Multidisciplinary Digital Publishing Institute",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "theriacstructuraldetectionandanevasionrobustnessevaluationfo": {
+   "title": "theriac: Structural Detection and an Evasion-Robustness Evaluation for Tool Poisoning in the Model Context Protocol",
+   "year": 2026,
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "venue_type": "repository",
+   "doi": "10.5281/zenodo.21990776",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "European Organization for Nuclear Research",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(zenodo)",
+   "is_journal": false
+  },
+  "areconnaissancemethodologyformappingthepreauthenticationatta": {
+   "title": "A Reconnaissance Methodology for Mapping the Pre-Authentication Attack Surface of Model Context Protocol Servers",
+   "year": 2026,
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "venue_type": "repository",
+   "doi": "10.5281/zenodo.22642964",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "European Organization for Nuclear Research",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(zenodo)",
+   "is_journal": false
+  },
+  "securityofthemodelcontextprotocolecosystememergingthreatsemp": {
+   "title": "Security of The Model Context Protocol Ecosystem: Emerging Threats, Empirical Attack Evidence, Trust and Authorization Failures, Supply-Chain Risks, And Defensive Strategies",
+   "year": 2026,
+   "venue": "Iconic Research and Engineering Journals",
+   "venue_type": "journal",
+   "doi": "10.64388/irev10i3-1723420",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": null,
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(iconic research)",
+   "is_journal": true
+  },
+  "yourllmagentcanleakyourdatadataexfiltrationviabackdooredtool": {
+   "title": "Your LLM Agent Can Leak Your Data: Data Exfiltration via Backdoored Tool Use",
+   "year": 2026,
+   "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
+   "venue_type": "proceedings-article",
+   "doi": "10.18653/v1/2026.findings-acl.1257",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": "Findings of the Association for Computational Linguistics: ACL 2026",
+   "publisher": "Association for Computational Linguistics",
+   "sources": [
+    "arxiv",
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "B",
+   "tier_reason": "Findings/Workshop（含主会名但非主会正刊）",
+   "is_journal": false
+  },
+  "imchatamultiagentllmframeworkintegratingtoolcallinganddiffus": {
+   "title": "IM-Chat: A multi-agent LLM framework integrating tool-calling and diffusion modeling for knowledge transfer in injection molding industry",
+   "year": 2025,
+   "venue": "Journal of Manufacturing Systems",
+   "venue_type": "journal-article",
+   "doi": "10.1016/j.jmsy.2025.11.007",
+   "cited_by": 15,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "simplepromptinjectionattackscanleakpersonaldataobservedbyllm": {
+   "title": "Simple Prompt Injection Attacks Can Leak Personal Data Observed by LLM Agents During Task Execution",
+   "year": 2025,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2506.01055v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:data AND all:exfiltration AND all:tool AND all:calling AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "actionguardtoolcallauthorizationunderpoisonedskills": {
+   "title": "ActionGuard: Tool Call Authorization under Poisoned Skills",
+   "year": 2026,
+   "venue": "arXiv",
+   "venue_type": "preprint",
+   "doi": "http://arxiv.org/abs/2609.39450v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:data AND all:exfiltration AND all:tool AND all:calling AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "youragentismorebrittlethanyouthinkuncoveringindirectinjectio": {
+   "title": "Your Agent is More Brittle Than You Think: Uncovering Indirect Injection Vulnerabilities in Agentic LLMs",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2604.03870v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:data AND all:exfiltration AND all:tool AND all:calling AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "silentegresswhenimplicitpromptinjectionmakesllmagentsleakwit": {
+   "title": "Silent Egress: When Implicit Prompt Injection Makes LLM Agents Leak Without a Trace",
+   "year": 2026,
+   "venue": "IEEE International Conference on Electro Information Technology",
+   "venue_type": "conference",
+   "doi": "http://arxiv.org/abs/2602.22450v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:data AND all:exfiltration AND all:tool AND all:calling AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "isolatedbutexposedpersistencebasedmemoryextractionattackonll": {
+   "title": "Isolated but Exposed: Persistence-Based Memory Extraction Attack on LLM Agents",
+   "year": 2026,
+   "venue": "arXiv",
+   "venue_type": "preprint",
+   "doi": "http://arxiv.org/abs/2607.23444v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:data AND all:exfiltration AND all:tool AND all:calling AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "exploitingwebsearchtoolsofaiagentsfordataexfiltration": {
+   "title": "Exploiting Web Search Tools of AI Agents for Data Exfiltration",
+   "year": 2025,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "http://arxiv.org/abs/2510.09093v2",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:data AND all:exfiltration AND all:tool AND all:calling AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv",
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "invitationisallyouneedpromptwareattacksagainstllmpoweredassi": {
+   "title": "Invitation Is All You Need! Promptware Attacks Against LLM-Powered Assistants in Production Are Practical and Dangerous",
+   "year": 2025,
+   "venue": "arXiv",
+   "venue_type": "preprint",
+   "doi": "http://arxiv.org/abs/2508.12175v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:data AND all:exfiltration AND all:tool AND all:calling AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "defeatingpromptinjectionsbydesign": {
+   "title": "Defeating Prompt Injections by Design",
+   "year": 2025,
+   "venue": "arXiv",
+   "venue_type": "preprint",
+   "doi": "http://arxiv.org/abs/2503.18813v2",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:data AND all:exfiltration AND all:tool AND all:calling AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "anempiricalstudyofprivacyleakagechainsviapromptinjectioninbl": {
+   "title": "An Empirical Study of Privacy Leakage Chains via Prompt Injection in Black-Box Chatbot Environments",
+   "year": 2026,
+   "venue": "arXiv",
+   "venue_type": "preprint",
+   "doi": "http://arxiv.org/abs/2605.18133v1",
+   "cited_by": null,
+   "source": "arxiv",
+   "raw_event": null,
+   "publisher": "arXiv",
+   "raw_query": "all:data AND all:exfiltration AND all:tool AND all:calling AND all:LLM AND all:agent",
+   "sources": [
+    "arxiv"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  },
+  "nukieeraipromptinjectioncheatsheetnewrelease": {
+   "title": "nukIeer/AI-Prompt-Injection-Cheatsheet: New release",
+   "year": 2026,
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "venue_type": "repository",
+   "doi": "10.5281/zenodo.19457343",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "European Organization for Nuclear Research",
+   "sources": [
+    "openalex"
+   ],
+   "survey": false,
+   "tier": "剔",
+   "tier_reason": "非合格出版渠道(zenodo)",
+   "is_journal": false
+  },
+  "resilientmultidimensionalformationcontrolofmassagainstagentb": {
+   "title": "Resilient Multi-Dimensional Formation Control of MASs against Agent-Based and Denial-of-Service Attacks",
+   "year": 2025,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.36227/techrxiv.176127512.24565240/v1",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "thinktrapdenialofserviceattacksagainstblackboxllmservicesvia": {
+   "title": "ThinkTrap: Denial-of-Service Attacks against Black-box LLM Services via Infinite Thinking",
+   "year": 2026,
+   "venue": "Proceedings 2026 Network and Distributed System Security Symposium",
+   "venue_type": "proceedings-article",
+   "doi": "10.14722/ndss.2026.240639",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": "Network and Distributed System Security Symposium",
+   "publisher": "Internet Society",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "S",
+   "tier_reason": "Tier S 会议",
+   "is_journal": false
+  },
+  "resilientconsensuscontrolformultiagentsystemsagainstdenialof": {
+   "title": "Resilient Consensus Control for Multi-Agent Systems Against Denial-of-Service Attacks",
+   "year": 2026,
+   "venue": "2026 15th Asian Control Conference (ASCC)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/ascc70886.2026.11701789",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "2026 15th Asian Control Conference (ASCC)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "observerbasedquantizedcontrolformultiagentsystemsunderdenial": {
+   "title": "Observer-Based Quantized Control for Multi-Agent Systems under Denial of Service Attack; Application to Satellite Formation Flight",
+   "year": 2025,
+   "venue": "AIAA SCITECH 2025 Forum",
+   "venue_type": "proceedings-article",
+   "doi": "10.2514/6.2025-2592",
+   "cited_by": 2,
+   "source": "crossref",
+   "raw_event": "AIAA SCITECH 2025 Forum",
+   "publisher": "American Institute of Aeronautics and Astronautics",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "riskassessmentofmultiagentsystemunderdenialofservicecyberatt": {
+   "title": "Risk Assessment of Multi-Agent System Under Denial-of-Service Cyberattacks Using Reachable Set Synthesis",
+   "year": 2024,
+   "venue": "2024 American Control Conference (ACC)",
+   "venue_type": "proceedings-article",
+   "doi": "10.23919/acc60939.2024.10644803",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "2024 American Control Conference (ACC)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "semiglobalobserverbasedsecureconsensusofmultiagentsystemswit": {
+   "title": "Semi-Global Observer-Based Secure Consensus of Multi-Agent Systems with Input Saturation and Denial-of-Service Attacks",
+   "year": 2025,
+   "venue": "Electronics",
+   "venue_type": "journal-article",
+   "doi": "10.3390/electronics14050878",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "MDPI AG",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "optimaldenialofserviceattacksequencetowardstheconsensusofmul": {
+   "title": "Optimal Denial-of-Service Attack Sequence towards the Consensus of Multi-Agent Systems",
+   "year": 2024,
+   "venue": "2024 4th International Conference on Control Theory and Applications (ICoCTA)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/icocta64736.2024.00061",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "2024 4th International Conference on Control Theory and Applications (ICoCTA)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "quantifyingdeviationinaverageconsensusequilibriuminamultiage": {
+   "title": "Quantifying Deviation in Average Consensus Equilibrium in a Multi-Agent System Subject to Periodic Denial-of-Service Attacks",
+   "year": 2024,
+   "venue": "2024 Tenth Indian Control Conference (ICC)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/icc64753.2024.10883684",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "2024 Tenth Indian Control Conference (ICC)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "optimalmultichanneldenialofserviceattacktowardstheconsensuso": {
+   "title": "Optimal Multi-channel Denial-of-Service Attack Towards the Consensus of Multi-Agent Systems",
+   "year": 2024,
+   "venue": "2024 IEEE International Symposium on Product Compliance Engineering - Asia (ISPCE-ASIA)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/ispce-asia64773.2024.10756264",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "2024 IEEE International Symposium on Product Compliance Engineering - Asia (ISPCE-ASIA)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "llmsafeguardisadoubleedgedswordexploitingfalsepositivesforde": {
+   "title": "LLM Safeguard is a Double-Edged Sword: Exploiting False Positives for Denial-of-Service Attacks",
+   "year": 2025,
+   "venue": "Proceedings of the 2025 Workshop on Large AI Systems and Models with Privacy and Security Analysis",
+   "venue_type": "proceedings-article",
+   "doi": "10.1145/3733800.3763264",
+   "cited_by": 5,
+   "source": "crossref",
+   "raw_event": "LAMPS '25: Proceedings of the 2025 Workshop on Large AI Systems and Models with Privacy and Security Analysis",
+   "publisher": "ACM",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "B",
+   "tier_reason": "Findings/Workshop（含主会名但非主会正刊）",
+   "is_journal": false
+  },
+  "resilientsemiglobalfinitetimecooperativeoutputregulationofhe": {
+   "title": "Resilient semi-global finite-time cooperative output regulation of heterogeneous linear multi-agent systems subject to denial-of-service attacks",
+   "year": 2025,
+   "venue": "Automatica",
+   "venue_type": "journal-article",
+   "doi": "10.1016/j.automatica.2024.112099",
+   "cited_by": 30,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "computervisionbaseddistributeddenialofserviceattackdetection": {
+   "title": "Computer vision based distributed denial of service attack detection for resource-limited devices",
+   "year": 2024,
+   "venue": "Computers and Electrical Engineering",
+   "venue_type": "journal-article",
+   "doi": "10.1016/j.compeleceng.2024.109716",
+   "cited_by": 5,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "eventtriggeredpracticalsecureconsensuscontrolfornonlinearmul": {
+   "title": "Event-Triggered Practical Secure Consensus Control for Nonlinear Multi-Agent Systems with Hysteresis Quantization under Denial-of-Service Attacks",
+   "year": 2025,
+   "venue": "2025 China Automation Congress (CAC)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/cac67268.2025.11486966",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "2025 China Automation Congress (CAC)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "securebipartiteconsensusofleaderfollowermultiagentsystemsund": {
+   "title": "Secure bipartite consensus of leader–follower multi-agent systems under denial-of-service attacks via observer-based dynamic event-triggered control",
+   "year": 2025,
+   "venue": "Neurocomputing",
+   "venue_type": "journal-article",
+   "doi": "10.1016/j.neucom.2024.128817",
+   "cited_by": 10,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "A",
+   "tier_reason": "Tier A 期刊",
+   "is_journal": true
+  },
+  "alignmentexhaustionandmemoryresonanceinextendedllminteractio": {
+   "title": "Alignment Exhaustion and Memory Resonance in Extended LLM Interactions: A Theoretical Framework for Cognitive Decompression Attacks",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.2139/ssrn.6116887",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "timevaryingformationcontainmenttrackingcontrolofheterogeneou": {
+   "title": "Time-Varying Formation-Containment Tracking Control of Heterogeneous Multi-Agent System Under Denial of Service Attack and Sensor Fault",
+   "year": 2024,
+   "venue": "2024 China Automation Congress (CAC)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/cac63892.2024.10864523",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "2024 China Automation Congress (CAC)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "comparativestudyofdefensealgorithmsagainstdenialofserviceand": {
+   "title": "Comparative Study of Defense Algorithms Against Denial of Service and Distributed Denial of Service Attacks",
+   "year": 2026,
+   "venue": "Leadership, Business and Management in STEM",
+   "venue_type": "book-chapter",
+   "doi": "10.1007/978-3-032-10539-4_9",
+   "cited_by": 1,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Springer Nature Switzerland",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "secureoutputconsensusformultiagentsystemsunderedgebasedevent": {
+   "title": "Secure output consensus for multi-agent systems under edge-based event-trigger against denial-of-service",
+   "year": 2024,
+   "venue": "ISA Transactions",
+   "venue_type": "journal-article",
+   "doi": "10.1016/j.isatra.2024.05.053",
+   "cited_by": 9,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": true
+  },
+  "estimatorbasedeventtriggeredoutputsynchronizationforheteroge": {
+   "title": "Estimator-based event-triggered output synchronization for heterogeneous multi-agent systems under denial-of-service attacks and actuator faults",
+   "year": 2024,
+   "venue": "Information Sciences",
+   "venue_type": "journal-article",
+   "doi": "10.1016/j.ins.2023.119955",
+   "cited_by": 27,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Elsevier BV",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "A",
+   "tier_reason": "Tier A 期刊",
+   "is_journal": true
+  },
+  "resilientdistributednashequilibriumseekingforfirstordermulti": {
+   "title": "Resilient Distributed Nash Equilibrium Seeking for First-Order Multi-Agent Systems Under Denial-of-Service Attacks",
+   "year": 2025,
+   "venue": "2025 IEEE 4th International Conference on Industrial Electronics for Sustainable Energy Systems (IESES)",
+   "venue_type": "proceedings-article",
+   "doi": "10.1109/ieses66335.2025.11359900",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": "2025 IEEE 4th International Conference on Industrial Electronics for Sustainable Energy Systems (IESES)",
+   "publisher": "IEEE",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "不在已签署名单内",
+   "is_journal": false
+  },
+  "selftriggeredprescribedtimetimevaryingformationcontrolofseco": {
+   "title": "Self-triggered prescribed-time time varying formation control of second-order multi-agent systems with denial of service (DoS) attacks",
+   "year": 2026,
+   "venue": "Scientific Reports",
+   "venue_type": "journal-article",
+   "doi": "10.1038/s41598-026-57121-0",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Springer Science and Business Media LLC",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "A",
+   "tier_reason": "Tier A 期刊",
+   "is_journal": true
+  },
+  "politicaldenialofserviceattacksdatabasepdosd": {
+   "title": "Political Denial-of-Service Attacks Database (PDOSD)",
+   "year": 2026,
+   "venue": "?",
+   "venue_type": "posted-content",
+   "doi": "10.31235/osf.io/gn9re_v3",
+   "cited_by": 0,
+   "source": "crossref",
+   "raw_event": null,
+   "publisher": "Center for Open Science",
+   "sources": [
+    "crossref"
+   ],
+   "survey": false,
+   "tier": "未分级",
+   "tier_reason": "venue 缺失",
+   "is_journal": false
+  },
+  "deeplearninglatencyattacksanddefensesacrossdomainsurveyofava": {
+   "title": "Deep Learning Latency Attacks and Defenses: A Cross-Domain Survey of Availability Threats",
+   "year": 2026,
+   "venue": "arXiv (Cornell University)",
+   "venue_type": "repository",
+   "doi": "10.48550/arxiv.2609.36732",
+   "cited_by": 0,
+   "source": "openalex",
+   "raw_event": null,
+   "publisher": "Cornell University",
+   "sources": [
+    "openalex"
+   ],
+   "survey": true,
+   "tier": "未分级",
+   "tier_reason": "预印本/聚合源，未定级（须人工按 venue 定级）",
+   "is_journal": false
+  }
+ },
+ "sources_failed": {
+  "openaire": {
+   "alive": true,
+   "errors": [
+    "openaire:audit log tampering  TimeoutError",
+    "openaire:audit log tampering  TimeoutError"
+   ]
+  }
+ },
+ "count": 105,
+ "count_rejected": 10,
+ "count_attack": 94
+}

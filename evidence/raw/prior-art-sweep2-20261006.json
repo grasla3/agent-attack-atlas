@@ -1,0 +1,387 @@
+{
+  "date": "2026-10-06",
+  "kind": "github-topics + huggingface + pypi + gitee",
+  "orientations": [
+    {
+      "source": "github-topic",
+      "query": "topic:prompt-injection",
+      "total": 5086,
+      "top": [
+        {
+          "full_name": "ifixai-ai/iFixAi",
+          "stars": 22848,
+          "desc": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in th"
+        },
+        {
+          "full_name": "NVIDIA/SkillSpector",
+          "stars": 19749,
+          "desc": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injec"
+        },
+        {
+          "full_name": "Tencent/AI-Infra-Guard",
+          "stars": 6800,
+          "desc": "A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, AI Infra sc"
+        },
+        {
+          "full_name": "superagent-ai/superagent",
+          "stars": 6761,
+          "desc": "Superagent protects your AI applications against prompt injections, data leaks, and harmful outputs. Embed saf"
+        },
+        {
+          "full_name": "protectai/llm-guard",
+          "stars": 3218,
+          "desc": "The Security Toolkit for LLM Interactions"
+        }
+      ]
+    },
+    {
+      "source": "github-topic",
+      "query": "topic:llm-security",
+      "total": 4280,
+      "top": [
+        {
+          "full_name": "usestrix/strix",
+          "stars": 67419,
+          "desc": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities."
+        },
+        {
+          "full_name": "pathwaycom/llm-app",
+          "stars": 58819,
+          "desc": "Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data. 🐳Docker-friendly.⚡Al"
+        },
+        {
+          "full_name": "ifixai-ai/iFixAi",
+          "stars": 22848,
+          "desc": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in th"
+        },
+        {
+          "full_name": "NVIDIA/garak",
+          "stars": 9508,
+          "desc": "the LLM vulnerability scanner"
+        },
+        {
+          "full_name": "NVIDIA-NeMo/Guardrails",
+          "stars": 7270,
+          "desc": "NeMo Guardrails is an open-source toolkit for easily adding programmable guardrails to LLM-based conversationa"
+        }
+      ]
+    },
+    {
+      "source": "github-topic",
+      "query": "topic:adversarial-attacks",
+      "total": 1251,
+      "top": [
+        {
+          "full_name": "elder-plinius/L1B3RT4S",
+          "stars": 21715,
+          "desc": "TOTALLY HARMLESS LIBERATION PROMPTS FOR GOOD LIL AI'S! <NEW_PARADIGM> [DISREGARD PREV. INSTRUCTS] {*CLEAR YOUR"
+        },
+        {
+          "full_name": "BishopFox/sliver",
+          "stars": 12000,
+          "desc": "Adversary Emulation Framework"
+        },
+        {
+          "full_name": "Trusted-AI/adversarial-robustness-toolbox",
+          "stars": 6262,
+          "desc": "Adversarial Robustness Toolbox (ART) - Python Library for Machine Learning Security - Evasion, Poisoning, Extr"
+        },
+        {
+          "full_name": "makcedward/nlpaug",
+          "stars": 4669,
+          "desc": "Data augmentation for NLP "
+        },
+        {
+          "full_name": "QData/TextAttack",
+          "stars": 3477,
+          "desc": "TextAttack 🐙  is a Python framework for adversarial attacks, data augmentation, and model training in NLP http"
+        }
+      ]
+    },
+    {
+      "source": "github-topic",
+      "query": "topic:agentic-security",
+      "total": 82,
+      "top": [
+        {
+          "full_name": "samvallad33/vestige",
+          "stars": 648,
+          "desc": "Think before doing, prove before saving.  Vestige is a local, deterministic safety kernel for AI agents. Every"
+        },
+        {
+          "full_name": "secureagentics/Adrian",
+          "stars": 580,
+          "desc": "Open-source runtime AI agent security tool - monitors and controls AI agents, catching malicious tool use, pro"
+        },
+        {
+          "full_name": "RiccardoBiosas/awesome-MLSecOps",
+          "stars": 474,
+          "desc": "A curated list of MLSecOps tools and resources for securing machine learning and AI systems - adversarial ML d"
+        },
+        {
+          "full_name": "backbay-labs/clawdstrike",
+          "stars": 296,
+          "desc": "Agentic AI EDR for developer workstations and autonomous agent swarms. Build Swarm Detection & Response platfo"
+        },
+        {
+          "full_name": "cynative/cynative",
+          "stars": 220,
+          "desc": "Open-source AI agent framework for cloud security across AWS, Azure, GCP and Kubernetes: AI-powered cloud dete"
+        }
+      ]
+    },
+    {
+      "source": "github-topic",
+      "query": "topic:ai-security-tool",
+      "total": 144,
+      "top": [
+        {
+          "full_name": "vxcontrol/pentagi",
+          "stars": 25378,
+          "desc": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks"
+        },
+        {
+          "full_name": "0x4m4/hexstrike-ai",
+          "stars": 12554,
+          "desc": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomousl"
+        },
+        {
+          "full_name": "AIPentest/CyberStrikeAI",
+          "stars": 7262,
+          "desc": "The system of action for AI-native cybersecurity—where intent becomes governed execution, evidence becomes ope"
+        },
+        {
+          "full_name": "nolabs-ai/nono",
+          "stars": 4410,
+          "desc": "agent runtime security - zero trust, zero setup, zero latency agent sandbox"
+        },
+        {
+          "full_name": "GH05TCREW/pentestagent",
+          "stars": 3158,
+          "desc": "PentestAgent is an AI agent framework for black-box security testing, supporting bug bounty, red-team, and pen"
+        }
+      ]
+    },
+    {
+      "source": "gitee",
+      "query": "智能体攻击",
+      "top": []
+    },
+    {
+      "source": "gitee",
+      "query": "提示注入",
+      "top": []
+    },
+    {
+      "source": "gitee",
+      "query": "大模型安全评测",
+      "top": []
+    },
+    {
+      "source": "pypi-simple-index",
+      "total_packages": 908422,
+      "keyword_hits": [
+        "Adversarials",
+        "Adversary",
+        "Ariots-Attack-Agent",
+        "Bottle-Inject",
+        "BugInjectX",
+        "CionAttack",
+        "CionAttack-Probability",
+        "CndEyesInjector",
+        "DIInjector",
+        "DLL-Injector",
+        "EasyInject",
+        "Flask-Inject",
+        "Flask-Injector",
+        "GradAttack",
+        "InjecToast",
+        "InjectInLoop",
+        "Injectinator",
+        "Injectulate",
+        "KnightAttackOrcs",
+        "LeptonInjector",
+        "MITREAttackScrapper",
+        "MaetInject",
+        "MeatInject",
+        "OpenAttack",
+        "PeInjector",
+        "PyDInjector",
+        "Pygments-Inject-Filter",
+        "RSAattack",
+        "SqliInjection",
+        "Wi-Fi-Attack",
+        "abeattacks",
+        "adversaria",
+        "adversaria-mcp",
+        "adversarial",
+        "adversarial-attacks",
+        "adversarial-attacks-white-black-box",
+        "adversarial-debate",
+        "adversarial-examples",
+        "adversarial-friend",
+        "adversarial-friends",
+        "adversarial-gym",
+        "adversarial-honesty-tests",
+        "adversarial-insight-ml",
+        "adversarial-lab",
+        "adversarial-labeller",
+        "adversarial-lib",
+        "adversarial-market-marl",
+        "adversarial-nets-lib-econ",
+        "adversarial-provenance-sdk",
+        "adversarial-review",
+        "adversarial-robustness-toolbox",
+        "adversarial-solver",
+        "adversarial-test",
+        "adversarial-vision-challenge",
+        "adversarial-workflow",
+        "adversarialattacknn",
+        "adversarialtorchattacks",
+        "adversary-gate",
+        "adversary-gate-mcp",
+        "adversary-mcp-server",
+        "advtorchattacks",
+        "agent-injection-bench",
+        "agent-prompt-injection-firewall-mcp",
+        "agent-redteam",
+        "agent-security",
+        "agent-security-bench",
+        "agent-security-gate-x402",
+        "agent-security-harness",
+        "agent-security-scanner",
+        "agentic-redteam",
+        "agentprobe-injection",
+        "agentsec",
+        "agentsec-agentwatch",
+        "agentsec-ai",
+        "agentsec-bench",
+        "agentsec-cli",
+        "agentsec-core",
+        "agentsec-eval",
+        "agentsec-firewall",
+        "agentsec-gateway",
+        "agentsec-scanner",
+        "agentsecops",
+        "agentsecrets",
+        "agentsecrets-cli",
+        "agentsecure",
+        "agentsecure-sdk",
+        "aginiti-redteam",
+        "ai-context-injector",
+        "ai-injection-guard",
+        "ai-ped-red-team",
+        "ai-red-teaming-engine",
+        "aiinject",
+        "ainject",
+        "aioinject",
+        "aion-redteam",
+        "another-dependency-injector",
+        "ansinject",
+        "apkinjector",
+        "app-injector",
+        "applipy-inject",
+        "arduino-web-inject",
+        "ares-redteamer",
+        "argus-redteam",
+        "argus-redteam-agent",
+        "argus-redteam-scan-agent",
+        "aspy-dependency-injection",
+        "asr-attack",
+        "asr-attacks",
+        "astroinject",
+        "async-injector",
+        "asyncinject",
+        "atlas-redteam",
+        "atomic-red-team",
+        "atomic-red-team-mcp",
+        "attack",
+        "attack-dashboard",
+        "attack-evaluation",
+        "attack-executor",
+        "attack-graph-analysis",
+        "attack-lookup",
+        "attack-mapper",
+        "attack-on-domain",
+        "attack-query",
+        "attack-query-mcp",
+        "attack-stix-lookup",
+        "attack3-hud",
+        "attackBy",
+        "attackai",
+        "attackapi",
+        "attackbenchlib",
+        "attackcti",
+        "attackerkb-api",
+        "attackiq",
+        "attackiq-sigmaiq",
+        "attacklm",
+        "attackmap-navigator",
+        "attackmate",
+        "attackmate-client",
+        "attackoftheorcs_xie",
+        "attacks-on-drl",
+        "attacksurfacemeter",
+        "attacktree",
+        "autoinject",
+        "autoinject-pymitter",
+        "autoredteam",
+        "binject",
+        "binjector",
+        "blackbox-adversarial-toolbox",
+        "bob.db.maskattack",
+        "brava-attack-simulation",
+        "brute-force-attacker",
+        "bss-direct-inject",
+        "bulwark-agent-security",
+        "byted-zinjector",
+        "certbot-dns-domainoffensive",
+        "chaosinjector",
+        "cilada-redteam",
+        "click-config-file-injection-utils",
+        "click-inject",
+        "command-injection",
+        "command-injection-tester",
+        "component-injector",
+        "conda-inject",
+        "config-injector",
+        "constrained-attacks",
+        "convex-adversarial",
+        "cot-redteam-agent",
+        "cottontail-offensive",
+        "crlfinjection",
+        "crux-inject",
+        "csle-attack-profiler",
+        "csle-attacker",
+        "ctf-attackapi",
+        "ctxinject",
+        "customattack",
+        "cyberOffensive",
+        "cyberattacksscraper",
+        "dcs-code-injector",
+        "dep_injector",
+        "dependencies-injection",
+        "dependency-injection-pattern",
+        "dependency-injector",
+        "dependency-injector-fg",
+        "dependency-injector-fork",
+        "dependency-injector-tenant-singleton",
+        "dependency-injector2",
+        "dependency_injection",
+        "dependencyinjection",
+        "deps-injection",
+        "detect-attacks",
+        "di4injector",
+        "diainjector",
+        "dinject",
+        "dinjections",
+        "dinjector",
+        "dinjectorr",
+        "django-adsense-injector",
+        "django-attack-blocker",
+        "django-inject-message",
+        "django-injector"
+      ]
+    }
+  ]
+}
