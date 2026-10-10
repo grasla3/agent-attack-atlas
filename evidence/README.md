@@ -9,7 +9,8 @@
 |---|---|
 | `queries.md` | 检索协议与全部检索式：文献侧 6 个源 / 5 轮 / 21 个检索式；仓库侧元数据取向；代码级检索式。由原始归档直接导出，非人工转录 |
 | `raw/*.json` | 各轮检索的**原始响应**（含检索式、时间戳、各源命中数、未答全的源） |
-| `manifest.json` | 每个原始文件的字节数与 SHA-256、来源端点、执行时间、命中数，以及整包摘要 |
+| `manifest.json` | 每个文件的字节数与 SHA-256、来源端点、执行时间、命中数（截图另含 url 与 captured_at），以及整包摘要 |
+| `screenshots/` | 辅助材料：GitHub 仓库检索页与关键仓库页截图（含本证据包对账运行页）。**截图不含地址栏**，每张图对应的完整 URL 与采集时间以 `manifest.json` 的 `url` / `captured_at` 字段为准 |
 
 ## 二、如何独立核验
 
@@ -17,7 +18,7 @@
 python tools/verify_evidence.py --manifest evidence/manifest.json --root evidence
 ```
 
-脚本逐个重算 SHA-256 并与 `manifest.json` 对账；**任一文件被改动都会失败**。CI 中的同一次对账见于
+脚本逐个重算 SHA-256 并与 `manifest.json` 对账（覆盖 `raw/` 与 `screenshots/` 全部文件）；**任一文件被改动都会失败**。CI 中的同一次对账见于
 仓库 Actions 的 `verify-evidence` 工作流运行记录（含平台签发的执行时间与 artifact 摘要）。
 
 ## 三、检索窗口与范围
@@ -39,3 +40,4 @@ python tools/verify_evidence.py --manifest evidence/manifest.json --root evidenc
 2. 搜索命中数会随时间漂移；**稳定证据是"命中的仓库集合"**，计数仅代表上述运行窗口内的读数。
 3. `raw/*.json` 为第三方服务公开响应的转存，版权归原服务方；本包只主张"在该时间点获得了这些响应"，不主张响应内容的著作权。
 4. 本包证明的是**记录未被改动、且由平台在指定时间完成对账**；检索式是否"选得够全"由 `queries.md` 公开的协议承担，任何人可据此复跑。
+5. 代码级检索需登录态，无法用公开页面截图复现；该轮证据以 `raw/prior-art-codesearch-20261006.json` 的原始响应为准。
