@@ -360,9 +360,19 @@
     {
       "file": "screenshots/01-github-repo-search-attack-method-library.png",
       "kind": "screenshot",
-      "source": "GitHub web（Edge 无头截取）",
+      "annotated": true,
+      "caption": "说明条为后期添加（含检索式、完整网址、采集时间与结果数），非页面内容；未加说明条的原始截图见 screenshots/original/ 同名文件。",
       "url": "https://github.com/search?q=%22attack+method+library%22&type=repositories",
       "shows": "仓库检索：\"attack method library\" → 0 个仓库命中（同查询下 268 个 PR、102 个 issue）",
+      "captured_at": "2026-10-10T11:50:42Z",
+      "bytes": 170092,
+      "sha256": "8e1c5c52035cde11009bd90dce310f75cb4a841adf9532d52e09fcc155c8f28e"
+    },
+    {
+      "file": "screenshots/original/01-github-repo-search-attack-method-library.png",
+      "kind": "screenshot-original",
+      "annotated": false,
+      "url": "https://github.com/search?q=%22attack+method+library%22&type=repositories",
       "captured_at": "2026-10-10T11:50:42Z",
       "bytes": 123707,
       "sha256": "837faf32420f9b5ec3e8768dab8dc80dd05bb9dafb5be365cad9006eb591d80e"
@@ -370,9 +380,19 @@
     {
       "file": "screenshots/02-github-repo-search-agent-red-team-benchmark.png",
       "kind": "screenshot",
-      "source": "GitHub web（Edge 无头截取）",
+      "annotated": true,
+      "caption": "说明条为后期添加（含检索式、完整网址、采集时间与结果数），非页面内容；未加说明条的原始截图见 screenshots/original/ 同名文件。",
       "url": "https://github.com/search?q=%22agent+red+team+benchmark%22&type=repositories",
       "shows": "仓库检索：\"agent red team benchmark\"（该取向检出同层最接近对象）",
+      "captured_at": "2026-10-10T11:50:50Z",
+      "bytes": 170146,
+      "sha256": "6c9de5439a8db2087fcaa89b15d6f76e09a7f4d1822defc3a8ff9e68440c8815"
+    },
+    {
+      "file": "screenshots/original/02-github-repo-search-agent-red-team-benchmark.png",
+      "kind": "screenshot-original",
+      "annotated": false,
+      "url": "https://github.com/search?q=%22agent+red+team+benchmark%22&type=repositories",
       "captured_at": "2026-10-10T11:50:50Z",
       "bytes": 123441,
       "sha256": "f26aa4d72e3221e72db0d070f42fe8e9af3af66e259e985b8c9c7cbb654456c3"
@@ -380,9 +400,19 @@
     {
       "file": "screenshots/03-github-repo-search-agent-attack-method-library.png",
       "kind": "screenshot",
-      "source": "GitHub web（Edge 无头截取）",
+      "annotated": true,
+      "caption": "说明条为后期添加（含检索式、完整网址、采集时间与结果数），非页面内容；未加说明条的原始截图见 screenshots/original/ 同名文件。",
       "url": "https://github.com/search?q=%22agent+attack+method+library%22&type=repositories",
       "shows": "仓库检索：\"agent attack method library\"（无相关命中）",
+      "captured_at": "2026-10-10T11:50:58Z",
+      "bytes": 168685,
+      "sha256": "9d63c39f683a90ffb22923cbf8286684f6f8e4bcc6387cd21173ec127bdd2f96"
+    },
+    {
+      "file": "screenshots/original/03-github-repo-search-agent-attack-method-library.png",
+      "kind": "screenshot-original",
+      "annotated": false,
+      "url": "https://github.com/search?q=%22agent+attack+method+library%22&type=repositories",
       "captured_at": "2026-10-10T11:50:58Z",
       "bytes": 121853,
       "sha256": "73676ab74a80b6540ab573ff5664ea9e46647519618f0aa9455db43a7c6f6df9"
@@ -390,9 +420,19 @@
     {
       "file": "screenshots/04-repo-red-team-blue-team-agent-fabric.png",
       "kind": "screenshot",
-      "source": "GitHub web（Edge 无头截取）",
+      "annotated": true,
+      "caption": "说明条为后期添加（含检索式、完整网址、采集时间与结果数），非页面内容；未加说明条的原始截图见 screenshots/original/ 同名文件。",
       "url": "https://github.com/msaleme/red-team-blue-team-agent-fabric",
       "shows": "同层最接近对象的仓库首页",
+      "captured_at": "2026-10-10T11:51:10Z",
+      "bytes": 217051,
+      "sha256": "784be82d734c20f016b9077f1170f6cc02ea880d7b5428ee2b1d6691e9bbda78"
+    },
+    {
+      "file": "screenshots/original/04-repo-red-team-blue-team-agent-fabric.png",
+      "kind": "screenshot-original",
+      "annotated": false,
+      "url": "https://github.com/msaleme/red-team-blue-team-agent-fabric",
       "captured_at": "2026-10-10T11:51:10Z",
       "bytes": 169125,
       "sha256": "4ea2fd2e9320eb4d383be2d50448883edfe3174037e38f0efb5433298dfe8ed4"
@@ -400,9 +440,19 @@
     {
       "file": "screenshots/05-repo-agentdojo.png",
       "kind": "screenshot",
-      "source": "GitHub web（Edge 无头截取）",
+      "annotated": true,
+      "caption": "说明条为后期添加（含检索式、完整网址、采集时间与结果数），非页面内容；未加说明条的原始截图见 screenshots/original/ 同名文件。",
       "url": "https://github.com/ethz-spylab/agentdojo",
       "shows": "公开靶场 AgentDojo 首页",
+      "captured_at": "2026-10-10T11:51:20Z",
+      "bytes": 200614,
+      "sha256": "305fc3b67cef1fdcb02996bf8a8c17c6d412801ee40331c15c65d5c05f80d9a8"
+    },
+    {
+      "file": "screenshots/original/05-repo-agentdojo.png",
+      "kind": "screenshot-original",
+      "annotated": false,
+      "url": "https://github.com/ethz-spylab/agentdojo",
       "captured_at": "2026-10-10T11:51:20Z",
       "bytes": 156126,
       "sha256": "d229cf0ab3f5df388d7f65cc54c8a09e71952a84b3a9746243a401ba7d521eee"
@@ -410,9 +460,19 @@
     {
       "file": "screenshots/06-repo-ASB.png",
       "kind": "screenshot",
-      "source": "GitHub web（Edge 无头截取）",
+      "annotated": true,
+      "caption": "说明条为后期添加（含检索式、完整网址、采集时间与结果数），非页面内容；未加说明条的原始截图见 screenshots/original/ 同名文件。",
       "url": "https://github.com/agiresearch/ASB",
       "shows": "公开靶场/基准 ASB 首页",
+      "captured_at": "2026-10-10T12:00:50Z",
+      "bytes": 155594,
+      "sha256": "bc96cfce9f230fa107e00fbb63f4d55e2a13633edbc06a30688c6d50fbbeb14c"
+    },
+    {
+      "file": "screenshots/original/06-repo-ASB.png",
+      "kind": "screenshot-original",
+      "annotated": false,
+      "url": "https://github.com/agiresearch/ASB",
       "captured_at": "2026-10-10T12:00:50Z",
       "bytes": 109959,
       "sha256": "1e7364a4727d1c12084e39c29a0b38654afab9bfd233dd5c440ebc21515e1d4c"
@@ -420,9 +480,19 @@
     {
       "file": "screenshots/07-run-verify-evidence.png",
       "kind": "screenshot",
-      "source": "GitHub web（Edge 无头截取）",
+      "annotated": true,
+      "caption": "说明条为后期添加（含检索式、完整网址、采集时间与结果数），非页面内容；未加说明条的原始截图见 screenshots/original/ 同名文件。",
       "url": "https://github.com/grasla3/agent-attack-atlas/actions/runs/38049703143",
       "shows": "本证据包的哈希对账运行页（GitHub 签发：commit 145474e、Success、artifact 1 份）",
+      "captured_at": "2026-10-10T12:02:20Z",
+      "bytes": 134461,
+      "sha256": "bf1a776860cbb21eed91613591906375ce18a4a9c7ae3b2be98c608c36485e38"
+    },
+    {
+      "file": "screenshots/original/07-run-verify-evidence.png",
+      "kind": "screenshot-original",
+      "annotated": false,
+      "url": "https://github.com/grasla3/agent-attack-atlas/actions/runs/38049703143",
       "captured_at": "2026-10-10T12:02:20Z",
       "bytes": 79145,
       "sha256": "e2b131d9d01a6d4698b8b9ba4e5fa8704ef756375eab42082c1e414a6c9854de"
@@ -436,7 +506,8 @@
     "code_search_queries": 8,
     "run_window": "2026-10-06 至 2026-10-09（各文件 run_time / run_date 为准）",
     "raw_files": 9,
-    "screenshots": 7
+    "screenshots": 7,
+    "total_files": 23
   },
   "screenshot_note": "截图不含浏览器地址栏；每张图对应的完整 URL 与采集时间见本清单 url / captured_at 字段，二者共同构成可复核关系。仓库检索页为公开页面；代码级检索需登录态，故代码检索以 raw/prior-art-codesearch-20261006.json 的原始响应为准。"
 }
