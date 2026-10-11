@@ -382,11 +382,11 @@
       "kind": "screenshot",
       "annotated": true,
       "caption": "说明条为后期添加（含检索式、完整网址、采集时间与结果数），非页面内容；未加说明条的原始截图见 screenshots/original/ 同名文件。",
-      "url": "https://github.com/search?q=%22agent+red+team+benchmark%22&type=repositories",
-      "shows": "仓库检索：\"agent red team benchmark\"（该取向检出同层最接近对象）",
+      "url": "https://github.com/search?q=agent%20red%20team%20benchmark&type=repositories",
+      "shows": "页面显示：53 个仓库命中；第 2 条即同层最接近对象 msaleme/red-team-blue-team-agent-fabric",
       "captured_at": "2026-10-10T11:50:50Z",
-      "bytes": 170146,
-      "sha256": "6c9de5439a8db2087fcaa89b15d6f76e09a7f4d1822defc3a8ff9e68440c8815"
+      "bytes": 282668,
+      "sha256": "fcdf63cd1cd065e3f6582994f23114423e191af662cf4b3c5df07c89d08a0a3b"
     },
     {
       "file": "screenshots/original/02-github-repo-search-agent-red-team-benchmark.png",
@@ -394,19 +394,19 @@
       "annotated": false,
       "url": "https://github.com/search?q=%22agent+red+team+benchmark%22&type=repositories",
       "captured_at": "2026-10-10T11:50:50Z",
-      "bytes": 123441,
-      "sha256": "f26aa4d72e3221e72db0d070f42fe8e9af3af66e259e985b8c9c7cbb654456c3"
+      "bytes": 220085,
+      "sha256": "6bc32b25f6eddd1131736877f1bc891b5e9398ae12d517353481a8cbb42dd515"
     },
     {
       "file": "screenshots/03-github-repo-search-agent-attack-method-library.png",
       "kind": "screenshot",
       "annotated": true,
       "caption": "说明条为后期添加（含检索式、完整网址、采集时间与结果数），非页面内容；未加说明条的原始截图见 screenshots/original/ 同名文件。",
-      "url": "https://github.com/search?q=%22agent+attack+method+library%22&type=repositories",
-      "shows": "仓库检索：\"agent attack method library\"（无相关命中）",
+      "url": "https://github.com/search?q=agent%20attack%20method%20library&type=repositories",
+      "shows": "页面显示：2 个仓库命中，均与\"攻击方法集\"无关（与归档命中数 2 一致）",
       "captured_at": "2026-10-10T11:50:58Z",
-      "bytes": 168685,
-      "sha256": "9d63c39f683a90ffb22923cbf8286684f6f8e4bcc6387cd21173ec127bdd2f96"
+      "bytes": 155152,
+      "sha256": "86db91e7f7febb1476ff1ef14f3963d4f1c895bef6b7012d72c87931ad06fe1d"
     },
     {
       "file": "screenshots/original/03-github-repo-search-agent-attack-method-library.png",
@@ -414,8 +414,8 @@
       "annotated": false,
       "url": "https://github.com/search?q=%22agent+attack+method+library%22&type=repositories",
       "captured_at": "2026-10-10T11:50:58Z",
-      "bytes": 121853,
-      "sha256": "73676ab74a80b6540ab573ff5664ea9e46647519618f0aa9455db43a7c6f6df9"
+      "bytes": 101020,
+      "sha256": "b71de667a4e0c469447055d95bcc528f5848a185c773bba3d8aa3af0ef05e5d7"
     },
     {
       "file": "screenshots/04-repo-red-team-blue-team-agent-fabric.png",
@@ -507,7 +507,8 @@
     "run_window": "2026-10-06 至 2026-10-09（各文件 run_time / run_date 为准）",
     "raw_files": 9,
     "screenshots": 7,
-    "total_files": 23
+    "total_files": 23,
+    "note_20261010b": "02/03 两张检索页按归档原检索式（不加引号）重截并重加说明条；01 保持引号短语检索（0 个仓库命中）"
   },
   "screenshot_note": "截图不含浏览器地址栏；每张图对应的完整 URL 与采集时间见本清单 url / captured_at 字段，二者共同构成可复核关系。仓库检索页为公开页面；代码级检索需登录态，故代码检索以 raw/prior-art-codesearch-20261006.json 的原始响应为准。"
 }
