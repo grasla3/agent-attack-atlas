@@ -570,9 +570,9 @@
       "annotated": false,
       "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-codesearch-20261006.json",
       "captured_at": "2026-10-11T09:20:00Z",
-      "shows": "原始记录文件页（高版）：共 358 行 · 10,563 字节",
-      "bytes": 440422,
-      "sha256": "364e13887948afae2bd0f29bdd4361b28fe1bc16c8f12c22f146d32ac2684358"
+      "shows": "原始记录文件页（宽版 1600px）：共 358 行 · 10,563 字节",
+      "bytes": 457320,
+      "sha256": "0b1d5e9447979c4e02979a1322f488a34eb818794c41e015aa038a32eb60d501"
     },
     {
       "file": "screenshots/records/rec-prior-art-github-supplement-20261011.png",
@@ -580,9 +580,9 @@
       "annotated": false,
       "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-github-supplement-20261011.json",
       "captured_at": "2026-10-11T09:20:00Z",
-      "shows": "原始记录文件页（高版）：共 88 行 · 3,863 字节",
-      "bytes": 260006,
-      "sha256": "8a7dd63b26b1ac472a9b2f3108e7690f744b4c7d61293bcaa5ea0a53a5929ab8"
+      "shows": "原始记录文件页（宽版 1600px）：共 88 行 · 3,863 字节",
+      "bytes": 278923,
+      "sha256": "b54445c78275531d89a3a62e0fee84fa39f1bc6e50bc16b39b68eb3b5047cec1"
     },
     {
       "file": "screenshots/records/rec-prior-art-github-sweep-20261006.png",
@@ -590,9 +590,9 @@
       "annotated": false,
       "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-github-sweep-20261006.json",
       "captured_at": "2026-10-11T09:20:00Z",
-      "shows": "原始记录文件页（高版）：共 310 行 · 13,159 字节",
-      "bytes": 492853,
-      "sha256": "305e802e8026145abc7b521fc2afa9ecf27e6e373c52c6e48e94a1bb2097d76e"
+      "shows": "原始记录文件页（宽版 1600px）：共 310 行 · 13,159 字节",
+      "bytes": 526983,
+      "sha256": "95c3b150df5a5cb7577c7d979ad20118d14127f4f0f68ee1e9ca020709d965a6"
     },
     {
       "file": "screenshots/records/rec-prior-art-sweep2-20261006.png",
@@ -600,9 +600,9 @@
       "annotated": false,
       "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-sweep2-20261006.json",
       "captured_at": "2026-10-11T09:20:00Z",
-      "shows": "原始记录文件页（高版）：共 388 行 · 11,909 字节",
-      "bytes": 458486,
-      "sha256": "ece43b91924f397049aabc601c75cfb2c22823139b4b7f00cb0b6c08f1b554ca"
+      "shows": "原始记录文件页（宽版 1600px）：共 388 行 · 11,909 字节",
+      "bytes": 477704,
+      "sha256": "1c48e538dca6b8778bc1f84b260363dbd14d0666a3cda42c2cbbb6b85738caec"
     },
     {
       "file": "screenshots/records/rec-prior-art-sweep3-20261006.png",
@@ -610,9 +610,9 @@
       "annotated": false,
       "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-sweep3-20261006.json",
       "captured_at": "2026-10-11T09:20:00Z",
-      "shows": "原始记录文件页（高版）：共 94 行 · 3,087 字节",
-      "bytes": 258597,
-      "sha256": "cce8f4c860aa6f90bf909701d31446b0c2fd3ee816c9b69bb0b956351fbd9586"
+      "shows": "原始记录文件页（宽版 1600px）：共 94 行 · 3,087 字节",
+      "bytes": 273735,
+      "sha256": "a373af86caea2c834e5fb2bcf01cc8b34cadfeaa61049e50795af29c669534f6"
     },
     {
       "file": "screenshots/records/rec-prior-art-toolkits-r1-name.png",
@@ -620,9 +620,9 @@
       "annotated": false,
       "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-toolkits-r1-name.json",
       "captured_at": "2026-10-11T09:20:00Z",
-      "shows": "原始记录文件页（高版）：共 1008 行 · 33,616 字节",
-      "bytes": 473912,
-      "sha256": "9b5369136fdc7abe319cc9b2c867442175294302cd0cb9971bb8cc9d9f94e774"
+      "shows": "原始记录文件页（宽版 1600px）：共 1008 行 · 33,616 字节",
+      "bytes": 492688,
+      "sha256": "a9c6c0ce1443c358b8f502625f4ab01c9604f191519213f3c1238991f5a71122"
     },
     {
       "file": "screenshots/records/rec-prior-art-toolkits-r2-capability.png",
@@ -630,9 +630,9 @@
       "annotated": false,
       "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-toolkits-r2-capability.json",
       "captured_at": "2026-10-11T09:20:00Z",
-      "shows": "原始记录文件页（高版）：共 1459 行 · 48,419 字节",
-      "bytes": 500219,
-      "sha256": "b7d8342fa73e412d1caafc72b587a4ee8c97324feae23b2911fd856148f7fb0d"
+      "shows": "原始记录文件页（宽版 1600px）：共 1459 行 · 48,419 字节",
+      "bytes": 520809,
+      "sha256": "053c3a3fb1b356b0d074e0ca22abff8296c3ac2a82bf3db3e95268bc46c644e1"
     },
     {
       "file": "screenshots/records/rec-prior-art-toolkits-r3-framing.png",
@@ -640,9 +640,9 @@
       "annotated": false,
       "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-toolkits-r3-framing.json",
       "captured_at": "2026-10-11T09:20:00Z",
-      "shows": "原始记录文件页（高版）：共 814 行 · 26,309 字节",
-      "bytes": 386203,
-      "sha256": "c496363cf110e43595c0f71a553dd88b2ec2f19dc651605c45a3f649cec9b903"
+      "shows": "原始记录文件页（宽版 1600px）：共 814 行 · 26,309 字节",
+      "bytes": 397698,
+      "sha256": "dfcf55af5c16252454789c0ab40bb506bcdf515117943877eab5c6ae2c1b9eb9"
     },
     {
       "file": "screenshots/records/rec-prior-art-toolkits-r4-asset.png",
@@ -650,9 +650,9 @@
       "annotated": false,
       "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-toolkits-r4-asset.json",
       "captured_at": "2026-10-11T09:20:00Z",
-      "shows": "原始记录文件页（高版）：共 2243 行 · 74,262 字节",
-      "bytes": 467081,
-      "sha256": "ea92504402cd1dd7acbbd23f036ab2a804d40d7d58437776c314add9ebb0e34a"
+      "shows": "原始记录文件页（宽版 1600px）：共 2243 行 · 74,262 字节",
+      "bytes": 486891,
+      "sha256": "7161382f25c87e9cb585298a7e90ae778f1b8564d3340f8cd0b818cccec660b0"
     },
     {
       "file": "screenshots/records/rec-prior-art-toolkits-r5-methodology.png",
@@ -660,9 +660,9 @@
       "annotated": false,
       "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-toolkits-r5-methodology.json",
       "captured_at": "2026-10-11T09:20:00Z",
-      "shows": "原始记录文件页（高版）：共 957 行 · 30,905 字节",
-      "bytes": 495631,
-      "sha256": "36a1ffdfffe26e3bc9569c05f2c79f3201eb61693cf13b2ed609d58133fdb0b6"
+      "shows": "原始记录文件页（宽版 1600px）：共 957 行 · 30,905 字节",
+      "bytes": 514820,
+      "sha256": "13b9f48a9e6cf40206a2dab75b153d7b4f98e92c521b2e9872a7048a6f48e196"
     },
     {
       "file": "screenshots/records/rec-run-38121106515.png",
@@ -673,16 +673,6 @@
       "shows": "校验运行 #5：提交 cacfe7a，Success，10s，产物 1 份",
       "bytes": 48369,
       "sha256": "4ea59ba2c03db907407725f91cae5404c870b9baeb808a51a845972f8c6bdf84"
-    },
-    {
-      "file": "screenshots/records/rec-queries-md.png",
-      "kind": "screenshot-record",
-      "annotated": false,
-      "url": "https://github.com/grasla3/agent-attack-atlas/blob/7bb17eab/evidence/queries.md",
-      "captured_at": "2026-10-11T09:20:00Z",
-      "shows": "检索协议文件页：queries.md（文献 21 条 · 仓库 30 组取向）",
-      "bytes": 241640,
-      "sha256": "566636c1061e629b32e9cf534a0d9767d68728c78bb8b15695b74c0b3dd9a44a"
     },
     {
       "file": "screenshots/records/rec-manifest-json.png",
@@ -703,14 +693,15 @@
     "code_search_queries": 8,
     "run_window": "2026-10-06 至 2026-10-11（各文件 run_time / run_date 为准）",
     "raw_files": 10,
-    "screenshots": 31,
-    "total_files": 41,
+    "screenshots": 30,
+    "total_files": 40,
     "note_20261010b": "02/03 两张检索页按归档原检索式（不加引号）重截并重加说明条；01 保持引号短语检索（0 个仓库命中）",
     "note_20261011": "新增补充取向 3 组（agentic attack surface benchmark / tool-calling agent attack benchmark / llm agent attack methods）与检索页原图 4 张（含 agent attack method library 的检索页原图）",
     "note_20261011b": "更正 sweep2 记录的来源字段：该轮实际取向为 GitHub topics · PyPI 包名索引 · Gitee，原字段中的 HuggingFace 无对应取向，已从记录 kind 与清单 source/label 中移除",
     "note_20261011c": "新增原始记录文件页截图 10 张（钉在提交 cacfe7a）与校验运行记录页截图 1 张，用于以截图形式直接呈现检索结果",
     "note_20261011d": "原始记录文件页截图统一裁为可读版面（保留文件路径、提交号、行数与字节数；sweep 记录的可见区段止于第 13 行）",
-    "note_20261011e": "记录页截图改为高版（同页两个区段展示，信息量提升）；新增检索协议文件页与指纹清单文件页截图；SWH 存档页因反爬无法自动化截图，存档编号以字段呈现"
+    "note_20261011e": "记录页截图改为高版（同页两个区段展示，信息量提升）；新增检索协议文件页与指纹清单文件页截图；SWH 存档页因反爬无法自动化截图，存档编号以字段呈现",
+    "note_20261011f": "记录页截图改宽版（1600px，长行截断减少约四成）；移除 queries.md 页面截图（该文件由 manifest.json 导出，原文件页截图冗余）"
   },
   "screenshot_note": "截图不含浏览器地址栏；每张图对应的完整 URL 与采集时间见本清单 url / captured_at 字段，二者共同构成可复核关系。仓库检索页为公开页面；代码级检索需登录态，故代码检索以 raw/prior-art-codesearch-20261006.json 的原始响应为准。"
 }
