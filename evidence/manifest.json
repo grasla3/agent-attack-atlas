@@ -216,10 +216,10 @@
     {
       "file": "raw/prior-art-sweep2-20261006.json",
       "kind": "repository-metadata",
-      "source": "GitHub topics · PyPI · Gitee · HuggingFace",
-      "label": "topics 长尾与其它源",
+      "source": "GitHub topics · PyPI 包名索引 · Gitee",
+      "label": "topics 长尾与包索引",
       "bytes": 11909,
-      "sha256": "3abfa97dad36a4f98d4a2cbef280761824780187915ed0d6a2cb305373fc7f00",
+      "sha256": "c429c5bfcf25a9ef1d64cc2446b5da7ce91ef9fbe9d69464315aad3d8bc29ab2",
       "run_date": "2026-10-06",
       "orientation_count": 9,
       "orientations": [
@@ -576,7 +576,8 @@
     "screenshots": 18,
     "total_files": 28,
     "note_20261010b": "02/03 两张检索页按归档原检索式（不加引号）重截并重加说明条；01 保持引号短语检索（0 个仓库命中）",
-    "note_20261011": "新增补充取向 3 组（agentic attack surface benchmark / tool-calling agent attack benchmark / llm agent attack methods）与检索页原图 4 张（含 agent attack method library 的检索页原图）"
+    "note_20261011": "新增补充取向 3 组（agentic attack surface benchmark / tool-calling agent attack benchmark / llm agent attack methods）与检索页原图 4 张（含 agent attack method library 的检索页原图）",
+    "note_20261011b": "更正 sweep2 记录的来源字段：该轮实际取向为 GitHub topics · PyPI 包名索引 · Gitee，原字段中的 HuggingFace 无对应取向，已从记录 kind 与清单 source/label 中移除"
   },
   "screenshot_note": "截图不含浏览器地址栏；每张图对应的完整 URL 与采集时间见本清单 url / captured_at 字段，二者共同构成可复核关系。仓库检索页为公开页面；代码级检索需登录态，故代码检索以 raw/prior-art-codesearch-20261006.json 的原始响应为准。"
 }

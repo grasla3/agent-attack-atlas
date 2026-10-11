@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "kind": "github-topics + huggingface + pypi + gitee",
+  "kind": "github-topics + pypi-simple-index + gitee",
   "orientations": [
     {
       "source": "github-topic",

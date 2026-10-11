@@ -25,7 +25,7 @@ python tools/verify_evidence.py --manifest evidence/manifest.json --root evidenc
 
 - 运行窗口：**2026-10-06 至 2026-10-11**（各文件的 `run_time` / `run_date` 为准）。
 - 文献侧：Crossref · DBLP · arXiv · OpenAIRE · Europe PMC · OpenAlex。
-- 仓库侧：GitHub 仓库检索（按星排序 10 组 + 按定位措辞补检 3 组）· GitHub topics 长尾 · GitHub 代码级检索（认证调用）· PyPI 全量包名索引 · Gitee · HuggingFace（经外部检索间接覆盖）。
+- 仓库侧：GitHub 仓库检索（按星排序 10 组 + 按定位措辞补检 3 组）· GitHub topics 长尾 · GitHub 代码级检索（认证调用）· PyPI 全量包名索引 · Gitee。
 - 未答全的源（超时 / 限流）在各原始文件中如实标注，未作隐藏。
 
 ## 四、收录判据
