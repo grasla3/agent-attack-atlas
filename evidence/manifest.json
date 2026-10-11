@@ -665,16 +665,6 @@
       "sha256": "13b9f48a9e6cf40206a2dab75b153d7b4f98e92c521b2e9872a7048a6f48e196"
     },
     {
-      "file": "screenshots/records/rec-run-38121106515.png",
-      "kind": "screenshot-run",
-      "annotated": false,
-      "url": "https://github.com/grasla3/agent-attack-atlas/actions/runs/38121106515",
-      "captured_at": "2026-10-11T07:40:00Z",
-      "shows": "校验运行 #5：提交 cacfe7a，Success，10s，产物 1 份",
-      "bytes": 48369,
-      "sha256": "4ea59ba2c03db907407725f91cae5404c870b9baeb808a51a845972f8c6bdf84"
-    },
-    {
       "file": "screenshots/records/rec-manifest-json.png",
       "kind": "screenshot-record",
       "annotated": false,
@@ -693,15 +683,16 @@
     "code_search_queries": 8,
     "run_window": "2026-10-06 至 2026-10-11（各文件 run_time / run_date 为准）",
     "raw_files": 10,
-    "screenshots": 30,
-    "total_files": 40,
+    "screenshots": 29,
+    "total_files": 39,
     "note_20261010b": "02/03 两张检索页按归档原检索式（不加引号）重截并重加说明条；01 保持引号短语检索（0 个仓库命中）",
     "note_20261011": "新增补充取向 3 组（agentic attack surface benchmark / tool-calling agent attack benchmark / llm agent attack methods）与检索页原图 4 张（含 agent attack method library 的检索页原图）",
     "note_20261011b": "更正 sweep2 记录的来源字段：该轮实际取向为 GitHub topics · PyPI 包名索引 · Gitee，原字段中的 HuggingFace 无对应取向，已从记录 kind 与清单 source/label 中移除",
     "note_20261011c": "新增原始记录文件页截图 10 张（钉在提交 cacfe7a）与校验运行记录页截图 1 张，用于以截图形式直接呈现检索结果",
     "note_20261011d": "原始记录文件页截图统一裁为可读版面（保留文件路径、提交号、行数与字节数；sweep 记录的可见区段止于第 13 行）",
     "note_20261011e": "记录页截图改为高版（同页两个区段展示，信息量提升）；新增检索协议文件页与指纹清单文件页截图；SWH 存档页因反爬无法自动化截图，存档编号以字段呈现",
-    "note_20261011f": "记录页截图改宽版（1600px，长行截断减少约四成）；移除 queries.md 页面截图（该文件由 manifest.json 导出，原文件页截图冗余）"
+    "note_20261011f": "记录页截图改宽版（1600px，长行截断减少约四成）；移除 queries.md 页面截图（该文件由 manifest.json 导出，原文件页截图冗余）",
+    "note_20261011g": "运行记录页截图移出证据包：该页由平台签发，以 URL 引用（避免截图所示运行号与引用编号不一致）"
   },
   "screenshot_note": "截图不含浏览器地址栏；每张图对应的完整 URL 与采集时间见本清单 url / captured_at 字段，二者共同构成可复核关系。仓库检索页为公开页面；代码级检索需登录态，故代码检索以 raw/prior-art-codesearch-20261006.json 的原始响应为准。"
 }
