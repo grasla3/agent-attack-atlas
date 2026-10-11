@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-11",
+  "kind": "github-repository-search-supplement",
+  "sort": "best match",
+  "note": "按定位措辞补检的 GitHub 仓库检索，条目为检索页可见部分（截断处标「截断」）。agent attack method library（命中 2）已登记于 prior-art-github-sweep-20261006.json 第 9 组取向，本轮仅补录其检索页原图。",
+  "orientations": [
+    {
+      "query": "agentic attack surface benchmark",
+      "total": 3,
+      "url": "https://github.com/search?q=agentic+attack+surface+benchmark&type=repositories",
+      "screenshot": "screenshots/original/09-github-repo-search-agentic-attack-surface-benchmark.png",
+      "items": [
+        {
+          "full_name": "mo574216/Survey-AttackSurface-AgenticAI",
+          "stars": 0,
+          "description": "The Expanding Attack Surface of Agentic AI: Vulnerabilities, Exploitation Vectors, Defenses, and Benchmarks",
+          "updated": "8月7日"
+        },
+        {
+          "full_name": "Raghavtripathi/injectrace",
+          "stars": 0,
+          "language": "Python",
+          "description": "A security testing tool purpose-built for RAG pipelines and tool-calling agents — the exact attack surface that existing tools (Garaks, Py…（截断）",
+          "updated": "1 天前"
+        },
+        {
+          "full_name": "Cashcoin123/Cashcoin123",
+          "stars": 0,
+          "description": "…methods New models for GitHub Copilot Chat undergo a staged evaluation process before deployment.（截断，仓库描述非检索主题）",
+          "updated": null
+        }
+      ]
+    },
+    {
+      "query": "tool-calling agent attack benchmark",
+      "total": 2,
+      "url": "https://github.com/search?q=tool-calling+agent+attack+benchmark&type=repositories",
+      "screenshot": "screenshots/original/10-github-repo-search-tool-calling-agent-attack-benchmark.png",
+      "items": [
+        {
+          "full_name": "K-Divyarsi/llm-redteam-jailbreak-benchmark",
+          "stars": 0,
+          "language": "Python",
+          "description": "An offensive red-team harness that attacks a guardrails layer and a tool-calling agent with prompt-injection and jailbreak payloads, scor…（截断）",
+          "updated": "20 天前"
+        },
+        {
+          "full_name": "Raghavtripathi/injectrace",
+          "stars": 0,
+          "language": "Python",
+          "description": "A security testing tool purpose-built for RAG pipelines and tool-calling agents — the exact attack surface that existing tools (Garaks, Py…（截断）",
+          "updated": "1 天前"
+        }
+      ]
+    },
+    {
+      "query": "llm agent attack methods",
+      "total": 7,
+      "url": "https://github.com/search?q=llm+agent+attack+methods&type=repositories",
+      "screenshot": "screenshots/original/11-github-repo-search-llm-agent-attack-methods.png",
+      "items_note": "检索页可见 2 条，其余 5 条未在截图范围内",
+      "items": [
+        {
+          "full_name": "dongdongunique/EvoSynth",
+          "stars": 61,
+          "language": "Python",
+          "topics": [
+            "jailbreak",
+            "ai safety",
+            "sota",
+            "llm-security",
+            "automated red-teaming"
+          ],
+          "description": "EvoSynth is a SOTA automated LLM red-teaming framework that evolves executable, code-level jailbreak attack methods using multi-agent syn…（截断）",
+          "updated": "2月4日"
+        },
+        {
+          "full_name": "Tanjukumar24/AgentSecurityEvaluation",
+          "stars": 2,
+          "language": "Jupyter Notebook",
+          "description": "Hands-on AI Agent Security Evaluation — Explore and simulate 15 advanced LLM attack techniques (prompt injection, RAG poisoning, multi-agent…（截断）",
+          "updated": "2025年8月6日"
+        }
+      ]
+    }
+  ]
+}

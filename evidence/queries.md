@@ -1,6 +1,6 @@
 # 检索协议与检索式（Search protocol and queries）
 
-本文件由 `manifest.json` 的原始归档条目直接导出，检索式与命中数为归档中的原文。
+本文件由 `manifest.json` 的原始归档条目直接导出，检索式与命中数为归档中的原文。仓库侧取向合计 30 组（元数据取向 19 组 + 代码级检索 8 组 + 补充取向 3 组）。
 
 ## 一、文献侧：6 个源，5 轮，共 21 个检索式
 
@@ -64,3 +64,14 @@
 - 核实方式：逐一读取入选仓库的 README、文件树与关键源文件；不依据项目自述作结论。
 - 表述纪律：结论一律写作"在本次检索范围内未检索到"，不表述为"不存在"。
 
+## 五、补充取向（2026-10-11）
+
+按定位措辞补检 GitHub 仓库检索 3 组（排序 best match），检索页原图见 `screenshots/original/08`–`11`：
+
+| 来源 | 检索式 | 命中 |
+|---|---|---|
+| GitHub | `agentic attack surface benchmark` | 3 |
+| GitHub | `tool-calling agent attack benchmark` | 2 |
+| GitHub | `llm agent attack methods` | 7 |
+
+`agent attack method library`（命中 2）已登记于第二节第 9 组取向，本次补录其检索页原图 `screenshots/original/08-github-repo-search-agent-attack-method-library.png`。

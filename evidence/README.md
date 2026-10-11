@@ -10,7 +10,7 @@
 | `queries.md` | 检索协议与全部检索式：文献侧 6 个源 / 5 轮 / 21 个检索式；仓库侧元数据取向；代码级检索式。由原始归档直接导出，非人工转录 |
 | `raw/*.json` | 各轮检索的**原始响应**（含检索式、时间戳、各源命中数、未答全的源） |
 | `manifest.json` | 每个文件的字节数与 SHA-256、来源端点、执行时间、命中数（截图另含 url 与 captured_at），以及整包摘要 |
-| `screenshots/` | 辅助材料：GitHub 仓库检索页与关键仓库页截图（含本证据包对账运行页）。**截图不含地址栏**，每张图对应的完整 URL 与采集时间以 `manifest.json` 的 `url` / `captured_at` 字段为准 |
+| `screenshots/` | 辅助材料：GitHub 仓库检索页与关键仓库页截图（含本证据包对账运行页），共 11 张。`01`–`07` 带说明条（**不含地址栏**），`08`–`11` 为含浏览器地址栏的检索页原图；每张图对应的完整 URL 与采集时间以 `manifest.json` 的 `url` / `captured_at` 字段为准 |
 
 ## 二、如何独立核验
 
@@ -23,9 +23,9 @@ python tools/verify_evidence.py --manifest evidence/manifest.json --root evidenc
 
 ## 三、检索窗口与范围
 
-- 运行窗口：**2026-10-06 至 2026-10-09**（各文件的 `run_time` / `run_date` 为准）。
+- 运行窗口：**2026-10-06 至 2026-10-11**（各文件的 `run_time` / `run_date` 为准）。
 - 文献侧：Crossref · DBLP · arXiv · OpenAIRE · Europe PMC · OpenAlex。
-- 仓库侧：GitHub 仓库检索（按星排序的多组取向）· GitHub topics 长尾 · GitHub 代码级检索（认证调用）· PyPI 全量包名索引 · Gitee · HuggingFace（经外部检索间接覆盖）。
+- 仓库侧：GitHub 仓库检索（按星排序 10 组 + 按定位措辞补检 3 组）· GitHub topics 长尾 · GitHub 代码级检索（认证调用）· PyPI 全量包名索引 · Gitee · HuggingFace（经外部检索间接覆盖）。
 - 未答全的源（超时 / 限流）在各原始文件中如实标注，未作隐藏。
 
 ## 四、收录判据

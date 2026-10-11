@@ -496,19 +496,87 @@
       "captured_at": "2026-10-10T12:02:20Z",
       "bytes": 79145,
       "sha256": "e2b131d9d01a6d4698b8b9ba4e5fa8704ef756375eab42082c1e414a6c9854de"
+    },
+    {
+      "file": "raw/prior-art-github-supplement-20261011.json",
+      "kind": "repository-metadata",
+      "source": "GitHub repository search (supplement)",
+      "label": "按定位措辞补检的 3 组取向",
+      "bytes": 3863,
+      "sha256": "8c2bef59de5da4bd6ba53e9abeb5b41856cd23610b012fb1857aefcb47ecd53c",
+      "run_date": "2026-10-11",
+      "orientation_count": 3,
+      "orientations": [
+        {
+          "query": "agentic attack surface benchmark",
+          "total": 3,
+          "items": 3
+        },
+        {
+          "query": "tool-calling agent attack benchmark",
+          "total": 2,
+          "items": 2
+        },
+        {
+          "query": "llm agent attack methods",
+          "total": 7,
+          "items": 2
+        }
+      ]
+    },
+    {
+      "file": "screenshots/original/08-github-repo-search-agent-attack-method-library.png",
+      "kind": "screenshot-original",
+      "annotated": false,
+      "url": "https://github.com/search?q=agent+attack+method+library&type=repositories",
+      "captured_at": "2026-10-11T02:33:28Z",
+      "shows": "检索式 agent attack method library 的检索页（2 条命中）；该式已登记于仓库扫描记录第 9 组取向，本次补录检索页原图",
+      "bytes": 125847,
+      "sha256": "4255b3e782e390e91658c46cb5f9adc2c504e9e0ec61e982fb77f71292d3cd89"
+    },
+    {
+      "file": "screenshots/original/09-github-repo-search-agentic-attack-surface-benchmark.png",
+      "kind": "screenshot-original",
+      "annotated": false,
+      "url": "https://github.com/search?q=agentic+attack+surface+benchmark&type=repositories",
+      "captured_at": "2026-10-11T02:33:28Z",
+      "shows": "检索式 agentic attack surface benchmark 的检索页（3 条命中）",
+      "bytes": 143917,
+      "sha256": "e1cb06677c8c49cd664d363c8bed1fe306f562af5d1d3860a4fbd1aee22bbec5"
+    },
+    {
+      "file": "screenshots/original/10-github-repo-search-tool-calling-agent-attack-benchmark.png",
+      "kind": "screenshot-original",
+      "annotated": false,
+      "url": "https://github.com/search?q=tool-calling+agent+attack+benchmark&type=repositories",
+      "captured_at": "2026-10-11T02:33:28Z",
+      "shows": "检索式 tool-calling agent attack benchmark 的检索页（2 条命中）",
+      "bytes": 129144,
+      "sha256": "2209e4f7dbdaf92abafe0d8e872d644e909e5c1a84e55e38c62fc1a8a2edbec8"
+    },
+    {
+      "file": "screenshots/original/11-github-repo-search-llm-agent-attack-methods.png",
+      "kind": "screenshot-original",
+      "annotated": false,
+      "url": "https://github.com/search?q=llm+agent+attack+methods&type=repositories",
+      "captured_at": "2026-10-11T02:33:28Z",
+      "shows": "检索式 llm agent attack methods 的检索页（7 条命中）",
+      "bytes": 139714,
+      "sha256": "76e9cabd843a743fef4b1a45cf71ed1170cdbc4d1f6b831b691811055d738625"
     }
   ],
   "summary": {
     "literature_sources": 6,
     "literature_rounds": 5,
     "literature_queries": 21,
-    "repository_orientations": 27,
+    "repository_orientations": 30,
     "code_search_queries": 8,
-    "run_window": "2026-10-06 至 2026-10-09（各文件 run_time / run_date 为准）",
-    "raw_files": 9,
-    "screenshots": 7,
-    "total_files": 23,
-    "note_20261010b": "02/03 两张检索页按归档原检索式（不加引号）重截并重加说明条；01 保持引号短语检索（0 个仓库命中）"
+    "run_window": "2026-10-06 至 2026-10-11（各文件 run_time / run_date 为准）",
+    "raw_files": 10,
+    "screenshots": 18,
+    "total_files": 28,
+    "note_20261010b": "02/03 两张检索页按归档原检索式（不加引号）重截并重加说明条；01 保持引号短语检索（0 个仓库命中）",
+    "note_20261011": "新增补充取向 3 组（agentic attack surface benchmark / tool-calling agent attack benchmark / llm agent attack methods）与检索页原图 4 张（含 agent attack method library 的检索页原图）"
   },
   "screenshot_note": "截图不含浏览器地址栏；每张图对应的完整 URL 与采集时间见本清单 url / captured_at 字段，二者共同构成可复核关系。仓库检索页为公开页面；代码级检索需登录态，故代码检索以 raw/prior-art-codesearch-20261006.json 的原始响应为准。"
 }
