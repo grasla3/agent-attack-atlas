@@ -563,6 +563,116 @@
       "shows": "检索式 llm agent attack methods 的检索页（7 条命中）",
       "bytes": 139714,
       "sha256": "76e9cabd843a743fef4b1a45cf71ed1170cdbc4d1f6b831b691811055d738625"
+    },
+    {
+      "file": "screenshots/records/rec-prior-art-codesearch-20261006.png",
+      "kind": "screenshot-record",
+      "annotated": false,
+      "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-codesearch-20261006.json",
+      "captured_at": "2026-10-11T07:40:00Z",
+      "shows": "原始记录文件页：358 行 · 10,563 字节",
+      "bytes": 171777,
+      "sha256": "7f19ba56447e5423f3f72b27d2145db59aee5cdfeaed4720d6faafa666b87ea8"
+    },
+    {
+      "file": "screenshots/records/rec-prior-art-github-supplement-20261011.png",
+      "kind": "screenshot-record",
+      "annotated": false,
+      "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-github-supplement-20261011.json",
+      "captured_at": "2026-10-11T07:40:00Z",
+      "shows": "原始记录文件页：88 行 · 3,863 字节",
+      "bytes": 242861,
+      "sha256": "388436e3617cff07e9840da3c63843c5950dc3ebf3063ef1525fc62132225855"
+    },
+    {
+      "file": "screenshots/records/rec-prior-art-github-sweep-20261006.png",
+      "kind": "screenshot-record",
+      "annotated": false,
+      "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-github-sweep-20261006.json",
+      "captured_at": "2026-10-11T07:40:00Z",
+      "shows": "原始记录文件页：310 行 · 13,159 字节",
+      "bytes": 176169,
+      "sha256": "9e725178c36bd4267918dbc5ac11f9f5d3a999222a3f6daf23dc8c83d3e692bb"
+    },
+    {
+      "file": "screenshots/records/rec-prior-art-sweep2-20261006.png",
+      "kind": "screenshot-record",
+      "annotated": false,
+      "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-sweep2-20261006.json",
+      "captured_at": "2026-10-11T07:40:00Z",
+      "shows": "原始记录文件页：388 行 · 11,909 字节",
+      "bytes": 116053,
+      "sha256": "3a8dc7469df08cf73ccb3821f2b678b8edc6ae106943930603ffd16df9ccea54"
+    },
+    {
+      "file": "screenshots/records/rec-prior-art-sweep3-20261006.png",
+      "kind": "screenshot-record",
+      "annotated": false,
+      "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-sweep3-20261006.json",
+      "captured_at": "2026-10-11T07:40:00Z",
+      "shows": "原始记录文件页：94 行 · 3,087 字节",
+      "bytes": 172869,
+      "sha256": "ad239e6ac82c7da0f6eb61024f24d91aa80a1bc3f47f12f0001483039f6a1fad"
+    },
+    {
+      "file": "screenshots/records/rec-prior-art-toolkits-r1-name.png",
+      "kind": "screenshot-record",
+      "annotated": false,
+      "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-toolkits-r1-name.json",
+      "captured_at": "2026-10-11T07:40:00Z",
+      "shows": "原始记录文件页：1008 行 · 33,616 字节",
+      "bytes": 154608,
+      "sha256": "e6a6d338aaf2f0af4d2c4d659d21298aeffa0891863ee0a93e8b3912bdcc9cd4"
+    },
+    {
+      "file": "screenshots/records/rec-prior-art-toolkits-r2-capability.png",
+      "kind": "screenshot-record",
+      "annotated": false,
+      "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-toolkits-r2-capability.json",
+      "captured_at": "2026-10-11T07:40:00Z",
+      "shows": "原始记录文件页：1459 行 · 48,419 字节",
+      "bytes": 156064,
+      "sha256": "8dca73927c51c123eb9a8e8eeddc520136e2d4981617d2c1645bf2d7aef3cee1"
+    },
+    {
+      "file": "screenshots/records/rec-prior-art-toolkits-r3-framing.png",
+      "kind": "screenshot-record",
+      "annotated": false,
+      "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-toolkits-r3-framing.json",
+      "captured_at": "2026-10-11T07:40:00Z",
+      "shows": "原始记录文件页：814 行 · 26,309 字节",
+      "bytes": 103367,
+      "sha256": "1cb12615461cfe1b45c3861e4fa4535247377fd729dbed25a4a99acc091219f9"
+    },
+    {
+      "file": "screenshots/records/rec-prior-art-toolkits-r4-asset.png",
+      "kind": "screenshot-record",
+      "annotated": false,
+      "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-toolkits-r4-asset.json",
+      "captured_at": "2026-10-11T07:40:00Z",
+      "shows": "原始记录文件页：2243 行 · 74,262 字节",
+      "bytes": 153004,
+      "sha256": "b8ce4095bf9a77ed7c55f35c3f71ed63125e920843d39bef26d5a511e22b141c"
+    },
+    {
+      "file": "screenshots/records/rec-prior-art-toolkits-r5-methodology.png",
+      "kind": "screenshot-record",
+      "annotated": false,
+      "url": "https://github.com/grasla3/agent-attack-atlas/blob/cacfe7a/evidence/raw/prior-art-toolkits-r5-methodology.json",
+      "captured_at": "2026-10-11T07:40:00Z",
+      "shows": "原始记录文件页：957 行 · 30,905 字节",
+      "bytes": 156552,
+      "sha256": "f6af3647b93f9f0af82f79c55191cb9b1cb65ec5a0181df23fae8ae20f395418"
+    },
+    {
+      "file": "screenshots/records/rec-run-38121106515.png",
+      "kind": "screenshot-run",
+      "annotated": false,
+      "url": "https://github.com/grasla3/agent-attack-atlas/actions/runs/38121106515",
+      "captured_at": "2026-10-11T07:40:00Z",
+      "shows": "校验运行 #5：提交 cacfe7a，Success，10s，产物 1 份",
+      "bytes": 90868,
+      "sha256": "2f6efeeb936a54fbf2e03b3397fdb60b260456baec9d84917db56bbd0dab2615"
     }
   ],
   "summary": {
@@ -573,11 +683,12 @@
     "code_search_queries": 8,
     "run_window": "2026-10-06 至 2026-10-11（各文件 run_time / run_date 为准）",
     "raw_files": 10,
-    "screenshots": 18,
-    "total_files": 28,
+    "screenshots": 29,
+    "total_files": 39,
     "note_20261010b": "02/03 两张检索页按归档原检索式（不加引号）重截并重加说明条；01 保持引号短语检索（0 个仓库命中）",
     "note_20261011": "新增补充取向 3 组（agentic attack surface benchmark / tool-calling agent attack benchmark / llm agent attack methods）与检索页原图 4 张（含 agent attack method library 的检索页原图）",
-    "note_20261011b": "更正 sweep2 记录的来源字段：该轮实际取向为 GitHub topics · PyPI 包名索引 · Gitee，原字段中的 HuggingFace 无对应取向，已从记录 kind 与清单 source/label 中移除"
+    "note_20261011b": "更正 sweep2 记录的来源字段：该轮实际取向为 GitHub topics · PyPI 包名索引 · Gitee，原字段中的 HuggingFace 无对应取向，已从记录 kind 与清单 source/label 中移除",
+    "note_20261011c": "新增原始记录文件页截图 10 张（钉在提交 cacfe7a）与校验运行记录页截图 1 张，用于以截图形式直接呈现检索结果"
   },
   "screenshot_note": "截图不含浏览器地址栏；每张图对应的完整 URL 与采集时间见本清单 url / captured_at 字段，二者共同构成可复核关系。仓库检索页为公开页面；代码级检索需登录态，故代码检索以 raw/prior-art-codesearch-20261006.json 的原始响应为准。"
 }
